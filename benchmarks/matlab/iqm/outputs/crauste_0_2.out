@@ -1,0 +1,89 @@
+[?1h=
+                                                                                                           < M A T L A B (R) >
+                                                                                                 Copyright 1984-2022 The MathWorks, Inc.
+                                                                                                R2022a (9.12.0.1884302) 64-bit (glnxa64)
+                                                                                                            February 16, 2022
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[2J[?1h=[?1h=[?1h=Building with 'gcc'.
+[?1h=[?1h=[?1h=[?1h=[?1h=[?1h=MEX completed successfully.
+[?1h=[?1h=[?1h=Building with 'gcc'.
+[?1h=[?1h=[?1h=[?1h=[?1h=[?1h=MEX completed successfully.
+[?1h=[?1h=[?1h=Building with 'gcc'.
+[?1h=[?1h=/home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/IQMtools V1.2.2.2/IQMlite/tools/optimization/auxiliary/isres/isrsort.c: In function ‘mexFunction’:
+/home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/IQMtools V1.2.2.2/IQMlite/tools/optimization/auxiliary/isres/isrsort.c:39:19: warning: implicit declaration of function ‘time’ [-Wimplicit-function-declaration]
+   39 |   srand((unsigned)time(NULL));
+      |                   ^~~~
+
+[?1h=[?1h=[?1h=[?1h=MEX completed successfully.
+ 
+IQM Tools Lite
+	- Developer: IntiQuan GmbH (info@intiquan.com)
+	- Installation completed
+ 
+ 
+License IQM Tools Lite:
+ 
+This program is Free Open Source Software: you can redistribute it and/or modify 
+it under the terms of the GNU General Public License as published by 
+the Free Software Foundation, either version 3 of the License, or 
+(at your option) any later version. 
+ 
+This program is distributed in the hope that it will be useful, 
+but WITHOUT ANY WARRANTY; without even the implied warranty of 
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the 
+GNU General Public License for more details. 
+ 
+You should have received a copy of the GNU General Public License 
+along with this program. If not, see <http://www.gnu.org/licenses/>.
+ 
+ 
+ 
+Copying files ...
+[?1h=[?1h=[?1h=[?1h=Compiling files ...
+[?1h=[?1h=[?1h=Building with 'gcc'.
+[?1h=[?1h=/home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/IQMtools V1.2.2.2/IQMpro/tools/01-MEXmodels/CVODEMEX/src/source_SUNDIALS_CVODES_25/CVODEmex25.c: In function ‘handleInputArguments’:
+/home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/IQMtools V1.2.2.2/IQMpro/tools/01-MEXmodels/CVODEMEX/src/source_SUNDIALS_CVODES_25/CVODEmex25.c:451:9: warning: implicit declaration of function ‘calc_ic_model’ [-Wimplicit-function-declaration]
+  451 |         calc_ic_model(initialconditions, &modeldata);
+      |         ^~~~~~~~~~~~~
+/home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/IQMtools V1.2.2.2/IQMpro/tools/01-MEXmodels/CVODEMEX/src/source_SUNDIALS_CVODES_25/CVODEmex25.c: In function ‘initCVODE’:
+/home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/IQMtools V1.2.2.2/IQMpro/tools/01-MEXmodels/CVODEMEX/src/source_SUNDIALS_CVODES_25/CVODEmex25.c:643:5: warning: implicit declaration of function ‘CVDense’ [-Wimplicit-function-declaration]
+  643 |     CVDense(cvode_mem,NRSTATES);
+      |     ^~~~~~~
+
+[?1h=[?1h=^C[?1h=sh /tmp/mex_59062355143347846_1129323: Interrupt
+{Error using mex
+/home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/IQMtools V1.2.2.2/IQMpro/tools/01-MEXmodels/CVODEMEX/src/source_SUNDIALS_CVODES_25/cvodes.c: In function ‘CVProcessError’:
+/home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/IQMtools V1.2.2.2/IQMpro/tools/01-MEXmodels/CVODEMEX/src/source_SUNDIALS_CVODES_25/cvodes.c:7188:5: warning: format not a string literal and no format arguments
+[-Wformat-security]
+ 7188 |     fprintf(stderr, msgfmt);
+      |     ^~~~~~~
+
+
+Error in buildCVODElibunix (line 25)
+mex -c -O -I../include_SUNDIALS_CVODES_25 ...
+
+Error in installIQMpro (line 47)
+    buildCVODElibunix
+
+Error in run (line 91)
+evalin('caller', strcat(script, ';'));
+
+Error in crauste_0_2 (line 9)
+run ../../src/'IQMtools V1.2.2.2'/IQMpro/installIQMpro.m;
+
+Error in run (line 91)
+evalin('caller', strcat(script, ';'));
+} 
+>> 
+>> 
+>> 
+>> 
+>> 
+>> Command terminated by signal 15
+
+
+CPU time: 6.67+65.95 sec	Max. resident set size: 911560 KB	 Elapsed: 355.45 sec.

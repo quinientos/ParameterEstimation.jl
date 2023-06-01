@@ -1,0 +1,25 @@
+********** EXPERIMENT NAME
+Exp 2
+
+********** EXPERIMENT NOTES
+
+
+********** EXPERIMENT INITIAL PARAMETER AND STATE SETTINGS
+lm = 0.5
+d = 0.5
+beta = 0.5
+a = 0.5
+k = 0.5
+u = 0.5
+c = 0.5
+q = 0.5
+b = 0.5
+h = 0.5
+x(0) = 0.4
+y(0) = 0.4
+v(0) = 0.4
+w(0) = 0.4
+z(0) = 0.4
+********** EXPERIMENT PARAMETER CHANGES
+
+********** EXPERIMENT STATE CHANGES

@@ -1,0 +1,4747 @@
+[?1h=
+                                                                                < M A T L A B (R) >
+                                                                      Copyright 1984-2022 The MathWorks, Inc.
+                                                                     R2022a (9.12.0.1884302) 64-bit (glnxa64)
+                                                                                 February 16, 2022
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+
+
+*********************************** 
+     AMIGO2, Copyright @CSIC      
+     AMIGO2_R2019a [March 2019]      
+*********************************** 
+
+*Date: 01-Jun-2023
+
+------>Pre processing....this may take a few seconds.
+
+
+------>Checking inputs....
+		Problem folder has not been provided. Default: Problem
+------> WARNING message
+
+		 AMIGO_check_model: You did not specify inputs.model.exe_type, standard will be assumed
+
+[Warning: AMIGO_check_IVPsolver: Changing ivp solver to the only option compatible with charmodelC and sbmlmodel, cvodes] 
+[> In AMIGO_check_IVPsolver (line 24)
+In AMIGO_check_model (line 387)
+In AMIGO_Prep (line 55)
+In crauste_JRB2 (line 132)
+In run (line 91)] 
+[Warning: AMIGO_check_IVPsolver: Changing sensitivities solver to, cvodes] 
+[> In AMIGO_check_IVPsolver (line 31)
+In AMIGO_check_model (line 387)
+In AMIGO_Prep (line 55)
+In crauste_JRB2 (line 132)
+In run (line 91)] 
+------> Generating C code ...
+
+
+------> Mexing files....
+
+[?1h=[?1h=[?1h=Building with 'gcc'.
+[?1h=[?1h=[?1h=[?1h=[?1h=/home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/AMIGO2_R2019b/Kernel/IVP_solvers/cvodes/C_src4Amigo/src/src_amigo/simulate_amigo_model.c: In function ‘simulate_amigo_model’:
+/home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/AMIGO2_R2019b/Kernel/IVP_solvers/cvodes/C_src4Amigo/src/src_amigo/simulate_amigo_model.c:278:11: warning: passing argument 1 of ‘mexPrintf’ from incompatible pointer type [-Wincompatible-pointer-types]
+  278 | mexPrintf(stderr,"\nSolver failed at flag = CVode(cvode_mem, tout, y, &t, CV_TSTOP_RETURN);. . .\n");
+      |           ^~~~~~
+      |           |
+      |           FILE * {aka struct _IO_FILE *}
+In file included from /home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/AMIGO2_R2019b/Kernel/IVP_solvers/cvodes/C_src4Amigo/include/include_amigo/simulate_amigo_model.h:4,
+                 from /home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/AMIGO2_R2019b/Kernel/IVP_solvers/cvodes/C_src4Amigo/src/src_amigo/simulate_amigo_model.c:1:
+/local/MATLAB/R2022a/extern/include/mex.h:192:17: note: expected ‘const char *’ but argument is of type ‘FILE *’ {aka ‘struct _IO_FILE *’}
+  192 |     const char *fmt, /* printf style format */
+      |     ~~~~~~~~~~~~^~~
+
+[?1h=/home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/AMIGO2_R2019b/Kernel/IVP_solvers/cvodes/C_src4Amigo/src/src_interface/interface_with_matlab.c: In function ‘mexFunction’:
+/home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/AMIGO2_R2019b/Kernel/IVP_solvers/cvodes/C_src4Amigo/src/src_interface/interface_with_matlab.c:181:14: warning: assignment to ‘mxArray *’ {aka ‘struct mxArray_tag *’} from incompatible pointer type ‘double *’ [-Wincompatible-pointer-types]
+  181 | stats_struct = mxGetPr(plhs[5]);
+      |              ^
+
+[?1h=[?1h=[?1h=/home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/AMIGO2_R2019b/Kernel/IVP_solvers/cvodes/C_src4Amigo/src/src_cvodes/cvodes.c: In function ‘cvProcessError’:
+/home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/AMIGO2_R2019b/Kernel/IVP_solvers/cvodes/C_src4Amigo/src/src_cvodes/cvodes.c:8961:21: warning: format not a string literal and no format arguments [-Wformat-security]
+ 8961 |     fprintf(stderr, msg);
+      |                     ^~~
+
+[?1h=[?1h=[?1h=[?1h=[?1h=[?1h=[?1h=[?1h=[?1h=[?1h=[?1h=[?1h=[?1h=[?1h=[?1h=[?1h=[?1h=[?1h=[?1h=[?1h=[?1h=[?1h=[?1h=[?1h=[?1h=MEX completed successfully.
+
+
+------>Files generated....
+
+
+*********************************** 
+     AMIGO2, Copyright @CSIC      
+     AMIGO2_R2019a [March 2019]      
+*********************************** 
+
+*Date: 01-Jun-2023
+
+------>Checking inputs....
+		Problem folder has not been provided. Default: Problem
+------> WARNING message
+
+		 AMIGO_check_model: You did not specify inputs.model.exe_type, standard will be assumed
+
+[Warning: AMIGO_check_IVPsolver: Changing ivp solver to the only option compatible with charmodelC and sbmlmodel, cvodes] 
+[> In AMIGO_check_IVPsolver (line 24)
+In AMIGO_check_model (line 387)
+In AMIGO_PE (line 83)
+In crauste_JRB2 (line 133)
+In run (line 91)] 
+[Warning: AMIGO_check_IVPsolver: Changing sensitivities solver to, cvodes] 
+[> In AMIGO_check_IVPsolver (line 31)
+In AMIGO_check_model (line 387)
+In AMIGO_PE (line 83)
+In crauste_JRB2 (line 133)
+In run (line 91)] 
+
+
+------> WARNING message
+
+		 You have not provided the sampling times.
+ 		 Equidistant sampling will be assumed for experiment 1
+		 Note however that you may modify your input file by adding
+		 inputs.exps.t_s{iexp}
+
+ans =
+
+    1.5000    1.5000    1.5000    1.5000    1.5000    1.5000    1.5000    1.5000    1.5000    1.5000    1.5000    1.5000    1.5000
+
+[Warning: Directory already exists.] 
+[> In AMIGO_gen_obs (line 38)
+In AMIGO_PE (line 128)
+In crauste_JRB2 (line 133)
+In run (line 91)] 
+[Warning: Name is nonexistent or not a directory: /home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/AMIGO2_R2019b/Results/Problem/AMIGO_gen_obs_problem.m] 
+[> In path (line 109)
+In addpath (line 86)
+In AMIGO_gen_obs (line 109)
+In AMIGO_PE (line 128)
+In crauste_JRB2 (line 133)
+In run (line 91)] 
+
+ans =
+
+    '/home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/AMIGO2_R2019b/Results/Problem/AMIGO_gen_obs_problem.m'
+
+
+*************************************************************************
+
+
+------>IMPORTANT!!: Most of the optimization solvers have their own
+                    tunning parameters (options).
+                    Defaults have been assigned in the *NLPsolver*_options
+                    files. You may need to modify those settings for your
+                    particular problem, specially:
+                      - maximum number of function evaluations /iterations,
+                      - maximum computational time
+
+
+******************************************************************
+
+  Solving the NLP problem with
+		>Summary of selected eSS options: 
+ess_options.
+	dim_refset:	'auto'
+	inter_save:	0
+	iterprint:	1
+	local:	(1x1 struct)
+	log_var:	[]
+	maxeval:	60000
+	maxtime:	600
+	ndiverse:	'auto'
+
+		  default options are used. 
+
+
+		>Bounds on the unknowns:
+
+		v_guess(1)=1.500000;  v_min(1)=0.000000;  v_max(1)=3.000000;
+		v_guess(2)=1.500000;  v_min(2)=0.000000;  v_max(2)=3.000000;
+		v_guess(3)=1.500000;  v_min(3)=0.000000;  v_max(3)=3.000000;
+		v_guess(4)=1.500000;  v_min(4)=0.000000;  v_max(4)=3.000000;
+		v_guess(5)=1.500000;  v_min(5)=0.000000;  v_max(5)=3.000000;
+		v_guess(6)=1.500000;  v_min(6)=0.000000;  v_max(6)=3.000000;
+		v_guess(7)=1.500000;  v_min(7)=0.000000;  v_max(7)=3.000000;
+		v_guess(8)=1.500000;  v_min(8)=0.000000;  v_max(8)=3.000000;
+		v_guess(9)=1.500000;  v_min(9)=0.000000;  v_max(9)=3.000000;
+		v_guess(10)=1.500000;  v_min(10)=0.000000;  v_max(10)=3.000000;
+		v_guess(11)=1.500000;  v_min(11)=0.000000;  v_max(11)=3.000000;
+		v_guess(12)=1.500000;  v_min(12)=0.000000;  v_max(12)=3.000000;
+		v_guess(13)=1.500000;  v_min(13)=0.000000;  v_max(13)=3.000000;
+		v_guess(14)=1.500000;  v_min(14)=0.000000;  v_max(14)=3.000000;
+		v_guess(15)=1.500000;  v_min(15)=0.000000;  v_max(15)=3.000000;
+		v_guess(16)=1.500000;  v_min(16)=0.000000;  v_max(16)=3.000000;
+		v_guess(17)=1.500000;  v_min(17)=0.000000;  v_max(17)=3.000000;
+		v_guess(18)=1.500000;  v_min(18)=0.000000;  v_max(18)=3.000000;
+
+
+------------------------------------------------------------------------------ 
+ eSS R2010B - Enhanced Scatter Search    
+<c> IIM-CSIC, Vigo, Spain -  email: gingproc@iim.csic.es 
+------------------------------------------------------------------------------ 
+
+Refset size automatically calculated: 14
+Number of diverse solutions automatically calculated: 180
+
+
+-----------------------------------------------
+ Initial value problem related active settings
+-----------------------------------------------
+ivpsolver: cvodes
+RelTol: 1e-12
+AbsTol: 1e-12
+MaxStepSize: Inf
+MaxNumberOfSteps: 1e+06
+
+[CVODES WARNING]  CVode
+  Internal t = 0.168708 and h = 1.21221e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.168708 and h = 1.21221e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.168708 and h = 1.21221e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.168708 and h = 1.21221e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.168708 and h = 1.21221e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.168708 and h = 1.21221e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.168708 and h = 1.21221e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.168708 and h = 1.21221e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.168708 and h = 1.21221e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.168708 and h = 1.21221e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.168708 and h = 2.05126e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.433734 and h = 2.28083e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.433734 and h = 2.28083e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.433734 and h = 2.28083e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.433734 and h = 2.28083e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.433734 and h = 2.28083e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.433734 and h = 2.28083e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.433734 and h = 2.28083e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.433734 and h = 2.28083e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.433734 and h = 2.28083e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.433734 and h = 2.28083e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.433734 and h = 1.04186e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.494838 and h = 2.44479e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.494838 and h = 2.44479e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.494838 and h = 2.44479e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.494838 and h = 2.44479e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.494838 and h = 2.44479e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.494838 and h = 2.44479e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.494838 and h = 2.44479e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.494838 and h = 2.44479e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.494838 and h = 2.44479e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.494838 and h = 2.44479e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.494838 and h = 1.10892e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.317777 and h = 2.37003e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.317777 and h = 2.37003e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.317777 and h = 2.37003e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.317777 and h = 2.37003e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.317777 and h = 2.37003e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.317777 and h = 2.37003e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.317777 and h = 2.37003e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.317777 and h = 2.37003e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.317777 and h = 2.37003e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.317777 and h = 2.37003e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.317777 and h = 1.86658e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.481493 and h = 2.4447e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.481493 and h = 2.4447e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.481493 and h = 2.4447e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.481493 and h = 2.4447e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.481493 and h = 2.4447e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.481493 and h = 2.4447e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.481493 and h = 2.4447e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.481493 and h = 2.4447e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.481493 and h = 2.4447e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.481493 and h = 2.4447e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.481493 and h = 9.76768e-151, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.841853 and h = 4.59359e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.841853 and h = 4.59359e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.841853 and h = 4.59359e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.841853 and h = 4.59359e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.841853 and h = 4.59359e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.841853 and h = 4.59359e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.841853 and h = 4.59359e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.841853 and h = 4.59359e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.841853 and h = 4.59359e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.841853 and h = 4.59359e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.841853 and h = 2.08388e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.327459 and h = 2.56858e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.327459 and h = 2.56858e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.327459 and h = 2.56858e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.327459 and h = 2.56858e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.327459 and h = 2.56858e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.327459 and h = 2.56858e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.327459 and h = 2.56858e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.327459 and h = 2.56858e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.327459 and h = 2.56858e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.327459 and h = 2.56858e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.327459 and h = 1.17739e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.426055 and h = 2.53718e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.426055 and h = 2.53718e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.426055 and h = 2.53718e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.426055 and h = 2.53718e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.426055 and h = 2.53718e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.426055 and h = 2.53718e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.426055 and h = 2.53718e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.426055 and h = 2.53718e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.426055 and h = 2.53718e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.426055 and h = 2.53718e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.426055 and h = 1.50429e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.228785 and h = 1.28412e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.228785 and h = 1.28412e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.228785 and h = 1.28412e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.228785 and h = 1.28412e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.228785 and h = 1.28412e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.228785 and h = 1.28412e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.228785 and h = 1.28412e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.228785 and h = 1.28412e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.228785 and h = 1.28412e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.228785 and h = 1.28412e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.228785 and h = 1.06767e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.273989 and h = 2.38663e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.273989 and h = 2.38663e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.273989 and h = 2.38663e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.273989 and h = 2.38663e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.273989 and h = 2.38663e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.273989 and h = 2.38663e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.273989 and h = 2.38663e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.273989 and h = 2.38663e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.273989 and h = 2.38663e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.273989 and h = 2.38663e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.273989 and h = 1.30232e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.662698 and h = 4.62284e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.662698 and h = 4.62284e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.662698 and h = 4.62284e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.662698 and h = 4.62284e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.662698 and h = 4.62284e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.662698 and h = 4.62284e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.662698 and h = 4.62284e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.662698 and h = 4.62284e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.662698 and h = 4.62284e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.662698 and h = 4.62284e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.662698 and h = 1.34624e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.835475 and h = 5.38793e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.835475 and h = 5.38793e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.835475 and h = 5.38793e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.835475 and h = 5.38793e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.835475 and h = 5.38793e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.835475 and h = 5.38793e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.835475 and h = 5.38793e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.835475 and h = 5.38793e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.835475 and h = 5.38793e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.835475 and h = 5.38793e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.835475 and h = 1.71407e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.653936 and h = 4.8807e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.653936 and h = 4.8807e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.653936 and h = 4.8807e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.653936 and h = 4.8807e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.653936 and h = 4.8807e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.653936 and h = 4.8807e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.653936 and h = 4.8807e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.653936 and h = 4.8807e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.653936 and h = 4.8807e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.653936 and h = 4.8807e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.653936 and h = 1.06131e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.409356 and h = 2.25213e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.409356 and h = 2.25213e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.409356 and h = 2.25213e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.409356 and h = 2.25213e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.409356 and h = 2.25213e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.409356 and h = 2.25213e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.409356 and h = 2.25213e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.409356 and h = 2.25213e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.409356 and h = 2.25213e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.409356 and h = 2.25213e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.409356 and h = 1.68755e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.3194 and h = 2.44067e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.3194 and h = 2.44067e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.3194 and h = 2.44067e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.3194 and h = 2.44067e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.3194 and h = 2.44067e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.3194 and h = 2.44067e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.3194 and h = 2.44067e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.3194 and h = 2.44067e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.3194 and h = 2.44067e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.3194 and h = 2.44067e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.3194 and h = 1.6025e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.58317 and h = 5.52378e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.58317 and h = 5.52378e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.58317 and h = 5.52378e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.58317 and h = 5.52378e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.58317 and h = 5.52378e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.58317 and h = 5.52378e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.58317 and h = 5.52378e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.58317 and h = 5.52378e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.58317 and h = 5.52378e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.58317 and h = 5.52378e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.58317 and h = 1.91966e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.564033 and h = 4.10874e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.564033 and h = 4.10874e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.564033 and h = 4.10874e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.564033 and h = 4.10874e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.564033 and h = 4.10874e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.564033 and h = 4.10874e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.564033 and h = 4.10874e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.564033 and h = 4.10874e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.564033 and h = 4.10874e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.564033 and h = 4.10874e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.564033 and h = 1.53472e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.281176 and h = 2.25701e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.281176 and h = 2.25701e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.281176 and h = 2.25701e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.281176 and h = 2.25701e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.281176 and h = 2.25701e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.281176 and h = 2.25701e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.281176 and h = 2.25701e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.281176 and h = 2.25701e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.281176 and h = 2.25701e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.281176 and h = 2.25701e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.281176 and h = 1.68908e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.718204 and h = 4.75308e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.718204 and h = 4.75308e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.718204 and h = 4.75308e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.718204 and h = 4.75308e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.718204 and h = 4.75308e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.718204 and h = 4.75308e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.718204 and h = 4.75308e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.718204 and h = 4.75308e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.718204 and h = 4.75308e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.718204 and h = 4.75308e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.718204 and h = 1.03175e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.638374 and h = 5.30284e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.638374 and h = 5.30284e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.638374 and h = 5.30284e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.638374 and h = 5.30284e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.638374 and h = 5.30284e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.638374 and h = 5.30284e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.638374 and h = 5.30284e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.638374 and h = 5.30284e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.638374 and h = 5.30284e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.638374 and h = 5.30284e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.638374 and h = 1.2431e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.213639 and h = 1.31822e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.213639 and h = 1.31822e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.213639 and h = 1.31822e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.213639 and h = 1.31822e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.213639 and h = 1.31822e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.213639 and h = 1.31822e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.213639 and h = 1.31822e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.213639 and h = 1.31822e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.213639 and h = 1.31822e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.213639 and h = 1.31822e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.213639 and h = 1.31956e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.818208 and h = 5.38119e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.818208 and h = 5.38119e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.818208 and h = 5.38119e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.818208 and h = 5.38119e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.818208 and h = 5.38119e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.818208 and h = 5.38119e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.818208 and h = 5.38119e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.818208 and h = 5.38119e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.818208 and h = 5.38119e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.818208 and h = 5.38119e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.818208 and h = 1.8025e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.325181 and h = 2.57865e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.325181 and h = 2.57865e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.325181 and h = 2.57865e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.325181 and h = 2.57865e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.325181 and h = 2.57865e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.325181 and h = 2.57865e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.325181 and h = 2.57865e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.325181 and h = 2.57865e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.325181 and h = 2.57865e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.325181 and h = 2.57865e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.325181 and h = 1.66651e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.40035 and h = 2.41482e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.40035 and h = 2.41482e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.40035 and h = 2.41482e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.40035 and h = 2.41482e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.40035 and h = 2.41482e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.40035 and h = 2.41482e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.40035 and h = 2.41482e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.40035 and h = 2.41482e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.40035 and h = 2.41482e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.40035 and h = 2.41482e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.40035 and h = 1.34517e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.446113 and h = 2.06002e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.446113 and h = 2.06002e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.446113 and h = 2.06002e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.446113 and h = 2.06002e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.446113 and h = 2.06002e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.446113 and h = 2.06002e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.446113 and h = 2.06002e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.446113 and h = 2.06002e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.446113 and h = 2.06002e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.446113 and h = 2.06002e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.446113 and h = 1.31086e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.444074 and h = 2.17837e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.444074 and h = 2.17837e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.444074 and h = 2.17837e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.444074 and h = 2.17837e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.444074 and h = 2.17837e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.444074 and h = 2.17837e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.444074 and h = 2.17837e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.444074 and h = 2.17837e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.444074 and h = 2.17837e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.444074 and h = 2.17837e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.444074 and h = 1.11006e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.281283 and h = 2.23669e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.281283 and h = 2.23669e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.281283 and h = 2.23669e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.281283 and h = 2.23669e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.281283 and h = 2.23669e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.281283 and h = 2.23669e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.281283 and h = 2.23669e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.281283 and h = 2.23669e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.281283 and h = 2.23669e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.281283 and h = 2.23669e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.281283 and h = 1.92974e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.239727 and h = 1.37091e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.239727 and h = 1.37091e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.239727 and h = 1.37091e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.239727 and h = 1.37091e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.239727 and h = 1.37091e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.239727 and h = 1.37091e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.239727 and h = 1.37091e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.239727 and h = 1.37091e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.239727 and h = 1.37091e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.239727 and h = 1.37091e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.239727 and h = 1.36257e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.224124 and h = 1.18826e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.224124 and h = 1.18826e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.224124 and h = 1.18826e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.224124 and h = 1.18826e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.224124 and h = 1.18826e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.224124 and h = 1.18826e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.224124 and h = 1.18826e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.224124 and h = 1.18826e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.224124 and h = 1.18826e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.224124 and h = 1.18826e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.224124 and h = 2.07506e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.245556 and h = 1.10834e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.245556 and h = 1.10834e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.245556 and h = 1.10834e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.245556 and h = 1.10834e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.245556 and h = 1.10834e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.245556 and h = 1.10834e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.245556 and h = 1.10834e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.245556 and h = 1.10834e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.245556 and h = 1.10834e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.245556 and h = 1.10834e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.245556 and h = 1.13079e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.20566 and h = 1.27938e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.20566 and h = 1.27938e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.20566 and h = 1.27938e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.20566 and h = 1.27938e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.20566 and h = 1.27938e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.20566 and h = 1.27938e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.20566 and h = 1.27938e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.20566 and h = 1.27938e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.20566 and h = 1.27938e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.20566 and h = 1.27938e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.20566 and h = 2.02269e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.614523 and h = 4.60911e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.614523 and h = 4.60911e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.614523 and h = 4.60911e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.614523 and h = 4.60911e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.614523 and h = 4.60911e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.614523 and h = 4.60911e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.614523 and h = 4.60911e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.614523 and h = 4.60911e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.614523 and h = 4.60911e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.614523 and h = 4.60911e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.614523 and h = 1.1433e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.314584 and h = 2.67233e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.314584 and h = 2.67233e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.314584 and h = 2.67233e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.314584 and h = 2.67233e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.314584 and h = 2.67233e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.314584 and h = 2.67233e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.314584 and h = 2.67233e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.314584 and h = 2.67233e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.314584 and h = 2.67233e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.314584 and h = 2.67233e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.314584 and h = 1.176e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.675628 and h = 4.97145e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.675628 and h = 4.97145e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.675628 and h = 4.97145e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.675628 and h = 4.97145e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.675628 and h = 4.97145e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.675628 and h = 4.97145e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.675628 and h = 4.97145e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.675628 and h = 4.97145e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.675628 and h = 4.97145e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.675628 and h = 4.97145e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.675628 and h = 9.9978e-151, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+Initial Pop: NFunEvals: 188  Bestf: 7.73285      CPUTime: 2.880000    Var: 4204.22 
+
+[CVODES WARNING]  CVode
+  Internal t = 0.832708 and h = 5.23758e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.832708 and h = 5.23758e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.832708 and h = 5.23758e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.832708 and h = 5.23758e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.832708 and h = 5.23758e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.832708 and h = 5.23758e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.832708 and h = 5.23758e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.832708 and h = 5.23758e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.832708 and h = 5.23758e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.832708 and h = 5.23758e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.832708 and h = 1.18061e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.855176 and h = 4.75038e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.855176 and h = 4.75038e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.855176 and h = 4.75038e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.855176 and h = 4.75038e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.855176 and h = 4.75038e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.855176 and h = 4.75038e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.855176 and h = 4.75038e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.855176 and h = 4.75038e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.855176 and h = 4.75038e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.855176 and h = 4.75038e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.855176 and h = 1.88107e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.881224 and h = 5.32575e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.881224 and h = 5.32575e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.881224 and h = 5.32575e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.881224 and h = 5.32575e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.881224 and h = 5.32575e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.881224 and h = 5.32575e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.881224 and h = 5.32575e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.881224 and h = 5.32575e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.881224 and h = 5.32575e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.881224 and h = 5.32575e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.881224 and h = 1.74016e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.615223 and h = 4.2634e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.615223 and h = 4.2634e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.615223 and h = 4.2634e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.615223 and h = 4.2634e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.615223 and h = 4.2634e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.615223 and h = 4.2634e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.615223 and h = 4.2634e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.615223 and h = 4.2634e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.615223 and h = 4.2634e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.615223 and h = 4.2634e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.615223 and h = 1.09548e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.666828 and h = 4.75669e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.666828 and h = 4.75669e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.666828 and h = 4.75669e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.666828 and h = 4.75669e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.666828 and h = 4.75669e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.666828 and h = 4.75669e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.666828 and h = 4.75669e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.666828 and h = 4.75669e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.666828 and h = 4.75669e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.666828 and h = 4.75669e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.666828 and h = 1.62944e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.741548 and h = 4.99549e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.741548 and h = 4.99549e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.741548 and h = 4.99549e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.741548 and h = 4.99549e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.741548 and h = 4.99549e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.741548 and h = 4.99549e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.741548 and h = 4.99549e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.741548 and h = 4.99549e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.741548 and h = 4.99549e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.741548 and h = 4.99549e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.741548 and h = 1.22002e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.906287 and h = 4.67633e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.906287 and h = 4.67633e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.906287 and h = 4.67633e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.906287 and h = 4.67633e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.906287 and h = 4.67633e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.906287 and h = 4.67633e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.906287 and h = 4.67633e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.906287 and h = 4.67633e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.906287 and h = 4.67633e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.906287 and h = 4.67633e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.906287 and h = 1.13535e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.361062 and h = 2.09812e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.361062 and h = 2.09812e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.361062 and h = 2.09812e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.361062 and h = 2.09812e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.361062 and h = 2.09812e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.361062 and h = 2.09812e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.361062 and h = 2.09812e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.361062 and h = 2.09812e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.361062 and h = 2.09812e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.361062 and h = 2.09812e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.361062 and h = 2.09302e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.465589 and h = 2.69668e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.465589 and h = 2.69668e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.465589 and h = 2.69668e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.465589 and h = 2.69668e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.465589 and h = 2.69668e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.465589 and h = 2.69668e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.465589 and h = 2.69668e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.465589 and h = 2.69668e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.465589 and h = 2.69668e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.465589 and h = 2.69668e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.465589 and h = 1.85923e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.936986 and h = 5.28337e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.936986 and h = 5.28337e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.936986 and h = 5.28337e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.936986 and h = 5.28337e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.936986 and h = 5.28337e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.936986 and h = 5.28337e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.936986 and h = 5.28337e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.936986 and h = 5.28337e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.936986 and h = 5.28337e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.936986 and h = 5.28337e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.936986 and h = 1.14691e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+Iteration: 1 NFunEvals: 399  Bestf: 3.16604      CPUTime: 3.560000    Var: 30.2572 
+Call local solver: DN2FB 
+Initial point function value: 3.166040 
+Local solution function value: 3.49716e-17 
+Number of function evaluations in the local search: 14617 
+CPU Time of the local search: 10.649472  seconds 
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.56068 and h = 4.75695e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.56068 and h = 4.75695e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.56068 and h = 4.75695e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.56068 and h = 4.75695e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.56068 and h = 4.75695e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.56068 and h = 4.75695e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.56068 and h = 4.75695e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.56068 and h = 4.75695e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.56068 and h = 4.75695e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.56068 and h = 4.75695e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.56068 and h = 1.39996e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.473697 and h = 2.21501e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.473697 and h = 2.21501e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.473697 and h = 2.21501e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.473697 and h = 2.21501e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.473697 and h = 2.21501e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.473697 and h = 2.21501e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.473697 and h = 2.21501e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.473697 and h = 2.21501e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.473697 and h = 2.21501e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.473697 and h = 2.21501e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.473697 and h = 1.19709e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.753372 and h = 4.26157e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.753372 and h = 4.26157e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.753372 and h = 4.26157e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.753372 and h = 4.26157e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.753372 and h = 4.26157e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.753372 and h = 4.26157e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.753372 and h = 4.26157e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.753372 and h = 4.26157e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.753372 and h = 4.26157e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.753372 and h = 4.26157e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.753372 and h = 1.25403e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.61979 and h = 5.26918e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.61979 and h = 5.26918e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.61979 and h = 5.26918e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.61979 and h = 5.26918e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.61979 and h = 5.26918e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.61979 and h = 5.26918e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.61979 and h = 5.26918e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.61979 and h = 5.26918e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.61979 and h = 5.26918e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.61979 and h = 5.26918e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.61979 and h = 1.14358e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.457576 and h = 2.1818e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.457576 and h = 2.1818e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.457576 and h = 2.1818e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.457576 and h = 2.1818e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.457576 and h = 2.1818e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.457576 and h = 2.1818e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.457576 and h = 2.1818e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.457576 and h = 2.1818e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.457576 and h = 2.1818e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.457576 and h = 2.1818e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.457576 and h = 1.17914e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.750215 and h = 5.42625e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.750215 and h = 5.42625e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.750215 and h = 5.42625e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.750215 and h = 5.42625e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.750215 and h = 5.42625e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.750215 and h = 5.42625e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.750215 and h = 5.42625e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.750215 and h = 5.42625e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.750215 and h = 5.42625e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.750215 and h = 5.42625e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.750215 and h = 1.3193e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.922836 and h = 4.4123e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.922836 and h = 4.4123e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.922836 and h = 4.4123e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.922836 and h = 4.4123e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.922836 and h = 4.4123e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.922836 and h = 4.4123e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.922836 and h = 4.4123e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.922836 and h = 4.4123e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.922836 and h = 4.4123e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.922836 and h = 4.4123e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.922836 and h = 1.29825e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.77331 and h = 4.79258e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.77331 and h = 4.79258e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.77331 and h = 4.79258e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.77331 and h = 4.79258e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.77331 and h = 4.79258e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.77331 and h = 4.79258e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.77331 and h = 4.79258e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.77331 and h = 4.79258e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.77331 and h = 4.79258e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.77331 and h = 4.79258e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.77331 and h = 1.04015e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.749983 and h = 5.25081e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.749983 and h = 5.25081e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.749983 and h = 5.25081e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.749983 and h = 5.25081e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.749983 and h = 5.25081e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.749983 and h = 5.25081e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.749983 and h = 5.25081e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.749983 and h = 5.25081e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.749983 and h = 5.25081e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.749983 and h = 5.25081e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.749983 and h = 1.13984e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.987467 and h = 5.02006e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.987467 and h = 5.02006e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.987467 and h = 5.02006e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.987467 and h = 5.02006e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.987467 and h = 5.02006e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.987467 and h = 5.02006e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.987467 and h = 5.02006e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.987467 and h = 5.02006e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.987467 and h = 5.02006e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.987467 and h = 5.02006e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.987467 and h = 1.29645e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.595228 and h = 4.20094e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.595228 and h = 4.20094e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.595228 and h = 4.20094e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.595228 and h = 4.20094e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.595228 and h = 4.20094e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.595228 and h = 4.20094e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.595228 and h = 4.20094e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.595228 and h = 4.20094e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.595228 and h = 4.20094e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.595228 and h = 4.20094e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.595228 and h = 1.26639e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.200951 and h = 1.20898e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.200951 and h = 1.20898e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.200951 and h = 1.20898e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.200951 and h = 1.20898e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.200951 and h = 1.20898e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.200951 and h = 1.20898e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.200951 and h = 1.20898e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.200951 and h = 1.20898e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.200951 and h = 1.20898e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.200951 and h = 1.20898e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.200951 and h = 1.22225e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.740784 and h = 4.35975e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.740784 and h = 4.35975e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.740784 and h = 4.35975e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.740784 and h = 4.35975e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.740784 and h = 4.35975e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.740784 and h = 4.35975e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.740784 and h = 4.35975e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.740784 and h = 4.35975e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.740784 and h = 4.35975e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.740784 and h = 4.35975e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.740784 and h = 9.86137e-151, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+Iteration: 2 NFunEvals: 15221  Bestf: 3.49716e-17      CPUTime: 18.890000    Var: 4.58402 
+
+[CVODES WARNING]  CVode
+  Internal t = 0.584392 and h = 4.5705e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.584392 and h = 4.5705e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.584392 and h = 4.5705e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.584392 and h = 4.5705e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.584392 and h = 4.5705e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.584392 and h = 4.5705e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.584392 and h = 4.5705e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.584392 and h = 4.5705e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.584392 and h = 4.5705e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.584392 and h = 4.5705e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.584392 and h = 9.91947e-151, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.84838 and h = 5.0263e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.84838 and h = 5.0263e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.84838 and h = 5.0263e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.84838 and h = 5.0263e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.84838 and h = 5.0263e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.84838 and h = 5.0263e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.84838 and h = 5.0263e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.84838 and h = 5.0263e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.84838 and h = 5.0263e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.84838 and h = 5.0263e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.84838 and h = 1.75985e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.427585 and h = 2.30718e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.427585 and h = 2.30718e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.427585 and h = 2.30718e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.427585 and h = 2.30718e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.427585 and h = 2.30718e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.427585 and h = 2.30718e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.427585 and h = 2.30718e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.427585 and h = 2.30718e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.427585 and h = 2.30718e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.427585 and h = 2.30718e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.427585 and h = 1.2469e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.720565 and h = 5.3936e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.720565 and h = 5.3936e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.720565 and h = 5.3936e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.720565 and h = 5.3936e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.720565 and h = 5.3936e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.720565 and h = 5.3936e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.720565 and h = 5.3936e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.720565 and h = 5.3936e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.720565 and h = 5.3936e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.720565 and h = 5.3936e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.720565 and h = 1.17059e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.732745 and h = 4.75956e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.732745 and h = 4.75956e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.732745 and h = 4.75956e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.732745 and h = 4.75956e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.732745 and h = 4.75956e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.732745 and h = 4.75956e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.732745 and h = 4.75956e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.732745 and h = 4.75956e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.732745 and h = 4.75956e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.732745 and h = 4.75956e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.732745 and h = 1.11449e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.579233 and h = 5.38737e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.579233 and h = 5.38737e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.579233 and h = 5.38737e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.579233 and h = 5.38737e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.579233 and h = 5.38737e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.579233 and h = 5.38737e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.579233 and h = 5.38737e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.579233 and h = 5.38737e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.579233 and h = 5.38737e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.579233 and h = 5.38737e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.579233 and h = 1.21124e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.712219 and h = 4.31546e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.712219 and h = 4.31546e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.712219 and h = 4.31546e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.712219 and h = 4.31546e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.712219 and h = 4.31546e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.712219 and h = 4.31546e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.712219 and h = 4.31546e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.712219 and h = 4.31546e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.712219 and h = 4.31546e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.712219 and h = 4.31546e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.712219 and h = 9.69736e-151, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.945482 and h = 4.33602e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.945482 and h = 4.33602e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.945482 and h = 4.33602e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.945482 and h = 4.33602e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.945482 and h = 4.33602e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.945482 and h = 4.33602e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.945482 and h = 4.33602e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.945482 and h = 4.33602e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.945482 and h = 4.33602e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.945482 and h = 4.33602e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.945482 and h = 1.1143e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+Iteration: 3 NFunEvals: 15421  Bestf: 3.49716e-17      CPUTime: 19.320000    Var: 1.84693 
+
+[CVODES WARNING]  CVode
+  Internal t = 0.751803 and h = 5.01156e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.751803 and h = 5.01156e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.751803 and h = 5.01156e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.751803 and h = 5.01156e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.751803 and h = 5.01156e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.751803 and h = 5.01156e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.751803 and h = 5.01156e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.751803 and h = 5.01156e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.751803 and h = 5.01156e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.751803 and h = 5.01156e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.751803 and h = 1.1008e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.763712 and h = 5.02702e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.763712 and h = 5.02702e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.763712 and h = 5.02702e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.763712 and h = 5.02702e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.763712 and h = 5.02702e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.763712 and h = 5.02702e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.763712 and h = 5.02702e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.763712 and h = 5.02702e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.763712 and h = 5.02702e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.763712 and h = 5.02702e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.763712 and h = 1.20599e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.746465 and h = 5.19058e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.746465 and h = 5.19058e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.746465 and h = 5.19058e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.746465 and h = 5.19058e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.746465 and h = 5.19058e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.746465 and h = 5.19058e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.746465 and h = 5.19058e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.746465 and h = 5.19058e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.746465 and h = 5.19058e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.746465 and h = 5.19058e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.746465 and h = 1.14106e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.97999 and h = 5.14636e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.97999 and h = 5.14636e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.97999 and h = 5.14636e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.97999 and h = 5.14636e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.97999 and h = 5.14636e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.97999 and h = 5.14636e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.97999 and h = 5.14636e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.97999 and h = 5.14636e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.97999 and h = 5.14636e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.97999 and h = 5.14636e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.97999 and h = 1.20182e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+Iteration: 4 NFunEvals: 15618  Bestf: 3.49716e-17      CPUTime: 19.610000    Var: 0.210416 
+Iteration: 5 NFunEvals: 15814  Bestf: 3.49716e-17      CPUTime: 20.070000    Var: 0.0299581 
+
+[CVODES WARNING]  CVode
+  Internal t = 0.744431 and h = 5.01695e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.744431 and h = 5.01695e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.744431 and h = 5.01695e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.744431 and h = 5.01695e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.744431 and h = 5.01695e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.744431 and h = 5.01695e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.744431 and h = 5.01695e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.744431 and h = 5.01695e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.744431 and h = 5.01695e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.744431 and h = 5.01695e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.744431 and h = 1.27073e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.91396 and h = 4.64737e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.91396 and h = 4.64737e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.91396 and h = 4.64737e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.91396 and h = 4.64737e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.91396 and h = 4.64737e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.91396 and h = 4.64737e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.91396 and h = 4.64737e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.91396 and h = 4.64737e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.91396 and h = 4.64737e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.91396 and h = 4.64737e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.91396 and h = 1.13649e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.71382 and h = 4.84748e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.71382 and h = 4.84748e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.71382 and h = 4.84748e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.71382 and h = 4.84748e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.71382 and h = 4.84748e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.71382 and h = 4.84748e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.71382 and h = 4.84748e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.71382 and h = 4.84748e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.71382 and h = 4.84748e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.71382 and h = 4.84748e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.71382 and h = 1.315e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.98649 and h = 5.1465e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.98649 and h = 5.1465e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.98649 and h = 5.1465e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.98649 and h = 5.1465e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.98649 and h = 5.1465e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.98649 and h = 5.1465e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.98649 and h = 5.1465e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.98649 and h = 5.1465e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.98649 and h = 5.1465e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.98649 and h = 5.1465e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.98649 and h = 1.29059e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+Iteration: 6 NFunEvals: 16008  Bestf: 3.49716e-17      CPUTime: 20.570000    Var: 0.0187825 
+
+[CVODES WARNING]  CVode
+  Internal t = 0.851126 and h = 4.11787e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.851126 and h = 4.11787e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.851126 and h = 4.11787e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.851126 and h = 4.11787e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.851126 and h = 4.11787e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.851126 and h = 4.11787e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.851126 and h = 4.11787e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.851126 and h = 4.11787e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.851126 and h = 4.11787e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.851126 and h = 4.11787e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.851126 and h = 1.23981e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.802489 and h = 4.61501e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.802489 and h = 4.61501e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.802489 and h = 4.61501e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.802489 and h = 4.61501e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.802489 and h = 4.61501e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.802489 and h = 4.61501e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.802489 and h = 4.61501e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.802489 and h = 4.61501e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.802489 and h = 4.61501e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.802489 and h = 4.61501e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.802489 and h = 1.07545e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+Iteration: 7 NFunEvals: 16203  Bestf: 3.49716e-17      CPUTime: 20.850000    Var: 0.0219218 
+
+[CVODES WARNING]  CVode
+  Internal t = 0.671136 and h = 4.86293e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.671136 and h = 4.86293e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.671136 and h = 4.86293e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.671136 and h = 4.86293e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.671136 and h = 4.86293e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.671136 and h = 4.86293e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.671136 and h = 4.86293e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.671136 and h = 4.86293e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.671136 and h = 4.86293e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.671136 and h = 4.86293e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.671136 and h = 1.30021e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.889081 and h = 4.78087e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.889081 and h = 4.78087e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.889081 and h = 4.78087e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.889081 and h = 4.78087e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.889081 and h = 4.78087e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.889081 and h = 4.78087e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.889081 and h = 4.78087e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.889081 and h = 4.78087e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.889081 and h = 4.78087e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.889081 and h = 4.78087e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.889081 and h = 1.33346e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.962872 and h = 5.47476e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.962872 and h = 5.47476e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.962872 and h = 5.47476e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.962872 and h = 5.47476e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.962872 and h = 5.47476e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.962872 and h = 5.47476e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.962872 and h = 5.47476e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.962872 and h = 5.47476e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.962872 and h = 5.47476e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.962872 and h = 5.47476e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.962872 and h = 1.91688e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+Iteration: 8 NFunEvals: 16397  Bestf: 3.49716e-17      CPUTime: 21.100000    Var: 0.0122055 
+
+[CVODES WARNING]  CVode
+  Internal t = 0.873282 and h = 4.22316e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.873282 and h = 4.22316e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.873282 and h = 4.22316e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.873282 and h = 4.22316e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.873282 and h = 4.22316e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.873282 and h = 4.22316e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.873282 and h = 4.22316e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.873282 and h = 4.22316e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.873282 and h = 4.22316e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.873282 and h = 4.22316e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.873282 and h = 1.46564e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+Iteration: 9 NFunEvals: 16596  Bestf: 3.49716e-17      CPUTime: 21.270000    Var: 0.00693919 
+
+[CVODES WARNING]  CVode
+  Internal t = 0.988641 and h = 4.87422e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.988641 and h = 4.87422e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.988641 and h = 4.87422e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.988641 and h = 4.87422e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.988641 and h = 4.87422e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.988641 and h = 4.87422e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.988641 and h = 4.87422e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.988641 and h = 4.87422e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.988641 and h = 4.87422e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.988641 and h = 4.87422e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.988641 and h = 1.36305e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+Iteration: 10 NFunEvals: 16796  Bestf: 3.49716e-17      CPUTime: 21.440000    Var: 0.00633872 
+
+[CVODES WARNING]  CVode
+  Internal t = 0.827045 and h = 4.64934e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.827045 and h = 4.64934e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.827045 and h = 4.64934e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.827045 and h = 4.64934e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.827045 and h = 4.64934e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.827045 and h = 4.64934e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.827045 and h = 4.64934e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.827045 and h = 4.64934e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.827045 and h = 4.64934e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.827045 and h = 4.64934e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.827045 and h = 1.16721e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.791807 and h = 5.51477e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.791807 and h = 5.51477e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.791807 and h = 5.51477e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.791807 and h = 5.51477e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.791807 and h = 5.51477e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.791807 and h = 5.51477e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.791807 and h = 5.51477e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.791807 and h = 5.51477e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.791807 and h = 5.51477e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.791807 and h = 5.51477e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.791807 and h = 1.19886e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+Iteration: 11 NFunEvals: 16990  Bestf: 3.49716e-17      CPUTime: 21.650000    Var: 0.0029609 
+Call local solver: DN2FB 
+Initial point function value: 0.005143 
+Local solution function value: 1.53003e-18 
+Number of function evaluations in the local search: 35716 
+CPU Time of the local search: 32.413106  seconds 
+
+Iteration: 12 NFunEvals: 52899  Bestf: 1.53003e-18      CPUTime: 54.310000    Var: 0.00135 
+Iteration: 13 NFunEvals: 53091  Bestf: 1.53003e-18      CPUTime: 54.450000    Var: 0.000390589 
+Iteration: 14 NFunEvals: 53282  Bestf: 1.53003e-18      CPUTime: 54.600000    Var: 4.32811e-05 
+Iteration: 15 NFunEvals: 53472  Bestf: 1.53003e-18      CPUTime: 54.750000    Var: 2.3261e-06 
+Iteration: 16 NFunEvals: 53663  Bestf: 1.53003e-18      CPUTime: 54.900000    Var: 1.04619e-07 
+Iteration: 17 NFunEvals: 53858  Bestf: 1.53003e-18      CPUTime: 55.040000    Var: 2.57478e-08 
+Iteration: 18 NFunEvals: 54050  Bestf: 1.53003e-18      CPUTime: 55.180000    Var: 1.2014e-08 
+Iteration: 19 NFunEvals: 54241  Bestf: 1.53003e-18      CPUTime: 55.320000    Var: 5.04459e-09 
+Iteration: 20 NFunEvals: 54434  Bestf: 1.53003e-18      CPUTime: 55.470000    Var: 3.63022e-09 
+Iteration: 21 NFunEvals: 54626  Bestf: 1.53003e-18      CPUTime: 55.730000    Var: 3.50184e-09 
+
+[CVODES WARNING]  CVode
+  Internal t = 0.190052 and h = 1.09188e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.190052 and h = 1.09188e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.190052 and h = 1.09188e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.190052 and h = 1.09188e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.190052 and h = 1.09188e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.190052 and h = 1.09188e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.190052 and h = 1.09188e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.190052 and h = 1.09188e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.190052 and h = 1.09188e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.190052 and h = 1.09188e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.190052 and h = 1.55267e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+Call local solver: DN2FB 
+Initial point function value: 0.000057 
+Local solution function value: 1.08875e-18 
+Number of function evaluations in the local search: 1188 
+CPU Time of the local search: 0.886592  seconds 
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.994675 and h = 4.24994e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.994675 and h = 4.24994e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.994675 and h = 4.24994e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.994675 and h = 4.24994e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.994675 and h = 4.24994e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.994675 and h = 4.24994e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.994675 and h = 4.24994e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.994675 and h = 4.24994e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.994675 and h = 4.24994e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.994675 and h = 4.24994e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.994675 and h = 1.25047e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.771019 and h = 4.47136e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.771019 and h = 4.47136e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.771019 and h = 4.47136e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.771019 and h = 4.47136e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.771019 and h = 4.47136e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.771019 and h = 4.47136e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.771019 and h = 4.47136e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.771019 and h = 4.47136e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.771019 and h = 4.47136e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0.771019 and h = 4.47136e-17 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES WARNING]  CVode
+  The above warning has been issued mxhnil times and will not be issued again for this problem.
+
+
+[CVODES ERROR]  CVode
+  At t = 0.771019 and h = 1.31562e-150, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+Iteration: 22 NFunEvals: 56004  Bestf: 1.08875e-18      CPUTime: 56.940000    Var: 8.49691 
+Iteration: 23 NFunEvals: 56191  Bestf: 1.08875e-18      CPUTime: 57.090000    Var: 0.0115827 
+Iteration: 24 NFunEvals: 56376  Bestf: 1.08875e-18      CPUTime: 57.230000    Var: 5.406e-05 
+Iteration: 25 NFunEvals: 56564  Bestf: 1.08875e-18      CPUTime: 57.380000    Var: 6.52809e-07 
+Iteration: 26 NFunEvals: 56751  Bestf: 1.08875e-18      CPUTime: 57.520000    Var: 1.05016e-07 
+Iteration: 27 NFunEvals: 56938  Bestf: 1.08875e-18      CPUTime: 57.670000    Var: 1.40863e-08 
+Iteration: 28 NFunEvals: 57122  Bestf: 1.08875e-18      CPUTime: 57.810000    Var: 1.40973e-08 
+Iteration: 29 NFunEvals: 57308  Bestf: 1.08875e-18      CPUTime: 57.950000    Var: 1.32763e-08 
+Iteration: 30 NFunEvals: 57491  Bestf: 1.08875e-18      CPUTime: 58.090000    Var: 1.32983e-08 
+Iteration: 31 NFunEvals: 57679  Bestf: 1.08875e-18      CPUTime: 58.250000    Var: 5.58592e-09 
+Call local solver: DN2FB 
+Initial point function value: 0.000002 
+Local solution function value: 4.3266e-18 
+Number of function evaluations in the local search: 4333 
+CPU Time of the local search: 3.232529  seconds 
+
+
+Final local refinement with: DN2FB 
+Initial point function value: 0.000000 
+Local solution function value: 0.000000 
+Number of function evaluations in the local search: 40 
+CPU Time of the local search: 0.044051  seconds 
+
+Maximum number of function evaluations achieved
+Best solution value		1.08875e-18
+Decision vector
+	0.071
+	0.143
+	0.198316
+	0.279398
+	0.365441
+	0.424
+	0.438261
+	0.508693
+	0.643
+	0.714
+	0.786683
+	0.857
+	0.862057
+	0.167
+	0.333
+	0.501866
+	0.665134
+	0.833
+CPU time		61.59
+Number of function evaluations		62055
+Execution of script mklJac as a function is not supported:
+/home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/AMIGO2_R2019b/Kernel/numericalDifferentiation/mklJac.m
+
+
+------> Computing Correlation Matrix for unknowns...
+
+---------------------------------------------------
+Local sensitivity problem related active settings
+---------------------------------------------------
+senssolver: cvodes
+ivp_RelTol: 1e-12
+ivp_AbsTol: 1e-12
+sens_RelTol: ~1e-12
+sensmex: cvodesg_problem
+MaxStepSize: Inf
+MaxNumberOfSteps: 1e+06
+sens_RelTol: ~1e-12
+
+----------------------------------------------------------
+------> WARNING message
+		The Fisher Information Matrix is nearly singular.
+----------------------------------------------------------
+
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.691819e-18.] 
+[> In AMIGO_corr_mat (line 81)
+In AMIGO_CramerRao (line 330)
+In AMIGO_PE (line 287)
+In crauste_JRB2 (line 133)
+In run (line 91)
+] 
+
+
+--------------------------------------------------------------------------
+		
+Experiment 1: 
+		inputs.exp_data{1}=[
+		0.167  0.333  1.167  0.833
+		0.161765  0.336739  1.16746  0.828272
+		0.15672  0.340216  1.16762  0.823484
+		0.151857  0.343437  1.16748  0.818637
+		0.147168  0.346407  1.16707  0.813732
+		0.142649  0.349131  1.16638  0.80877
+		0.138292  0.351615  1.16543  0.803752
+		0.13409  0.353863  1.16423  0.798679
+		0.130039  0.35588  1.16279  0.793552
+		0.126132  0.357672  1.16111  0.788372
+		0.122364  0.359242  1.15922  0.78314
+		0.11873  0.360597  1.15711  0.777858
+		0.115224  0.361739  1.1548  0.772527
+		0.111842  0.362675  1.1523  0.767147
+		0.108579  0.363409  1.1496  0.76172
+		0.105431  0.363946  1.14673  0.756248
+		0.102393  0.364289  1.14368  0.750731
+		0.0994617  0.364444  1.14048  0.745171
+		0.0966322  0.364416  1.13711  0.739568
+		0.0939011  0.364208  1.1336  0.733925
+		];
+
+
+
+---------------------------------------------------------------------------------------------
+>>>>    Mean / Maximum value of the residuals in percentage (100*(data-model)/data):
+
+		Experiment 1 : 
+		 Observable 1 -->  mean error: 0.000000 %	 max error: 0.000000 %
+		 Observable 2 -->  mean error: 0.000000 %	 max error: 0.000000 %
+		 Observable 3 -->  mean error: 0.000000 %	 max error: 0.000000 %
+		 Observable 4 -->  mean error: 0.000000 %	 max error: 0.000000 %
+
+--------------------------------------------------------------------------
+
+--------------------------------------------------------------------
+>>>>    Maximum absolute value of the residuals (data-model):
+
+		Experiment 1 : 
+		 Observable 1 -->  max residual: 0.000000 max data: 0.167000
+		 Observable 2 -->  max residual: 0.000000 max data: 0.364444
+		 Observable 3 -->  max residual: 0.000000 max data: 1.167620
+		 Observable 4 -->  max residual: 0.000000 max data: 0.833000
+
+--------------------------------------------------------------------------	   
+
+>>>> Best objective function: 0.000000 
+	   
+
+>>>> Computational cost: 61.590000 s
+> 99.86% of successful simulationn
+> 100.00% of successful sensitivity calculations
+
+
+>>> Estimated global parameters: 
+
+	muN     : 7.1000e-02 
+	muEE    : 1.4300e-01 
+	muLE    : 1.9832e-01 
+	muLL    : 2.7940e-01 
+	muM     : 3.6544e-01 
+	muP     : 4.2400e-01 
+	muPE    : 4.3826e-01 
+	muPL    : 5.0869e-01 
+	deltaNE : 6.4300e-01 
+	deltaEL : 7.1400e-01 
+	deltaLM : 7.8668e-01 
+	rhoE    : 8.5700e-01 
+	rhoP    : 8.6206e-01 
+
+
+>>> Estimated global initial conditions: 
+
+	n : 1.6700e-01
+	e : 3.3300e-01
+	s : 5.0187e-01
+	m : 6.6513e-01
+	p : 8.3300e-01
+
+
+------>Plotting results....
+
+
+
+------>Results (report and struct_results.mat) and plots were kept in the directory:
+
+		/home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/AMIGO2_R2019b/Results/Problem/PE_problem_eSS_run1
+
+		Click <a href="matlab: cd('/home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/AMIGO2_R2019b/Results/Problem/PE_problem_eSS_run1')">here</a> to go to the results folder or <a href="matlab: load('/home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/AMIGO2_R2019b/Results/Problem/PE_problem_eSS_run1/strreport_problem_run1.mat')">here</a> to load the results.
+[?1l>
+
+CPU time: 8.47+176.58 sec	Max. resident set size: 1462876 KB	 Elapsed: 158.79 sec.

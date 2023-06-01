@@ -1,0 +1,21 @@
+[?1h=
+                                                                                                      < M A T L A B (R) >
+                                                                                            Copyright 1984-2022 The MathWorks, Inc.
+                                                                                            R2022a (9.12.0.1884302) 64-bit (glnxa64)
+                                                                                                       February 16, 2022
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+{Error: File: /home/soogo/ParameterEstimation.jl/benchmarks/matlab/amigo_models/HIV_JRB2.m Line: 115 Column: 1
+Invalid text character. Check for unsupported symbol, invisible character, or pasting of non-ASCII characters.
+
+Error in run (line 91)
+evalin('caller', strcat(script, ';'));
+} 
+>> 
+>> Command terminated by signal 15
+
+
+CPU time: 2.42+21.04 sec	Max. resident set size: 836748 KB	 Elapsed: 230.39 sec.

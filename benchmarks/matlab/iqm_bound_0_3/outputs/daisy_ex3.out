@@ -1,0 +1,2092 @@
+[?1h=
+                                                                                < M A T L A B (R) >
+                                                                      Copyright 1984-2022 The MathWorks, Inc.
+                                                                      R2022a (9.12.0.1884302) 64-bit (glnxa64)
+                                                                                 February 16, 2022
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[2J[?1h=[?1h=[?1h=Building with 'gcc'.
+[?1h=[?1h=[?1h=[?1h=[?1h=[?1h=MEX completed successfully.
+[?1h=[?1h=[?1h=Building with 'gcc'.
+[?1h=[?1h=[?1h=[?1h=[?1h=[?1h=MEX completed successfully.
+[?1h=[?1h=[?1h=Building with 'gcc'.
+[?1h=[?1h=/home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/IQMtools V1.2.2.2/IQMlite/tools/optimization/auxiliary/isres/isrsort.c: In function ‘mexFunction’:
+/home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/IQMtools V1.2.2.2/IQMlite/tools/optimization/auxiliary/isres/isrsort.c:39:19: warning: implicit declaration of function ‘time’ [-Wimplicit-function-declaration]
+   39 |   srand((unsigned)time(NULL));
+      |                   ^~~~
+
+[?1h=[?1h=[?1h=[?1h=MEX completed successfully.
+ 
+IQM Tools Lite
+	- Developer: IntiQuan GmbH (info@intiquan.com)
+	- Installation completed
+ 
+ 
+License IQM Tools Lite:
+ 
+This program is Free Open Source Software: you can redistribute it and/or modify 
+it under the terms of the GNU General Public License as published by 
+the Free Software Foundation, either version 3 of the License, or 
+(at your option) any later version. 
+ 
+This program is distributed in the hope that it will be useful, 
+but WITHOUT ANY WARRANTY; without even the implied warranty of 
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the 
+GNU General Public License for more details. 
+ 
+You should have received a copy of the GNU General Public License 
+along with this program. If not, see <http://www.gnu.org/licenses/>.
+ 
+ 
+ 
+Copying files ...
+[?1h=[?1h=[?1h=[?1h=Compiling files ...
+[?1h=[?1h=[?1h=Building with 'gcc'.
+[?1h=[?1h=/home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/IQMtools V1.2.2.2/IQMpro/tools/01-MEXmodels/CVODEMEX/src/source_SUNDIALS_CVODES_25/CVODEmex25.c: In function ‘handleInputArguments’:
+/home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/IQMtools V1.2.2.2/IQMpro/tools/01-MEXmodels/CVODEMEX/src/source_SUNDIALS_CVODES_25/CVODEmex25.c:451:9: warning: implicit declaration of function ‘calc_ic_model’ [-Wimplicit-function-declaration]
+  451 |         calc_ic_model(initialconditions, &modeldata);
+      |         ^~~~~~~~~~~~~
+/home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/IQMtools V1.2.2.2/IQMpro/tools/01-MEXmodels/CVODEMEX/src/source_SUNDIALS_CVODES_25/CVODEmex25.c: In function ‘initCVODE’:
+/home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/IQMtools V1.2.2.2/IQMpro/tools/01-MEXmodels/CVODEMEX/src/source_SUNDIALS_CVODES_25/CVODEmex25.c:643:5: warning: implicit declaration of function ‘CVDense’ [-Wimplicit-function-declaration]
+  643 |     CVDense(cvode_mem,NRSTATES);
+      |     ^~~~~~~
+
+[?1h=[?1h=[?1h=/home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/IQMtools V1.2.2.2/IQMpro/tools/01-MEXmodels/CVODEMEX/src/source_SUNDIALS_CVODES_25/cvodes.c: In function ‘CVProcessError’:
+/home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/IQMtools V1.2.2.2/IQMpro/tools/01-MEXmodels/CVODEMEX/src/source_SUNDIALS_CVODES_25/cvodes.c:7188:5: warning: format not a string literal and no format arguments [-Wformat-security]
+ 7188 |     fprintf(stderr, msgfmt);
+      |     ^~~~~~~
+
+[?1h=[?1h=[?1h=[?1h=[?1h=[?1h=[?1h=[?1h=[?1h=[?1h=[?1h=[?1h=[?1h=[?1h=[?1h=[?1h=[?1h=[?1h=[?1h=[?1h=MEX completed successfully.
+Deleting copied files ...
+Generating library ...
+[?1h=Deleting object files ...
+Finishing ...
+[?1h=[?1h=[?1h=[?1h=[?1h=The library has been build and all necessary files have been installed.
+ 
+ 
+IQM Tools Pro
+	- Developer: IntiQuan GmbH (info@intiquan.com)
+	- Installation completed
+ 
+ 
+License IQM Tools Pro:
+ 
+                    GNU GENERAL PUBLIC LICENSE
+                       Version 3, 29 June 2007
+
+ Copyright (C) 2007 Free Software Foundation, Inc. <http://fsf.org/>
+ Everyone is permitted to copy and distribute verbatim copies
+ of this license document, but changing it is not allowed.
+
+                            Preamble
+
+  The GNU General Public License is a free, copyleft license for
+software and other kinds of works.
+
+  The licenses for most software and other practical works are designed
+to take away your freedom to share and change the works.  By contrast,
+the GNU General Public License is intended to guarantee your freedom to
+share and change all versions of a program--to make sure it remains free
+software for all its users.  We, the Free Software Foundation, use the
+GNU General Public License for most of our software; it applies also to
+any other work released this way by its authors.  You can apply it to
+your programs, too.
+
+  When we speak of free software, we are referring to freedom, not
+price.  Our General Public Licenses are designed to make sure that you
+have the freedom to distribute copies of free software (and charge for
+them if you wish), that you receive source code or can get it if you
+want it, that you can change the software or use pieces of it in new
+free programs, and that you know you can do these things.
+
+  To protect your rights, we need to prevent others from denying you
+these rights or asking you to surrender the rights.  Therefore, you have
+certain responsibilities if you distribute copies of the software, or if
+you modify it: responsibilities to respect the freedom of others.
+
+  For example, if you distribute copies of such a program, whether
+gratis or for a fee, you must pass on to the recipients the same
+freedoms that you received.  You must make sure that they, too, receive
+or can get the source code.  And you must show them these terms so they
+know their rights.
+
+  Developers that use the GNU GPL protect your rights with two steps:
+(1) assert copyright on the software, and (2) offer you this License
+giving you legal permission to copy, distribute and/or modify it.
+
+  For the developers' and authors' protection, the GPL clearly explains
+that there is no warranty for this free software.  For both users' and
+authors' sake, the GPL requires that modified versions be marked as
+changed, so that their problems will not be attributed erroneously to
+authors of previous versions.
+
+  Some devices are designed to deny users access to install or run
+modified versions of the software inside them, although the manufacturer
+can do so.  This is fundamentally incompatible with the aim of
+protecting users' freedom to change the software.  The systematic
+pattern of such abuse occurs in the area of products for individuals to
+use, which is precisely where it is most unacceptable.  Therefore, we
+have designed this version of the GPL to prohibit the practice for those
+products.  If such problems arise substantially in other domains, we
+stand ready to extend this provision to those domains in future versions
+of the GPL, as needed to protect the freedom of users.
+
+  Finally, every program is threatened constantly by software patents.
+States should not allow patents to restrict development and use of
+software on general-purpose computers, but in those that do, we wish to
+avoid the special danger that patents applied to a free program could
+make it effectively proprietary.  To prevent this, the GPL assures that
+patents cannot be used to render the program non-free.
+
+  The precise terms and conditions for copying, distribution and
+modification follow.
+
+                       TERMS AND CONDITIONS
+
+  0. Definitions.
+
+  "This License" refers to version 3 of the GNU General Public License.
+
+  "Copyright" also means copyright-like laws that apply to other kinds of
+works, such as semiconductor masks.
+
+  "The Program" refers to any copyrightable work licensed under this
+License.  Each licensee is addressed as "you".  "Licensees" and
+"recipients" may be individuals or organizations.
+
+  To "modify" a work means to copy from or adapt all or part of the work
+in a fashion requiring copyright permission, other than the making of an
+exact copy.  The resulting work is called a "modified version" of the
+earlier work or a work "based on" the earlier work.
+
+  A "covered work" means either the unmodified Program or a work based
+on the Program.
+
+  To "propagate" a work means to do anything with it that, without
+permission, would make you directly or secondarily liable for
+infringement under applicable copyright law, except executing it on a
+computer or modifying a private copy.  Propagation includes copying,
+distribution (with or without modification), making available to the
+public, and in some countries other activities as well.
+
+  To "convey" a work means any kind of propagation that enables other
+parties to make or receive copies.  Mere interaction with a user through
+a computer network, with no transfer of a copy, is not conveying.
+
+  An interactive user interface displays "Appropriate Legal Notices"
+to the extent that it includes a convenient and prominently visible
+feature that (1) displays an appropriate copyright notice, and (2)
+tells the user that there is no warranty for the work (except to the
+extent that warranties are provided), that licensees may convey the
+work under this License, and how to view a copy of this License.  If
+the interface presents a list of user commands or options, such as a
+menu, a prominent item in the list meets this criterion.
+
+  1. Source Code.
+
+  The "source code" for a work means the preferred form of the work
+for making modifications to it.  "Object code" means any non-source
+form of a work.
+
+  A "Standard Interface" means an interface that either is an official
+standard defined by a recognized standards body, or, in the case of
+interfaces specified for a particular programming language, one that
+is widely used among developers working in that language.
+
+  The "System Libraries" of an executable work include anything, other
+than the work as a whole, that (a) is included in the normal form of
+packaging a Major Component, but which is not part of that Major
+Component, and (b) serves only to enable use of the work with that
+Major Component, or to implement a Standard Interface for which an
+implementation is available to the public in source code form.  A
+"Major Component", in this context, means a major essential component
+(kernel, window system, and so on) of the specific operating system
+(if any) on which the executable work runs, or a compiler used to
+produce the work, or an object code interpreter used to run it.
+
+  The "Corresponding Source" for a work in object code form means all
+the source code needed to generate, install, and (for an executable
+work) run the object code and to modify the work, including scripts to
+control those activities.  However, it does not include the work's
+System Libraries, or general-purpose tools or generally available free
+programs which are used unmodified in performing those activities but
+which are not part of the work.  For example, Corresponding Source
+includes interface definition files associated with source files for
+the work, and the source code for shared libraries and dynamically
+linked subprograms that the work is specifically designed to require,
+such as by intimate data communication or control flow between those
+subprograms and other parts of the work.
+
+  The Corresponding Source need not include anything that users
+can regenerate automatically from other parts of the Corresponding
+Source.
+
+  The Corresponding Source for a work in source code form is that
+same work.
+
+  2. Basic Permissions.
+
+  All rights granted under this License are granted for the term of
+copyright on the Program, and are irrevocable provided the stated
+conditions are met.  This License explicitly affirms your unlimited
+permission to run the unmodified Program.  The output from running a
+covered work is covered by this License only if the output, given its
+content, constitutes a covered work.  This License acknowledges your
+rights of fair use or other equivalent, as provided by copyright law.
+
+  You may make, run and propagate covered works that you do not
+convey, without conditions so long as your license otherwise remains
+in force.  You may convey covered works to others for the sole purpose
+of having them make modifications exclusively for you, or provide you
+with facilities for running those works, provided that you comply with
+the terms of this License in conveying all material for which you do
+not control copyright.  Those thus making or running the covered works
+for you must do so exclusively on your behalf, under your direction
+and control, on terms that prohibit them from making any copies of
+your copyrighted material outside their relationship with you.
+
+  Conveying under any other circumstances is permitted solely under
+the conditions stated below.  Sublicensing is not allowed; section 10
+makes it unnecessary.
+
+  3. Protecting Users' Legal Rights From Anti-Circumvention Law.
+
+  No covered work shall be deemed part of an effective technological
+measure under any applicable law fulfilling obligations under article
+11 of the WIPO copyright treaty adopted on 20 December 1996, or
+similar laws prohibiting or restricting circumvention of such
+measures.
+
+  When you convey a covered work, you waive any legal power to forbid
+circumvention of technological measures to the extent such circumvention
+is effected by exercising rights under this License with respect to
+the covered work, and you disclaim any intention to limit operation or
+modification of the work as a means of enforcing, against the work's
+users, your or third parties' legal rights to forbid circumvention of
+technological measures.
+
+  4. Conveying Verbatim Copies.
+
+  You may convey verbatim copies of the Program's source code as you
+receive it, in any medium, provided that you conspicuously and
+appropriately publish on each copy an appropriate copyright notice;
+keep intact all notices stating that this License and any
+non-permissive terms added in accord with section 7 apply to the code;
+keep intact all notices of the absence of any warranty; and give all
+recipients a copy of this License along with the Program.
+
+  You may charge any price or no price for each copy that you convey,
+and you may offer support or warranty protection for a fee.
+
+  5. Conveying Modified Source Versions.
+
+  You may convey a work based on the Program, or the modifications to
+produce it from the Program, in the form of source code under the
+terms of section 4, provided that you also meet all of these conditions:
+
+    a) The work must carry prominent notices stating that you modified
+    it, and giving a relevant date.
+
+    b) The work must carry prominent notices stating that it is
+    released under this License and any conditions added under section
+    7.  This requirement modifies the requirement in section 4 to
+    "keep intact all notices".
+
+    c) You must license the entire work, as a whole, under this
+    License to anyone who comes into possession of a copy.  This
+    License will therefore apply, along with any applicable section 7
+    additional terms, to the whole of the work, and all its parts,
+    regardless of how they are packaged.  This License gives no
+    permission to license the work in any other way, but it does not
+    invalidate such permission if you have separately received it.
+
+    d) If the work has interactive user interfaces, each must display
+    Appropriate Legal Notices; however, if the Program has interactive
+    interfaces that do not display Appropriate Legal Notices, your
+    work need not make them do so.
+
+  A compilation of a covered work with other separate and independent
+works, which are not by their nature extensions of the covered work,
+and which are not combined with it such as to form a larger program,
+in or on a volume of a storage or distribution medium, is called an
+"aggregate" if the compilation and its resulting copyright are not
+used to limit the access or legal rights of the compilation's users
+beyond what the individual works permit.  Inclusion of a covered work
+in an aggregate does not cause this License to apply to the other
+parts of the aggregate.
+
+  6. Conveying Non-Source Forms.
+
+  You may convey a covered work in object code form under the terms
+of sections 4 and 5, provided that you also convey the
+machine-readable Corresponding Source under the terms of this License,
+in one of these ways:
+
+    a) Convey the object code in, or embodied in, a physical product
+    (including a physical distribution medium), accompanied by the
+    Corresponding Source fixed on a durable physical medium
+    customarily used for software interchange.
+
+    b) Convey the object code in, or embodied in, a physical product
+    (including a physical distribution medium), accompanied by a
+    written offer, valid for at least three years and valid for as
+    long as you offer spare parts or customer support for that product
+    model, to give anyone who possesses the object code either (1) a
+    copy of the Corresponding Source for all the software in the
+    product that is covered by this License, on a durable physical
+    medium customarily used for software interchange, for a price no
+    more than your reasonable cost of physically performing this
+    conveying of source, or (2) access to copy the
+    Corresponding Source from a network server at no charge.
+
+    c) Convey individual copies of the object code with a copy of the
+    written offer to provide the Corresponding Source.  This
+    alternative is allowed only occasionally and noncommercially, and
+    only if you received the object code with such an offer, in accord
+    with subsection 6b.
+
+    d) Convey the object code by offering access from a designated
+    place (gratis or for a charge), and offer equivalent access to the
+    Corresponding Source in the same way through the same place at no
+    further charge.  You need not require recipients to copy the
+    Corresponding Source along with the object code.  If the place to
+    copy the object code is a network server, the Corresponding Source
+    may be on a different server (operated by you or a third party)
+    that supports equivalent copying facilities, provided you maintain
+    clear directions next to the object code saying where to find the
+    Corresponding Source.  Regardless of what server hosts the
+    Corresponding Source, you remain obligated to ensure that it is
+    available for as long as needed to satisfy these requirements.
+
+    e) Convey the object code using peer-to-peer transmission, provided
+    you inform other peers where the object code and Corresponding
+    Source of the work are being offered to the general public at no
+    charge under subsection 6d.
+
+  A separable portion of the object code, whose source code is excluded
+from the Corresponding Source as a System Library, need not be
+included in conveying the object code work.
+
+  A "User Product" is either (1) a "consumer product", which means any
+tangible personal property which is normally used for personal, family,
+or household purposes, or (2) anything designed or sold for incorporation
+into a dwelling.  In determining whether a product is a consumer product,
+doubtful cases shall be resolved in favor of coverage.  For a particular
+product received by a particular user, "normally used" refers to a
+typical or common use of that class of product, regardless of the status
+of the particular user or of the way in which the particular user
+actually uses, or expects or is expected to use, the product.  A product
+is a consumer product regardless of whether the product has substantial
+commercial, industrial or non-consumer uses, unless such uses represent
+the only significant mode of use of the product.
+
+  "Installation Information" for a User Product means any methods,
+procedures, authorization keys, or other information required to install
+and execute modified versions of a covered work in that User Product from
+a modified version of its Corresponding Source.  The information must
+suffice to ensure that the continued functioning of the modified object
+code is in no case prevented or interfered with solely because
+modification has been made.
+
+  If you convey an object code work under this section in, or with, or
+specifically for use in, a User Product, and the conveying occurs as
+part of a transaction in which the right of possession and use of the
+User Product is transferred to the recipient in perpetuity or for a
+fixed term (regardless of how the transaction is characterized), the
+Corresponding Source conveyed under this section must be accompanied
+by the Installation Information.  But this requirement does not apply
+if neither you nor any third party retains the ability to install
+modified object code on the User Product (for example, the work has
+been installed in ROM).
+
+  The requirement to provide Installation Information does not include a
+requirement to continue to provide support service, warranty, or updates
+for a work that has been modified or installed by the recipient, or for
+the User Product in which it has been modified or installed.  Access to a
+network may be denied when the modification itself materially and
+adversely affects the operation of the network or violates the rules and
+protocols for communication across the network.
+
+  Corresponding Source conveyed, and Installation Information provided,
+in accord with this section must be in a format that is publicly
+documented (and with an implementation available to the public in
+source code form), and must require no special password or key for
+unpacking, reading or copying.
+
+  7. Additional Terms.
+
+  "Additional permissions" are terms that supplement the terms of this
+License by making exceptions from one or more of its conditions.
+Additional permissions that are applicable to the entire Program shall
+be treated as though they were included in this License, to the extent
+that they are valid under applicable law.  If additional permissions
+apply only to part of the Program, that part may be used separately
+under those permissions, but the entire Program remains governed by
+this License without regard to the additional permissions.
+
+  When you convey a copy of a covered work, you may at your option
+remove any additional permissions from that copy, or from any part of
+it.  (Additional permissions may be written to require their own
+removal in certain cases when you modify the work.)  You may place
+additional permissions on material, added by you to a covered work,
+for which you have or can give appropriate copyright permission.
+
+  Notwithstanding any other provision of this License, for material you
+add to a covered work, you may (if authorized by the copyright holders of
+that material) supplement the terms of this License with terms:
+
+    a) Disclaiming warranty or limiting liability differently from the
+    terms of sections 15 and 16 of this License; or
+
+    b) Requiring preservation of specified reasonable legal notices or
+    author attributions in that material or in the Appropriate Legal
+    Notices displayed by works containing it; or
+
+    c) Prohibiting misrepresentation of the origin of that material, or
+    requiring that modified versions of such material be marked in
+    reasonable ways as different from the original version; or
+
+    d) Limiting the use for publicity purposes of names of licensors or
+    authors of the material; or
+
+    e) Declining to grant rights under trademark law for use of some
+    trade names, trademarks, or service marks; or
+
+    f) Requiring indemnification of licensors and authors of that
+    material by anyone who conveys the material (or modified versions of
+    it) with contractual assumptions of liability to the recipient, for
+    any liability that these contractual assumptions directly impose on
+    those licensors and authors.
+
+  All other non-permissive additional terms are considered "further
+restrictions" within the meaning of section 10.  If the Program as you
+received it, or any part of it, contains a notice stating that it is
+governed by this License along with a term that is a further
+restriction, you may remove that term.  If a license document contains
+a further restriction but permits relicensing or conveying under this
+License, you may add to a covered work material governed by the terms
+of that license document, provided that the further restriction does
+not survive such relicensing or conveying.
+
+  If you add terms to a covered work in accord with this section, you
+must place, in the relevant source files, a statement of the
+additional terms that apply to those files, or a notice indicating
+where to find the applicable terms.
+
+  Additional terms, permissive or non-permissive, may be stated in the
+form of a separately written license, or stated as exceptions;
+the above requirements apply either way.
+
+  8. Termination.
+
+  You may not propagate or modify a covered work except as expressly
+provided under this License.  Any attempt otherwise to propagate or
+modify it is void, and will automatically terminate your rights under
+this License (including any patent licenses granted under the third
+paragraph of section 11).
+
+  However, if you cease all violation of this License, then your
+license from a particular copyright holder is reinstated (a)
+provisionally, unless and until the copyright holder explicitly and
+finally terminates your license, and (b) permanently, if the copyright
+holder fails to notify you of the violation by some reasonable means
+prior to 60 days after the cessation.
+
+  Moreover, your license from a particular copyright holder is
+reinstated permanently if the copyright holder notifies you of the
+violation by some reasonable means, this is the first time you have
+received notice of violation of this License (for any work) from that
+copyright holder, and you cure the violation prior to 30 days after
+your receipt of the notice.
+
+  Termination of your rights under this section does not terminate the
+licenses of parties who have received copies or rights from you under
+this License.  If your rights have been terminated and not permanently
+reinstated, you do not qualify to receive new licenses for the same
+material under section 10.
+
+  9. Acceptance Not Required for Having Copies.
+
+  You are not required to accept this License in order to receive or
+run a copy of the Program.  Ancillary propagation of a covered work
+occurring solely as a consequence of using peer-to-peer transmission
+to receive a copy likewise does not require acceptance.  However,
+nothing other than this License grants you permission to propagate or
+modify any covered work.  These actions infringe copyright if you do
+not accept this License.  Therefore, by modifying or propagating a
+covered work, you indicate your acceptance of this License to do so.
+
+  10. Automatic Licensing of Downstream Recipients.
+
+  Each time you convey a covered work, the recipient automatically
+receives a license from the original licensors, to run, modify and
+propagate that work, subject to this License.  You are not responsible
+for enforcing compliance by third parties with this License.
+
+  An "entity transaction" is a transaction transferring control of an
+organization, or substantially all assets of one, or subdividing an
+organization, or merging organizations.  If propagation of a covered
+work results from an entity transaction, each party to that
+transaction who receives a copy of the work also receives whatever
+licenses to the work the party's predecessor in interest had or could
+give under the previous paragraph, plus a right to possession of the
+Corresponding Source of the work from the predecessor in interest, if
+the predecessor has it or can get it with reasonable efforts.
+
+  You may not impose any further restrictions on the exercise of the
+rights granted or affirmed under this License.  For example, you may
+not impose a license fee, royalty, or other charge for exercise of
+rights granted under this License, and you may not initiate litigation
+(including a cross-claim or counterclaim in a lawsuit) alleging that
+any patent claim is infringed by making, using, selling, offering for
+sale, or importing the Program or any portion of it.
+
+  11. Patents.
+
+  A "contributor" is a copyright holder who authorizes use under this
+License of the Program or a work on which the Program is based.  The
+work thus licensed is called the contributor's "contributor version".
+
+  A contributor's "essential patent claims" are all patent claims
+owned or controlled by the contributor, whether already acquired or
+hereafter acquired, that would be infringed by some manner, permitted
+by this License, of making, using, or selling its contributor version,
+but do not include claims that would be infringed only as a
+consequence of further modification of the contributor version.  For
+purposes of this definition, "control" includes the right to grant
+patent sublicenses in a manner consistent with the requirements of
+this License.
+
+  Each contributor grants you a non-exclusive, worldwide, royalty-free
+patent license under the contributor's essential patent claims, to
+make, use, sell, offer for sale, import and otherwise run, modify and
+propagate the contents of its contributor version.
+
+  In the following three paragraphs, a "patent license" is any express
+agreement or commitment, however denominated, not to enforce a patent
+(such as an express permission to practice a patent or covenant not to
+sue for patent infringement).  To "grant" such a patent license to a
+party means to make such an agreement or commitment not to enforce a
+patent against the party.
+
+  If you convey a covered work, knowingly relying on a patent license,
+and the Corresponding Source of the work is not available for anyone
+to copy, free of charge and under the terms of this License, through a
+publicly available network server or other readily accessible means,
+then you must either (1) cause the Corresponding Source to be so
+available, or (2) arrange to deprive yourself of the benefit of the
+patent license for this particular work, or (3) arrange, in a manner
+consistent with the requirements of this License, to extend the patent
+license to downstream recipients.  "Knowingly relying" means you have
+actual knowledge that, but for the patent license, your conveying the
+covered work in a country, or your recipient's use of the covered work
+in a country, would infringe one or more identifiable patents in that
+country that you have reason to believe are valid.
+
+  If, pursuant to or in connection with a single transaction or
+arrangement, you convey, or propagate by procuring conveyance of, a
+covered work, and grant a patent license to some of the parties
+receiving the covered work authorizing them to use, propagate, modify
+or convey a specific copy of the covered work, then the patent license
+you grant is automatically extended to all recipients of the covered
+work and works based on it.
+
+  A patent license is "discriminatory" if it does not include within
+the scope of its coverage, prohibits the exercise of, or is
+conditioned on the non-exercise of one or more of the rights that are
+specifically granted under this License.  You may not convey a covered
+work if you are a party to an arrangement with a third party that is
+in the business of distributing software, under which you make payment
+to the third party based on the extent of your activity of conveying
+the work, and under which the third party grants, to any of the
+parties who would receive the covered work from you, a discriminatory
+patent license (a) in connection with copies of the covered work
+conveyed by you (or copies made from those copies), or (b) primarily
+for and in connection with specific products or compilations that
+contain the covered work, unless you entered into that arrangement,
+or that patent license was granted, prior to 28 March 2007.
+
+  Nothing in this License shall be construed as excluding or limiting
+any implied license or other defenses to infringement that may
+otherwise be available to you under applicable patent law.
+
+  12. No Surrender of Others' Freedom.
+
+  If conditions are imposed on you (whether by court order, agreement or
+otherwise) that contradict the conditions of this License, they do not
+excuse you from the conditions of this License.  If you cannot convey a
+covered work so as to satisfy simultaneously your obligations under this
+License and any other pertinent obligations, then as a consequence you may
+not convey it at all.  For example, if you agree to terms that obligate you
+to collect a royalty for further conveying from those to whom you convey
+the Program, the only way you could satisfy both those terms and this
+License would be to refrain entirely from conveying the Program.
+
+  13. Use with the GNU Affero General Public License.
+
+  Notwithstanding any other provision of this License, you have
+permission to link or combine any covered work with a work licensed
+under version 3 of the GNU Affero General Public License into a single
+combined work, and to convey the resulting work.  The terms of this
+License will continue to apply to the part which is the covered work,
+but the special requirements of the GNU Affero General Public License,
+section 13, concerning interaction through a network will apply to the
+combination as such.
+
+  14. Revised Versions of this License.
+
+  The Free Software Foundation may publish revised and/or new versions of
+the GNU General Public License from time to time.  Such new versions will
+be similar in spirit to the present version, but may differ in detail to
+address new problems or concerns.
+
+  Each version is given a distinguishing version number.  If the
+Program specifies that a certain numbered version of the GNU General
+Public License "or any later version" applies to it, you have the
+option of following the terms and conditions either of that numbered
+version or of any later version published by the Free Software
+Foundation.  If the Program does not specify a version number of the
+GNU General Public License, you may choose any version ever published
+by the Free Software Foundation.
+
+  If the Program specifies that a proxy can decide which future
+versions of the GNU General Public License can be used, that proxy's
+public statement of acceptance of a version permanently authorizes you
+to choose that version for the Program.
+
+  Later license versions may give you additional or different
+permissions.  However, no additional obligations are imposed on any
+author or copyright holder as a result of your choosing to follow a
+later version.
+
+  15. Disclaimer of Warranty.
+
+  THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY
+APPLICABLE LAW.  EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT
+HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM "AS IS" WITHOUT WARRANTY
+OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO,
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+PURPOSE.  THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM
+IS WITH YOU.  SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF
+ALL NECESSARY SERVICING, REPAIR OR CORRECTION.
+
+  16. Limitation of Liability.
+
+  IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING
+WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MODIFIES AND/OR CONVEYS
+THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY
+GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE
+USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF
+DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD
+PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS),
+EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF
+SUCH DAMAGES.
+
+  17. Interpretation of Sections 15 and 16.
+
+  If the disclaimer of warranty and limitation of liability provided
+above cannot be given local legal effect according to their terms,
+reviewing courts shall apply local law that most closely approximates
+an absolute waiver of all civil liability in connection with the
+Program, unless a warranty or assumption of liability accompanies a
+copy of the Program in return for a fee.
+
+                     END OF TERMS AND CONDITIONS
+
+            How to Apply These Terms to Your New Programs
+
+  If you develop a new program, and you want it to be of the greatest
+possible use to the public, the best way to achieve this is to make it
+free software which everyone can redistribute and change under these terms.
+
+  To do so, attach the following notices to the program.  It is safest
+to attach them to the start of each source file to most effectively
+state the exclusion of warranty; and each file should have at least
+the "copyright" line and a pointer to where the full notice is found.
+
+    {one line to give the program's name and a brief idea of what it does.}
+    Copyright (C) {year}  {name of author}
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+Also add information on how to contact you by electronic and paper mail.
+
+  If the program does terminal interaction, make it output a short
+notice like this when it starts in an interactive mode:
+
+    {project}  Copyright (C) {year}  {fullname}
+    This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.
+    This is free software, and you are welcome to redistribute it
+    under certain conditions; type `show c' for details.
+
+The hypothetical commands `show w' and `show c' should show the appropriate
+parts of the General Public License.  Of course, your program's commands
+might be different; for a GUI interface, you would use an "about box".
+
+  You should also get your employer (if you work as a programmer) or school,
+if any, to sign a "copyright disclaimer" for the program, if necessary.
+For more information on this, and how to apply and follow the GNU GPL, see
+<http://www.gnu.org/licenses/>.
+
+  The GNU General Public License does not permit incorporating your program
+into proprietary programs.  If your program is a subroutine library, you
+may consider it more useful to permit linking proprietary applications with
+the library.  If this is what you want to do, use the GNU Lesser General
+Public License instead of this License.  But first, please read
+<http://www.gnu.org/philosophy/why-not-lgpl.html>.
+
+ 
+===PROJECT INFO===============================================
+Project name: project
+---NOTES------------------------------------------------------
+Project notes: 
+---MODELS-----------------------------------------------------
+Model 1: model
+---EXPERIMENTS------------------------------------------------
+Experiment 1: 
+	Measurement 1: DaisyEx3
+---ESTIMATIONS------------------------------------------------
+0 estimations present
+==============================================================
+ 
+[?1h=[?1h=[?1h=Building with 'gcc'.
+[?1h=[?1h=[?1h=[?1h=[?1h=[?1h=MEX completed successfully.
+[?1h=[?1h=[?1h=Building with 'gcc'.
+[?1h=[?1h=[?1h=[?1h=[?1h=[?1h=MEX completed successfully.
+ Nr Iter    Nr Fun Eval         Min function          Algorithm Step
+     0            1              0.0454351            initial guess
+     1           10              0.0429671            initial simplex
+     2           12              0.0369819            extrapolation
+     3           13              0.0369819            reflection
+     4           14              0.0369819            reflection
+     5           15              0.0369819            reflection
+     6           16              0.0369819            reflection
+     7           17              0.0369819            reflection
+     8           18              0.0369819            reflection
+     9           20              0.0316628            extrapolation
+    10           21              0.0316628            reflection
+    11           22              0.0316628            reflection
+    12           23              0.0316628            reflection
+    13           25               0.026737            extrapolation
+    14           26               0.026737            reflection
+    15           27               0.026737            reflection
+    16           29               0.022087            extrapolation
+    17           30               0.022087            reflection
+    18           32              0.0164282            extrapolation
+    19           33              0.0164282            reflection
+    20           34              0.0164282            reflection
+    21           35              0.0164282            reflection
+    22           37              0.0143415            extrapolation
+    23           39              0.0113487            extrapolation
+    24           40              0.0113487            reflection
+    25           41              0.0113487            reflection
+    26           43             0.00993045            reflection
+    27           45             0.00921746            reflection
+    28           46             0.00921746            reflection
+    29           47             0.00921746            reflection
+    30           48             0.00921746            reflection
+    31           50             0.00921746            one dimensional contraction
+    32           52             0.00861096            extrapolation
+    33           53             0.00861096            reflection
+    34           55             0.00861096            one dimensional contraction
+    35           57              0.0043326            extrapolation
+    36           58              0.0043326            reflection
+    37           60              0.0043326            one dimensional contraction
+    38           61              0.0043326            reflection
+    39           62              0.0043326            reflection
+    40           63              0.0043326            reflection
+    41           65              0.0013852            extrapolation
+    42           66              0.0013852            reflection
+    43           67              0.0013852            reflection
+    44           68              0.0013852            reflection
+    45           69              0.0013852            reflection
+    46           70              0.0013852            reflection
+    47           72            0.000934424            reflection
+    48           73            0.000934424            reflection
+    49           75            0.000141486            reflection
+    50           76            0.000141486            reflection
+    51           77            0.000141486            reflection
+    52           78            0.000141486            reflection
+    53           80            0.000141486            one dimensional contraction
+    54           81            0.000141486            reflection
+    55           82            0.000141486            reflection
+    56           83            0.000141486            reflection
+    57           85            0.000141486            one dimensional contraction
+    58           87            0.000141486            one dimensional contraction
+    59           89            0.000141486            one dimensional contraction
+    60           90            0.000141486            reflection
+    61          100            9.07404e-05            contraction around best point
+    62          102            9.07404e-05            one dimensional contraction
+    63          103            9.07404e-05            reflection
+    64          105            7.66223e-05            reflection
+    65          107            7.66223e-05            one dimensional contraction
+    66          108            7.66223e-05            reflection
+    67          110            5.69758e-05            reflection
+    68          112            5.69758e-05            one dimensional contraction
+    69          114            5.69758e-05            one dimensional contraction
+    70          115            5.69758e-05            reflection
+    71          117            5.69758e-05            one dimensional contraction
+    72          119            5.69758e-05            one dimensional contraction
+    73          121            5.69758e-05            one dimensional contraction
+    74          123            4.22274e-05            reflection
+    75          124            4.22274e-05            reflection
+    76          126            4.22274e-05            one dimensional contraction
+    77          128            4.22274e-05            one dimensional contraction
+    78          130            4.22274e-05            one dimensional contraction
+    79          132            4.22274e-05            one dimensional contraction
+    80          134            4.22274e-05            one dimensional contraction
+    81          136            4.22274e-05            one dimensional contraction
+    82          138            3.95149e-05            reflection
+    83          140            3.95149e-05            one dimensional contraction
+    84          141            3.95149e-05            reflection
+    85          142            3.95149e-05            reflection
+    86          143            3.95149e-05            reflection
+    87          144            3.95149e-05            reflection
+    88          145            3.95149e-05            reflection
+    89          147            3.95149e-05            one dimensional contraction
+    90          149            3.95149e-05            one dimensional contraction
+    91          151            3.52723e-05            reflection
+    92          153            3.52723e-05            one dimensional contraction
+    93          163            3.52723e-05            contraction around best point
+    94          165            3.52723e-05            one dimensional contraction
+    95          167            3.42548e-05            reflection
+    96          169            3.07295e-05            extrapolation
+    97          170            3.07295e-05            reflection
+    98          171            3.07295e-05            reflection
+    99          172            3.07295e-05            reflection
+   100          173            3.07295e-05            reflection
+   101          175            2.92535e-05            extrapolation
+   102          176            2.92535e-05            reflection
+   103          177            2.92535e-05            reflection
+   104          178            2.92535e-05            reflection
+   105          179            2.92535e-05            reflection
+   106          180            2.92535e-05            reflection
+   107          182            2.65036e-05            extrapolation
+   108          183            2.65036e-05            reflection
+   109          184            2.65036e-05            reflection
+   110          186            2.36035e-05            extrapolation
+   111          187            2.36035e-05            reflection
+   112          189            1.98252e-05            extrapolation
+   113          190            1.98252e-05            reflection
+   114          191            1.98252e-05            reflection
+   115          192            1.98252e-05            reflection
+   116          194            1.67398e-05            extrapolation
+   117          195            1.67398e-05            reflection
+   118          196            1.67398e-05            reflection
+   119          197            1.67398e-05            reflection
+   120          198            1.67398e-05            reflection
+   121          200            1.64415e-05            reflection
+   122          201            1.64415e-05            reflection
+   123          202            1.64415e-05            reflection
+   124          203            1.64415e-05            reflection
+   125          204            1.64415e-05            reflection
+   126          205            1.64415e-05            reflection
+   127          207            1.64415e-05            one dimensional contraction
+   128          209            1.64415e-05            one dimensional contraction
+   129          210            1.64415e-05            reflection
+   130          212            1.64415e-05            one dimensional contraction
+   131          214            1.64415e-05            one dimensional contraction
+   132          216            1.64415e-05            one dimensional contraction
+   133          218            1.64415e-05            one dimensional contraction
+   134          219            1.64415e-05            reflection
+   135          220            1.64415e-05            reflection
+   136          222            1.55618e-05            extrapolation
+   137          223            1.55618e-05            reflection
+   138          224            1.55618e-05            reflection
+   139          225            1.55618e-05            reflection
+   140          227            1.55618e-05            one dimensional contraction
+   141          228            1.55618e-05            reflection
+   142          229            1.55618e-05            reflection
+   143          230            1.55618e-05            reflection
+   144          232            1.55618e-05            one dimensional contraction
+   145          233            1.55618e-05            reflection
+   146          234            1.55618e-05            reflection
+   147          236            1.55618e-05            one dimensional contraction
+   148          238            1.52802e-05            reflection
+   149          240            1.52802e-05            one dimensional contraction
+   150          242            1.52802e-05            one dimensional contraction
+   151          244            1.52802e-05            one dimensional contraction
+   152          245            1.52802e-05            reflection
+   153          246            1.52802e-05            reflection
+   154          248            1.52802e-05            one dimensional contraction
+   155          249            1.52802e-05            reflection
+   156          250            1.52802e-05            reflection
+   157          251            1.52802e-05            reflection
+   158          253            1.51103e-05            reflection
+   159          254            1.51103e-05            reflection
+   160          255            1.51103e-05            reflection
+   161          256            1.51103e-05            reflection
+   162          257            1.51103e-05            reflection
+   163          259            1.50114e-05            reflection
+   164          261            1.50114e-05            one dimensional contraction
+   165          263            1.50114e-05            one dimensional contraction
+   166          264            1.50114e-05            reflection
+   167          266            1.46724e-05            extrapolation
+   168          267            1.46724e-05            reflection
+   169          268            1.46724e-05            reflection
+   170          269            1.46724e-05            reflection
+   171          270            1.46724e-05            reflection
+   172          271            1.46724e-05            reflection
+   173          273            1.42908e-05            extrapolation
+   174          275            1.39983e-05            extrapolation
+   175          276            1.39983e-05            reflection
+   176          278            1.39431e-05            extrapolation
+   177          280            1.38879e-05            reflection
+   178          282            1.36623e-05            extrapolation
+   179          284            1.34335e-05            extrapolation
+   180          286            1.31611e-05            extrapolation
+   181          288            1.21075e-05            extrapolation
+   181          288            1.13083e-05            initial simplex
+   182          290            1.13083e-05            one dimensional contraction
+   183          292            1.13083e-05            one dimensional contraction
+   184          293            1.13083e-05            reflection
+   185          295            1.13083e-05            one dimensional contraction
+   186          297            1.13083e-05            one dimensional contraction
+   187          298            1.13083e-05            reflection
+   188          300            1.13083e-05            one dimensional contraction
+   189          302            1.13083e-05            one dimensional contraction
+   190          303            1.13083e-05            reflection
+   191          313            1.13083e-05            contraction around best point
+   192          315            1.13083e-05            one dimensional contraction
+   193          317            1.01842e-05            reflection
+   194          318            1.01842e-05            reflection
+   195          319            1.01842e-05            reflection
+   196          329            1.01842e-05            contraction around best point
+   197          331            1.01842e-05            one dimensional contraction
+   198          332            1.01842e-05            reflection
+   199          334            9.35096e-06            extrapolation
+   200          335            9.35096e-06            reflection
+   201          336            9.35096e-06            reflection
+   202          337            9.35096e-06            reflection
+   203          338            9.35096e-06            reflection
+   204          339            9.35096e-06            reflection
+   205          340            9.35096e-06            reflection
+   206          342             8.7325e-06            extrapolation
+   207          343             8.7325e-06            reflection
+   208          344             8.7325e-06            reflection
+   209          345             8.7325e-06            reflection
+   210          347             7.6637e-06            extrapolation
+   211          348             7.6637e-06            reflection
+   212          349             7.6637e-06            reflection
+   213          350             7.6637e-06            reflection
+   214          351             7.6637e-06            reflection
+   215          352             7.6637e-06            reflection
+   216          354            6.58025e-06            extrapolation
+   217          355            6.58025e-06            reflection
+   218          357            5.65297e-06            extrapolation
+   219          358            5.65297e-06            reflection
+   220          359            5.65297e-06            reflection
+   221          360            5.65297e-06            reflection
+   222          362            5.05866e-06            extrapolation
+   223          363            5.05866e-06            reflection
+   224          364            5.05866e-06            reflection
+   225          366             4.7999e-06            reflection
+   226          368            4.75996e-06            reflection
+   227          369            4.75996e-06            reflection
+   228          371            3.76289e-06            extrapolation
+   229          372            3.76289e-06            reflection
+   230          374            3.76289e-06            one dimensional contraction
+   231          376            2.97964e-06            extrapolation
+   232          377            2.97964e-06            reflection
+   233          378            2.97964e-06            reflection
+   234          379            2.97964e-06            reflection
+   235          380            2.97964e-06            reflection
+   236          381            2.97964e-06            reflection
+   237          382            2.97964e-06            reflection
+   238          383            2.97964e-06            reflection
+   239          384            2.97964e-06            reflection
+   240          385            2.97964e-06            reflection
+   241          387            2.97964e-06            one dimensional contraction
+   242          388            2.97964e-06            reflection
+   243          389            2.97964e-06            reflection
+   244          390            2.97964e-06            reflection
+   245          391            2.97964e-06            reflection
+   246          392            2.97964e-06            reflection
+   247          393            2.97964e-06            reflection
+   248          395            2.97964e-06            one dimensional contraction
+   249          397            2.74723e-06            reflection
+   250          399            2.24959e-06            extrapolation
+   251          400            2.24959e-06            reflection
+   252          401            2.24959e-06            reflection
+   253          402            2.24959e-06            reflection
+   254          404            1.77874e-06            extrapolation
+   255          406            1.77874e-06            one dimensional contraction
+   256          407            1.77874e-06            reflection
+   257          409            1.35095e-06            extrapolation
+   258          410            1.35095e-06            reflection
+   259          411            1.35095e-06            reflection
+   260          412            1.35095e-06            reflection
+   261          413            1.35095e-06            reflection
+   262          414            1.35095e-06            reflection
+   263          415            1.35095e-06            reflection
+   264          416            1.35095e-06            reflection
+   265          417            1.35095e-06            reflection
+   266          419            1.22477e-06            reflection
+   267          420            1.22477e-06            reflection
+   268          422            9.34423e-07            extrapolation
+   269          423            9.34423e-07            reflection
+   270          424            9.34423e-07            reflection
+   271          426            8.93387e-07            reflection
+   272          427            8.93387e-07            reflection
+   273          429            4.65685e-07            extrapolation
+   274          430            4.65685e-07            reflection
+   275          432            4.65685e-07            one dimensional contraction
+   276          433            4.65685e-07            reflection
+   277          435            4.65685e-07            one dimensional contraction
+   278          436            4.65685e-07            reflection
+   279          437            4.65685e-07            reflection
+   280          438            4.65685e-07            reflection
+   281          439            4.65685e-07            reflection
+   282          440            4.65685e-07            reflection
+   283          441            4.65685e-07            reflection
+   284          443            4.65685e-07            one dimensional contraction
+   285          445            4.65685e-07            one dimensional contraction
+   286          447             2.4947e-07            extrapolation
+   287          448             2.4947e-07            reflection
+   288          450            1.84618e-07            reflection
+   289          452            1.84618e-07            one dimensional contraction
+   290          453            1.84618e-07            reflection
+   291          454            1.84618e-07            reflection
+   292          455            1.84618e-07            reflection
+   293          465            1.50098e-07            contraction around best point
+   294          467            1.50098e-07            one dimensional contraction
+   295          468            1.50098e-07            reflection
+   296          470            1.42181e-07            reflection
+   297          472            1.39548e-07            reflection
+   298          474            1.28339e-07            reflection
+   299          476            1.23366e-07            reflection
+   300          477            1.23366e-07            reflection
+   301          479            1.22333e-07            reflection
+   302          480            1.22333e-07            reflection
+   303          481            1.22333e-07            reflection
+   304          483            1.22333e-07            one dimensional contraction
+   305          484            1.22333e-07            reflection
+   306          486            1.22333e-07            one dimensional contraction
+   307          487            1.22333e-07            reflection
+   308          489            1.18086e-07            one dimensional contraction
+   309          491            1.16455e-07            one dimensional contraction
+   310          493            1.14838e-07            one dimensional contraction
+   311          495            1.14838e-07            one dimensional contraction
+   312          497            1.11619e-07            reflection
+   313          499            1.11619e-07            one dimensional contraction
+   314          501            1.06947e-07            reflection
+   315          502            1.06947e-07            reflection
+   316          512            1.05586e-07            contraction around best point
+   317          514            1.05586e-07            one dimensional contraction
+   318          516            1.02421e-07            reflection
+   319          518             1.0199e-07            reflection
+   320          519             1.0199e-07            reflection
+   321          520             1.0199e-07            reflection
+   322          522            1.00785e-07            reflection
+   323          524            1.00785e-07            one dimensional contraction
+   324          526            1.00785e-07            one dimensional contraction
+   325          527            1.00785e-07            reflection
+   326          528            1.00785e-07            reflection
+   327          529            1.00785e-07            reflection
+   328          531            9.96095e-08            extrapolation
+   329          533            9.96095e-08            one dimensional contraction
+   330          534            9.96095e-08            reflection
+   331          536              9.796e-08            extrapolation
+   332          538            9.74134e-08            reflection
+   333          539            9.74134e-08            reflection
+   334          540            9.74134e-08            reflection
+   335          541            9.74134e-08            reflection
+   336          543            9.70899e-08            reflection
+   337          545            9.70899e-08            one dimensional contraction
+   338          547            9.59427e-08            extrapolation
+   339          548            9.59427e-08            reflection
+   340          550            9.59427e-08            one dimensional contraction
+   341          551            9.59427e-08            reflection
+   342          553            9.51605e-08            reflection
+   343          554            9.51605e-08            reflection
+   344          555            9.51605e-08            reflection
+   345          557            9.47052e-08            reflection
+   346          559             9.1864e-08            extrapolation
+   347          560             9.1864e-08            reflection
+   348          561             9.1864e-08            reflection
+   349          562             9.1864e-08            reflection
+   350          564            8.87297e-08            extrapolation
+   351          565            8.87297e-08            reflection
+   352          566            8.87297e-08            reflection
+   353          567            8.87297e-08            reflection
+   354          568            8.87297e-08            reflection
+   355          570            8.25268e-08            extrapolation
+   356          571            8.25268e-08            reflection
+   357          572            8.25268e-08            reflection
+   358          573            8.25268e-08            reflection
+   359          574            8.25268e-08            reflection
+   360          576            7.93112e-08            extrapolation
+   361          578            7.48682e-08            extrapolation
+   362          579            7.48682e-08            reflection
+   363          580            7.48682e-08            reflection
+   364          582            6.59939e-08            extrapolation
+   365          583            6.59939e-08            reflection
+   366          584            6.59939e-08            reflection
+   367          585            6.59939e-08            reflection
+   368          586            6.59939e-08            reflection
+   369          588            6.36829e-08            extrapolation
+   370          590            5.54812e-08            extrapolation
+   371          591            5.54812e-08            reflection
+   372          592            5.54812e-08            reflection
+   373          594            4.46999e-08            extrapolation
+   374          595            4.46999e-08            reflection
+   375          596            4.46999e-08            reflection
+   376          597            4.46999e-08            reflection
+   377          599            3.23682e-08            extrapolation
+   378          600            3.23682e-08            reflection
+   379          601            3.23682e-08            reflection
+   380          602            3.23682e-08            reflection
+   381          603            3.23682e-08            reflection
+   382          604            3.23682e-08            reflection
+   383          606            2.60626e-08            extrapolation
+   384          607            2.60626e-08            reflection
+   385          608            2.60626e-08            reflection
+   386          609            2.60626e-08            reflection
+   387          610            2.60626e-08            reflection
+   388          612            1.98928e-08            extrapolation
+   389          614            1.98928e-08            one dimensional contraction
+   390          615            1.98928e-08            reflection
+   391          617             1.6331e-08            extrapolation
+   392          618             1.6331e-08            reflection
+   393          620            6.23114e-09            extrapolation
+   394          622            6.23114e-09            one dimensional contraction
+   395          623            6.23114e-09            reflection
+   396          624            6.23114e-09            reflection
+   397          625            6.23114e-09            reflection
+   398          626            6.23114e-09            reflection
+   399          628            6.23114e-09            one dimensional contraction
+   400          630            6.23114e-09            one dimensional contraction
+   401          631            6.23114e-09            reflection
+   402          632            6.23114e-09            reflection
+   403          634            6.23114e-09            one dimensional contraction
+   404          636            5.23582e-09            reflection
+   405          637            5.23582e-09            reflection
+   406          638            5.23582e-09            reflection
+   407          639            5.23582e-09            reflection
+   408          640            5.23582e-09            reflection
+   409          641            5.23582e-09            reflection
+   410          642            5.23582e-09            reflection
+   411          644            4.23687e-09            reflection
+   412          645            4.23687e-09            reflection
+   413          646            4.23687e-09            reflection
+   414          648            1.87806e-09            reflection
+   415          650            1.87806e-09            one dimensional contraction
+   416          651            1.87806e-09            reflection
+   417          652            1.87806e-09            reflection
+   418          653            1.87806e-09            reflection
+   419          654            1.87806e-09            reflection
+   420          655            1.87806e-09            reflection
+   421          656            1.87806e-09            reflection
+   422          658            1.17951e-09            reflection
+   423          660            1.17951e-09            one dimensional contraction
+   424          661            1.17951e-09            reflection
+   425          662            1.17951e-09            reflection
+   426          663            1.17951e-09            reflection
+   427          664            1.17951e-09            reflection
+   428          666            1.17951e-09            one dimensional contraction
+   429          667            1.17951e-09            reflection
+   430          669            1.17951e-09            one dimensional contraction
+   431          671            1.17951e-09            one dimensional contraction
+   432          673            1.17951e-09            one dimensional contraction
+   433          674            1.17951e-09            reflection
+   434          675            1.17951e-09            reflection
+   435          676            1.17951e-09            reflection
+   436          678            8.79691e-10            reflection
+   437          680            7.40563e-10            one dimensional contraction
+   438          681            7.40563e-10            reflection
+   439          683            7.40563e-10            one dimensional contraction
+   440          685            7.40563e-10            one dimensional contraction
+   441          686            7.40563e-10            reflection
+   442          687            7.40563e-10            reflection
+   443          689            7.40563e-10            one dimensional contraction
+   444          690            7.40563e-10            reflection
+   445          692            7.40563e-10            one dimensional contraction
+   446          694            7.40563e-10            one dimensional contraction
+   447          696             3.8853e-10            reflection
+   448          706            2.52709e-10            contraction around best point
+   449          708            2.52709e-10            one dimensional contraction
+   450          710            6.36184e-11            reflection
+   451          711            6.36184e-11            reflection
+   451          711            6.36184e-11            initial simplex
+   452          713            6.36184e-11            one dimensional contraction
+   453          715            6.36184e-11            one dimensional contraction
+   454          716            6.36184e-11            reflection
+   455          717            6.36184e-11            reflection
+   456          719            6.36184e-11            one dimensional contraction
+   457          720            6.36184e-11            reflection
+   458          722            6.36184e-11            one dimensional contraction
+   459          724            6.36184e-11            one dimensional contraction
+   460          726            6.36184e-11            one dimensional contraction
+   461          728            6.36184e-11            one dimensional contraction
+   462          729            6.36184e-11            reflection
+   463          731            6.36184e-11            one dimensional contraction
+   464          732            6.36184e-11            reflection
+   465          734            6.36184e-11            one dimensional contraction
+   466          736            6.36184e-11            one dimensional contraction
+   467          738            6.36184e-11            one dimensional contraction
+   468          740            6.36184e-11            one dimensional contraction
+   469          741            6.36184e-11            reflection
+   470          742            6.36184e-11            reflection
+   471          744            6.36184e-11            one dimensional contraction
+   472          745            6.36184e-11            reflection
+   473          747            6.36184e-11            one dimensional contraction
+   474          749            6.36184e-11            one dimensional contraction
+   475          751            6.36184e-11            one dimensional contraction
+   476          753            6.36184e-11            one dimensional contraction
+   477          754            6.36184e-11            reflection
+   478          756            6.36184e-11            one dimensional contraction
+   479          758            6.36184e-11            one dimensional contraction
+   480          760            6.36184e-11            one dimensional contraction
+   481          770            6.36184e-11            contraction around best point
+   482          772            6.36184e-11            one dimensional contraction
+   483          773            6.36184e-11            reflection
+   484          775            6.36184e-11            one dimensional contraction
+   485          777            6.36184e-11            one dimensional contraction
+   486          778            6.36184e-11            reflection
+   487          779            6.36184e-11            reflection
+   488          780            6.36184e-11            reflection
+   489          781            6.36184e-11            reflection
+   490          783            6.36184e-11            one dimensional contraction
+   491          785            6.36184e-11            one dimensional contraction
+   492          795            6.36184e-11            contraction around best point
+   493          797            6.36184e-11            one dimensional contraction
+   494          798            6.36184e-11            reflection
+   495          799            6.36184e-11            reflection
+   496          800            6.36184e-11            reflection
+   497          802            6.36184e-11            one dimensional contraction
+   498          804            6.36184e-11            one dimensional contraction
+   499          805            6.36184e-11            reflection
+   500          807            6.36184e-11            one dimensional contraction
+   501          809            6.36184e-11            one dimensional contraction
+   502          810            6.36184e-11            reflection
+   503          820            6.36184e-11            contraction around best point
+   504          822            6.36184e-11            one dimensional contraction
+   505          823            6.36184e-11            reflection
+   506          824            6.36184e-11            reflection
+   507          825            6.36184e-11            reflection
+   508          826            6.36184e-11            reflection
+   509          828            6.36184e-11            one dimensional contraction
+   510          830            6.36184e-11            one dimensional contraction
+   511          831            6.36184e-11            reflection
+   512          832            6.36184e-11            reflection
+   513          833            6.36184e-11            reflection
+   514          834            6.36184e-11            reflection
+   515          835            6.36184e-11            reflection
+   516          837            6.36184e-11            one dimensional contraction
+   517          838            6.36184e-11            reflection
+   518          839            6.36184e-11            reflection
+   519          840            6.36184e-11            reflection
+   520          842            6.36184e-11            one dimensional contraction
+   521          843            6.36184e-11            reflection
+   522          845            6.36184e-11            one dimensional contraction
+   523          847            6.36184e-11            one dimensional contraction
+   524          849            6.36184e-11            one dimensional contraction
+   525          850            6.36184e-11            reflection
+   526          852            6.36184e-11            one dimensional contraction
+   527          853            6.36184e-11            reflection
+   528          854            6.36184e-11            reflection
+   529          855            6.36184e-11            reflection
+   530          857            6.36184e-11            one dimensional contraction
+   531          859            6.36184e-11            one dimensional contraction
+   532          861            6.36184e-11            one dimensional contraction
+   533          863            6.36184e-11            one dimensional contraction
+   534          864            6.36184e-11            reflection
+   535          874            6.36184e-11            contraction around best point
+   536          876            6.36184e-11            one dimensional contraction
+   537          878            5.07738e-11            reflection
+   538          879            5.07738e-11            reflection
+   539          881            3.52411e-11            extrapolation
+   540          882            3.52411e-11            reflection
+   541          883            3.52411e-11            reflection
+   542          884            3.52411e-11            reflection
+   543          885            3.52411e-11            reflection
+   544          886            3.52411e-11            reflection
+   545          887            3.52411e-11            reflection
+   546          888            3.52411e-11            reflection
+   547          889            3.52411e-11            reflection
+   548          891            3.52411e-11            one dimensional contraction
+   549          892            3.52411e-11            reflection
+   550          893            3.52411e-11            reflection
+   551          895            3.52411e-11            one dimensional contraction
+   552          897            3.48965e-11            reflection
+   553          899            2.85734e-11            reflection
+   554          900            2.85734e-11            reflection
+   555          902            2.85734e-11            one dimensional contraction
+   556          904            2.85734e-11            one dimensional contraction
+   557          906            2.85734e-11            one dimensional contraction
+   558          907            2.85734e-11            reflection
+   559          908            2.85734e-11            reflection
+   560          910            2.82705e-11            reflection
+   561          911            2.82705e-11            reflection
+   562          913            2.77328e-11            reflection
+   563          915            2.77328e-11            one dimensional contraction
+   564          916            2.77328e-11            reflection
+   565          918             2.3884e-11            reflection
+   566          919             2.3884e-11            reflection
+   567          921             1.8662e-11            reflection
+   568          922             1.8662e-11            reflection
+   569          923             1.8662e-11            reflection
+   570          924             1.8662e-11            reflection
+   571          926             1.8662e-11            one dimensional contraction
+   572          927             1.8662e-11            reflection
+   573          928             1.8662e-11            reflection
+   574          929             1.8662e-11            reflection
+   575          931            1.84458e-11            reflection
+   576          933            1.84458e-11            one dimensional contraction
+   577          934            1.84458e-11            reflection
+   578          935            1.84458e-11            reflection
+   579          937            1.81465e-11            one dimensional contraction
+   580          939            1.81465e-11            one dimensional contraction
+   581          941            1.81465e-11            one dimensional contraction
+   582          943             1.7534e-11            one dimensional contraction
+   583          945             1.7469e-11            one dimensional contraction
+   584          946             1.7469e-11            reflection
+   585          948            1.71017e-11            reflection
+   586          950            1.71017e-11            one dimensional contraction
+   587          952            1.67244e-11            reflection
+   588          954            1.67244e-11            one dimensional contraction
+   589          956            1.62086e-11            reflection
+   590          958            1.62086e-11            one dimensional contraction
+   591          960            1.62086e-11            one dimensional contraction
+   592          962            1.61445e-11            reflection
+   593          963            1.61445e-11            reflection
+   594          964            1.61445e-11            reflection
+   595          965            1.61445e-11            reflection
+   596          966            1.61445e-11            reflection
+   597          968            1.59865e-11            reflection
+   598          969            1.59865e-11            reflection
+   599          971            1.59865e-11            one dimensional contraction
+   600          972            1.59865e-11            reflection
+   601          973            1.59865e-11            reflection
+   602          974            1.59865e-11            reflection
+   603          976            1.59865e-11            one dimensional contraction
+   604          978            1.59865e-11            one dimensional contraction
+   605          980            1.59865e-11            one dimensional contraction
+   606          982            1.58111e-11            reflection
+   607          984            1.58111e-11            one dimensional contraction
+   608          986            1.58111e-11            one dimensional contraction
+   609          988             1.5789e-11            reflection
+   610          990             1.5789e-11            one dimensional contraction
+   611          991             1.5789e-11            reflection
+   612          992             1.5789e-11            reflection
+   613          993             1.5789e-11            reflection
+   614          995            1.56585e-11            reflection
+   615          996            1.56585e-11            reflection
+   616          997            1.56585e-11            reflection
+   617          998            1.56585e-11            reflection
+   618          999            1.56585e-11            reflection
+   619         1000            1.56585e-11            reflection
+   620         1002            1.56585e-11            one dimensional contraction
+   621         1003            1.56585e-11            reflection
+   622         1005            1.53957e-11            reflection
+   623         1007            1.53957e-11            one dimensional contraction
+   624         1009            1.53957e-11            one dimensional contraction
+   625         1011            1.53957e-11            one dimensional contraction
+   626         1013            1.53957e-11            one dimensional contraction
+   627         1014            1.53957e-11            reflection
+   628         1015            1.53957e-11            reflection
+   629         1016            1.53957e-11            reflection
+   630         1017            1.53957e-11            reflection
+   631         1019            1.53957e-11            one dimensional contraction
+   632         1021            1.53957e-11            one dimensional contraction
+   633         1022            1.53957e-11            reflection
+   634         1023            1.53957e-11            reflection
+   635         1025             1.5323e-11            reflection
+   636         1027             1.5323e-11            one dimensional contraction
+   637         1029            1.50622e-11            extrapolation
+   638         1030            1.50622e-11            reflection
+   639         1031            1.50622e-11            reflection
+   640         1032            1.50622e-11            reflection
+   641         1033            1.50622e-11            reflection
+   642         1034            1.50622e-11            reflection
+   643         1036            1.49898e-11            extrapolation
+   644         1037            1.49898e-11            reflection
+   645         1039            1.49046e-11            reflection
+   646         1041            1.49046e-11            one dimensional contraction
+   647         1042            1.49046e-11            reflection
+   648         1044            1.48989e-11            reflection
+   649         1045            1.48989e-11            reflection
+   650         1047             1.4571e-11            extrapolation
+   651         1048             1.4571e-11            reflection
+   652         1049             1.4571e-11            reflection
+   653         1050             1.4571e-11            reflection
+   654         1052            1.42411e-11            extrapolation
+   655         1053            1.42411e-11            reflection
+   656         1054            1.42411e-11            reflection
+   657         1055            1.42411e-11            reflection
+   658         1056            1.42411e-11            reflection
+   659         1057            1.42411e-11            reflection
+   660         1059             1.4135e-11            reflection
+   661         1061            1.37613e-11            extrapolation
+   662         1062            1.37613e-11            reflection
+   663         1063            1.37613e-11            reflection
+   664         1065             1.3221e-11            extrapolation
+   665         1066             1.3221e-11            reflection
+   666         1067             1.3221e-11            reflection
+   667         1068             1.3221e-11            reflection
+   668         1069             1.3221e-11            reflection
+   669         1071            1.28203e-11            extrapolation
+   670         1072            1.28203e-11            reflection
+   671         1074            1.18838e-11            extrapolation
+   672         1075            1.18838e-11            reflection
+   673         1076            1.18838e-11            reflection
+   674         1077            1.18838e-11            reflection
+   675         1078            1.18838e-11            reflection
+   676         1080            1.14956e-11            extrapolation
+   677         1082            1.04224e-11            extrapolation
+   678         1083            1.04224e-11            reflection
+   679         1084            1.04224e-11            reflection
+   680         1086            9.44423e-12            extrapolation
+   681         1087            9.44423e-12            reflection
+   682         1088            9.44423e-12            reflection
+   683         1089            9.44423e-12            reflection
+   684         1090            9.44423e-12            reflection
+   685         1092             9.3308e-12            reflection
+   686         1093             9.3308e-12            reflection
+   687         1095            8.63741e-12            extrapolation
+   688         1097            5.98414e-12            extrapolation
+   689         1098            5.98414e-12            reflection
+   690         1099            5.98414e-12            reflection
+   691         1100            5.98414e-12            reflection
+   692         1101            5.98414e-12            reflection
+   693         1102            5.98414e-12            reflection
+   694         1103            5.98414e-12            reflection
+   695         1104            5.98414e-12            reflection
+   696         1106            4.80963e-12            extrapolation
+   697         1107            4.80963e-12            reflection
+   698         1109            2.59692e-12            extrapolation
+   699         1110            2.59692e-12            reflection
+   700         1111            2.59692e-12            reflection
+   701         1112            2.59692e-12            reflection
+   702         1113            2.59692e-12            reflection
+   703         1114            2.59692e-12            reflection
+   704         1116            2.16096e-12            reflection
+   705         1117            2.16096e-12            reflection
+   706         1118            2.16096e-12            reflection
+   707         1120             1.4748e-12            reflection
+   708         1122             1.4748e-12            one dimensional contraction
+   709         1124             1.4748e-12            one dimensional contraction
+   710         1125             1.4748e-12            reflection
+   711         1126             1.4748e-12            reflection
+   712         1127             1.4748e-12            reflection
+   713         1128             1.4748e-12            reflection
+   714         1130            1.42166e-12            reflection
+   715         1131            1.42166e-12            reflection
+   716         1132            1.42166e-12            reflection
+   717         1134            1.42166e-12            one dimensional contraction
+   718         1136            1.42166e-12            one dimensional contraction
+   719         1138            1.42166e-12            one dimensional contraction
+   720         1139            1.42166e-12            reflection
+   721         1140            1.42166e-12            reflection
+   722         1142            1.42166e-12            one dimensional contraction
+   723         1143            1.42166e-12            reflection
+   724         1145            1.42166e-12            one dimensional contraction
+   725         1146            1.42166e-12            reflection
+   726         1147            1.42166e-12            reflection
+   727         1149            1.42166e-12            one dimensional contraction
+   728         1150            1.42166e-12            reflection
+   729         1151            1.42166e-12            reflection
+   730         1152            1.42166e-12            reflection
+   731         1153            1.42166e-12            reflection
+   732         1154            1.42166e-12            reflection
+   733         1156            1.33965e-12            reflection
+   734         1157            1.33965e-12            reflection
+   735         1158            1.33965e-12            reflection
+   736         1159            1.33965e-12            reflection
+   737         1161            1.33965e-12            one dimensional contraction
+   738         1162            1.33965e-12            reflection
+   739         1164            1.33965e-12            one dimensional contraction
+   740         1166            1.28796e-12            reflection
+   741         1168            1.28796e-12            one dimensional contraction
+   742         1170            1.28796e-12            one dimensional contraction
+   743         1172            1.23654e-12            reflection
+   744         1173            1.23654e-12            reflection
+   745         1175            1.23654e-12            one dimensional contraction
+   746         1177            1.23654e-12            one dimensional contraction
+   747         1178            1.23654e-12            reflection
+   748         1180            1.23654e-12            one dimensional contraction
+   749         1181            1.23654e-12            reflection
+   750         1191            1.22903e-12            contraction around best point
+   751         1193            1.22903e-12            one dimensional contraction
+   752         1195            1.21394e-12            reflection
+   753         1197            1.21159e-12            reflection
+   754         1199            1.20828e-12            reflection
+   755         1201            1.20828e-12            one dimensional contraction
+   756         1202            1.20828e-12            reflection
+   757         1203            1.20828e-12            reflection
+   758         1205            1.19963e-12            extrapolation
+   759         1206            1.19963e-12            reflection
+   760         1207            1.19963e-12            reflection
+   761         1208            1.19963e-12            reflection
+   762         1209            1.19963e-12            reflection
+   763         1211            1.19007e-12            reflection
+   764         1212            1.19007e-12            reflection
+   765         1214            1.19007e-12            one dimensional contraction
+   766         1216            1.17651e-12            extrapolation
+   767         1217            1.17651e-12            reflection
+   768         1219            1.17651e-12            one dimensional contraction
+   769         1220            1.17651e-12            reflection
+   770         1221            1.17651e-12            reflection
+   771         1222            1.17651e-12            reflection
+   772         1224            1.17651e-12            one dimensional contraction
+   773         1225            1.17651e-12            reflection
+   774         1226            1.17651e-12            reflection
+   775         1227            1.17651e-12            reflection
+   776         1229            1.17651e-12            one dimensional contraction
+   777         1230            1.17651e-12            reflection
+   778         1231            1.17651e-12            reflection
+   779         1232            1.17651e-12            reflection
+   780         1234            1.17651e-12            one dimensional contraction
+   781         1236            1.17527e-12            reflection
+   782         1238            1.17527e-12            one dimensional contraction
+   783         1239            1.17527e-12            reflection
+   784         1241            1.16957e-12            reflection
+   785         1242            1.16957e-12            reflection
+   786         1243            1.16957e-12            reflection
+   787         1245            1.16957e-12            one dimensional contraction
+   788         1247            1.16957e-12            one dimensional contraction
+   789         1248            1.16957e-12            reflection
+   790         1249            1.16957e-12            reflection
+   791         1251            1.16957e-12            one dimensional contraction
+   792         1252            1.16957e-12            reflection
+   793         1253            1.16957e-12            reflection
+   794         1255             1.1673e-12            reflection
+   795         1256             1.1673e-12            reflection
+   796         1257             1.1673e-12            reflection
+   797         1259             1.1673e-12            one dimensional contraction
+   798         1261            1.16612e-12            reflection
+   799         1262            1.16612e-12            reflection
+   800         1263            1.16612e-12            reflection
+   801         1265            1.16475e-12            reflection
+   802         1275            1.16455e-12            contraction around best point
+   803         1277            1.16455e-12            one dimensional contraction
+   804         1279            1.16405e-12            reflection
+   805         1280            1.16405e-12            reflection
+   806         1281            1.16405e-12            reflection
+   807         1283            1.16138e-12            extrapolation
+   808         1284            1.16138e-12            reflection
+   809         1285            1.16138e-12            reflection
+   810         1286            1.16138e-12            reflection
+   811         1287            1.16138e-12            reflection
+   812         1288            1.16138e-12            reflection
+   813         1290            1.15859e-12            extrapolation
+   814         1291            1.15859e-12            reflection
+   815         1292            1.15859e-12            reflection
+   816         1293            1.15859e-12            reflection
+   817         1294            1.15859e-12            reflection
+   818         1295            1.15859e-12            reflection
+   819         1296            1.15859e-12            reflection
+   820         1298            1.15611e-12            extrapolation
+   821         1299            1.15611e-12            reflection
+   822         1301            1.15456e-12            extrapolation
+   823         1302            1.15456e-12            reflection
+   824         1303            1.15456e-12            reflection
+   825         1305            1.15325e-12            extrapolation
+   826         1307            1.15117e-12            extrapolation
+   827         1309            1.14633e-12            extrapolation
+   828         1310            1.14633e-12            reflection
+   829         1312            1.14065e-12            extrapolation
+   830         1313            1.14065e-12            reflection
+   831         1314            1.14065e-12            reflection
+   832         1315            1.14065e-12            reflection
+   833         1317            1.13361e-12            extrapolation
+   834         1319            1.11877e-12            extrapolation
+   835         1320            1.11877e-12            reflection
+   836         1321            1.11877e-12            reflection
+   837         1322            1.11877e-12            reflection
+   838         1323            1.11877e-12            reflection
+   839         1324            1.11877e-12            reflection
+   840         1326            1.10667e-12            extrapolation
+   841         1327            1.10667e-12            reflection
+   842         1329            1.09689e-12            extrapolation
+   843         1330            1.09689e-12            reflection
+   844         1332            1.07361e-12            extrapolation
+   845         1333            1.07361e-12            reflection
+   846         1334            1.07361e-12            reflection
+   847         1335            1.07361e-12            reflection
+   848         1337            1.04265e-12            extrapolation
+   849         1338            1.04265e-12            reflection
+   850         1339            1.04265e-12            reflection
+   851         1340            1.04265e-12            reflection
+   852         1342            1.02869e-12            extrapolation
+   853         1344            1.00103e-12            extrapolation
+   854         1345            1.00103e-12            reflection
+   855         1347            9.58336e-13            extrapolation
+   856         1348            9.58336e-13            reflection
+   856         1348            9.58336e-13            initial simplex
+   857         1350            9.58336e-13            one dimensional contraction
+   858         1352            9.58336e-13            one dimensional contraction
+   859         1353            9.58336e-13            reflection
+   860         1354            9.58336e-13            reflection
+   861         1356            9.58336e-13            one dimensional contraction
+   862         1357            9.58336e-13            reflection
+   863         1359            9.58336e-13            one dimensional contraction
+   864         1361            9.58336e-13            one dimensional contraction
+   865         1363            9.58336e-13            one dimensional contraction
+   866         1365            9.58336e-13            one dimensional contraction
+   867         1366            9.58336e-13            reflection
+   868         1368            9.58336e-13            one dimensional contraction
+   869         1369            9.58336e-13            reflection
+   870         1371            9.58336e-13            one dimensional contraction
+   871         1373            9.58336e-13            one dimensional contraction
+   872         1375            9.58336e-13            one dimensional contraction
+   873         1377            9.58336e-13            one dimensional contraction
+   874         1378            9.58336e-13            reflection
+   875         1379            9.58336e-13            reflection
+   876         1381            9.58336e-13            one dimensional contraction
+   877         1382            9.58336e-13            reflection
+   878         1384            9.58336e-13            one dimensional contraction
+   879         1386            9.58336e-13            one dimensional contraction
+   880         1388            9.58336e-13            one dimensional contraction
+   881         1390            9.58336e-13            one dimensional contraction
+   882         1391            9.58336e-13            reflection
+   883         1393            9.58336e-13            one dimensional contraction
+   884         1395            9.58336e-13            one dimensional contraction
+   885         1397            9.58336e-13            one dimensional contraction
+   886         1407            9.58336e-13            contraction around best point
+   887         1409            9.58336e-13            one dimensional contraction
+   888         1410            9.58336e-13            reflection
+   889         1412            9.58336e-13            one dimensional contraction
+   890         1414            9.58336e-13            one dimensional contraction
+   891         1415            9.58336e-13            reflection
+   892         1416            9.58336e-13            reflection
+   893         1417            9.58336e-13            reflection
+   894         1418            9.58336e-13            reflection
+   895         1420            9.58336e-13            one dimensional contraction
+   896         1422            9.58336e-13            one dimensional contraction
+   897         1432            9.58336e-13            contraction around best point
+   898         1434            9.58336e-13            one dimensional contraction
+   899         1435            9.58336e-13            reflection
+   900         1436            9.58336e-13            reflection
+   901         1437            9.58336e-13            reflection
+   902         1439            9.58336e-13            one dimensional contraction
+   903         1441            9.58336e-13            one dimensional contraction
+   904         1442            9.58336e-13            reflection
+   905         1444            9.58336e-13            one dimensional contraction
+   906         1445            9.58336e-13            reflection
+   907         1447            9.58336e-13            one dimensional contraction
+   908         1449            9.58336e-13            one dimensional contraction
+   909         1450            9.58336e-13            reflection
+   910         1452            9.58336e-13            one dimensional contraction
+   911         1453            9.58336e-13            reflection
+   912         1455            9.58336e-13            one dimensional contraction
+   913         1456            9.58336e-13            reflection
+   914         1458            9.58336e-13            one dimensional contraction
+   915         1460            9.58336e-13            one dimensional contraction
+   916         1462            9.58336e-13            one dimensional contraction
+   917         1464            9.58336e-13            one dimensional contraction
+   918         1466            9.58336e-13            one dimensional contraction
+   919         1468            9.58336e-13            one dimensional contraction
+   920         1470            9.58336e-13            one dimensional contraction
+   921         1471            9.58336e-13            reflection
+   922         1472            9.58336e-13            reflection
+   923         1474            9.58336e-13            one dimensional contraction
+   924         1476            9.58336e-13            one dimensional contraction
+   925         1477            9.58336e-13            reflection
+   926         1478            9.58336e-13            reflection
+   927         1479            9.58336e-13            reflection
+   928         1481            9.58336e-13            one dimensional contraction
+   929         1483            9.58336e-13            one dimensional contraction
+   930         1493            9.58336e-13            contraction around best point
+   931         1495            9.58336e-13            one dimensional contraction
+   932         1496            9.58336e-13            reflection
+   933         1497            9.58336e-13            reflection
+   934         1498            9.58336e-13            reflection
+   935         1500            9.58336e-13            one dimensional contraction
+   936         1502            9.58336e-13            one dimensional contraction
+   937         1503            9.58336e-13            reflection
+   938         1505            9.58336e-13            one dimensional contraction
+   939         1507            9.58336e-13            one dimensional contraction
+   940         1508            9.58336e-13            reflection
+   941         1509            9.58336e-13            reflection
+   942         1511            9.58336e-13            one dimensional contraction
+   943         1513            9.58336e-13            one dimensional contraction
+   944         1515            9.58336e-13            one dimensional contraction
+   945         1517            9.58336e-13            one dimensional contraction
+   946         1518            9.58336e-13            reflection
+   947         1520            9.58336e-13            one dimensional contraction
+   948         1522            9.58336e-13            one dimensional contraction
+   949         1524            9.58336e-13            one dimensional contraction
+   950         1525            9.58336e-13            reflection
+   951         1527            9.58336e-13            one dimensional contraction
+   952         1528            9.58336e-13            reflection
+   953         1529            9.58336e-13            reflection
+   954         1531            9.58336e-13            one dimensional contraction
+   955         1532            9.58336e-13            reflection
+   956         1533            9.58336e-13            reflection
+   957         1535            9.58336e-13            one dimensional contraction
+   958         1536            9.58336e-13            reflection
+   959         1538            9.58336e-13            one dimensional contraction
+   960         1548            9.58336e-13            contraction around best point
+   961         1550            9.58336e-13            one dimensional contraction
+   962         1551            9.58336e-13            reflection
+   963         1553            9.58336e-13            one dimensional contraction
+   964         1555            9.58336e-13            one dimensional contraction
+   965         1556            9.58336e-13            reflection
+   966         1558            9.58336e-13            one dimensional contraction
+   967         1559            9.58336e-13            reflection
+   968         1560            9.58336e-13            reflection
+   969         1562            9.58336e-13            one dimensional contraction
+   970         1564            9.58336e-13            one dimensional contraction
+   971         1566            9.58336e-13            one dimensional contraction
+   972         1567            9.58336e-13            reflection
+   973         1568            9.58336e-13            reflection
+   974         1569            9.58336e-13            reflection
+   975         1570            9.58336e-13            reflection
+   976         1571            9.58336e-13            reflection
+   977         1573            9.58336e-13            one dimensional contraction
+   978         1575            9.58336e-13            one dimensional contraction
+   979         1576            9.58336e-13            reflection
+   980         1578            9.58336e-13            one dimensional contraction
+   981         1580            9.58336e-13            one dimensional contraction
+   982         1582            9.58336e-13            one dimensional contraction
+   983         1583            9.58336e-13            reflection
+   984         1585            9.58336e-13            one dimensional contraction
+   985         1586            9.58336e-13            reflection
+   986         1587            9.58336e-13            reflection
+   987         1588            9.58336e-13            reflection
+   988         1589            9.58336e-13            reflection
+   989         1591            9.58336e-13            one dimensional contraction
+   990         1592            9.58336e-13            reflection
+   991         1594            9.58336e-13            one dimensional contraction
+   992         1595            9.58336e-13            reflection
+   993         1597            9.58336e-13            one dimensional contraction
+   994         1598            9.58336e-13            reflection
+   995         1600            9.58336e-13            one dimensional contraction
+   996         1602            9.58336e-13            one dimensional contraction
+   997         1603            9.58336e-13            reflection
+   998         1605            9.58336e-13            one dimensional contraction
+   999         1607            9.49653e-13            one dimensional contraction
+  1000         1608            9.49653e-13            reflection
+  1001         1609            9.49653e-13            reflection
+  1002         1611            9.40959e-13            one dimensional contraction
+  1003         1613            9.40959e-13            one dimensional contraction
+  1004         1615            9.40959e-13            one dimensional contraction
+  1005         1617            9.40959e-13            one dimensional contraction
+  1006         1627            9.26454e-13            contraction around best point
+  1007         1629            9.26454e-13            one dimensional contraction
+  1008         1631            9.26284e-13            reflection
+  1009         1633            9.18878e-13            extrapolation
+  1010         1635            9.17812e-13            reflection
+  1011         1636            9.17812e-13            reflection
+  1012         1637            9.17812e-13            reflection
+  1013         1639            9.16835e-13            reflection
+  1014         1640            9.16835e-13            reflection
+  1015         1641            9.16835e-13            reflection
+  1016         1643            9.14743e-13            reflection
+  1017         1644            9.14743e-13            reflection
+  1018         1646            9.11817e-13            reflection
+  1019         1648            9.11817e-13            one dimensional contraction
+  1020         1649            9.11817e-13            reflection
+  1021         1651            9.11817e-13            one dimensional contraction
+  1022         1652            9.11817e-13            reflection
+  1023         1654            9.11817e-13            one dimensional contraction
+  1024         1656            9.11817e-13            one dimensional contraction
+  1025         1657            9.11817e-13            reflection
+  1026         1659             9.1084e-13            reflection
+  1027         1661             9.1084e-13            one dimensional contraction
+  1028         1663            9.09841e-13            reflection
+  1029         1665            9.08635e-13            reflection
+  1030         1667            9.08635e-13            one dimensional contraction
+  1031         1668            9.08635e-13            reflection
+  1032         1670            9.08635e-13            one dimensional contraction
+  1033         1672            9.08635e-13            one dimensional contraction
+  1034         1674            9.08635e-13            one dimensional contraction
+  1035         1675            9.08635e-13            reflection
+  1036         1677            9.08635e-13            one dimensional contraction
+  1037         1678            9.08635e-13            reflection
+  1038         1680            9.08399e-13            reflection
+  1039         1681            9.08399e-13            reflection
+  1040         1683            9.06742e-13            reflection
+  1041         1684            9.06742e-13            reflection
+  1042         1685            9.06742e-13            reflection
+  1043         1687            9.06742e-13            one dimensional contraction
+  1044         1689            9.06742e-13            one dimensional contraction
+  1045         1690            9.06742e-13            reflection
+  1046         1691            9.06742e-13            reflection
+  1047         1692            9.06742e-13            reflection
+  1048         1694            9.06742e-13            one dimensional contraction
+  1049         1696            9.06742e-13            one dimensional contraction
+  1050         1698            9.06742e-13            one dimensional contraction
+  1051         1700            9.06742e-13            one dimensional contraction
+  1052         1701            9.06742e-13            reflection
+  1053         1703            9.06742e-13            one dimensional contraction
+  1054         1704            9.06742e-13            reflection
+  1055         1705            9.06742e-13            reflection
+  1056         1706            9.06742e-13            reflection
+  1057         1707            9.06742e-13            reflection
+  1058         1709             9.0607e-13            extrapolation
+  1059         1710             9.0607e-13            reflection
+  1060         1711             9.0607e-13            reflection
+  1061         1712             9.0607e-13            reflection
+  1062         1713             9.0607e-13            reflection
+  1063         1714             9.0607e-13            reflection
+  1064         1716            9.05553e-13            extrapolation
+  1065         1718            9.04077e-13            extrapolation
+  1066         1719            9.04077e-13            reflection
+  1067         1720            9.04077e-13            reflection
+  1068         1721            9.04077e-13            reflection
+  1069         1722            9.04077e-13            reflection
+  1070         1723            9.04077e-13            reflection
+  1071         1724            9.04077e-13            reflection
+  1072         1725            9.04077e-13            reflection
+  1073         1726            9.04077e-13            reflection
+  1074         1727            9.04077e-13            reflection
+  1075         1728            9.04077e-13            reflection
+  1076         1730            9.02416e-13            extrapolation
+  1077         1731            9.02416e-13            reflection
+  1078         1732            9.02416e-13            reflection
+  1079         1733            9.02416e-13            reflection
+  1080         1734            9.02416e-13            reflection
+  1081         1735            9.02416e-13            reflection
+  1082         1737            8.99768e-13            extrapolation
+  1083         1738            8.99768e-13            reflection
+  1084         1739            8.99768e-13            reflection
+  1085         1741            8.98055e-13            extrapolation
+  1086         1742            8.98055e-13            reflection
+  1087         1743            8.98055e-13            reflection
+  1088         1744            8.98055e-13            reflection
+  1089         1745            8.98055e-13            reflection
+  1090         1747            8.97564e-13            reflection
+  1091         1749            8.92932e-13            extrapolation
+  1092         1750            8.92932e-13            reflection
+  1093         1751            8.92932e-13            reflection
+  1094         1752            8.92932e-13            reflection
+  1095         1753            8.92932e-13            reflection
+  1096         1755            8.88951e-13            extrapolation
+  1097         1756            8.88951e-13            reflection
+  1098         1757            8.88951e-13            reflection
+  1099         1759            8.86313e-13            extrapolation
+  1100         1761              8.814e-13            extrapolation
+  1101         1762              8.814e-13            reflection
+  1102         1763              8.814e-13            reflection
+  1103         1765             8.7757e-13            extrapolation
+  1104         1766             8.7757e-13            reflection
+  1105         1768            8.71554e-13            extrapolation
+  1106         1769            8.71554e-13            reflection
+  1107         1771            8.68264e-13            extrapolation
+  1108         1772            8.68264e-13            reflection
+  1109         1774            8.62155e-13            extrapolation
+  1110         1775            8.62155e-13            reflection
+  1111         1776            8.62155e-13            reflection
+  1112         1778            8.60684e-13            reflection
+  1113         1780             8.5864e-13            reflection
+  1114         1782            8.51413e-13            extrapolation
+  1115         1783            8.51413e-13            reflection
+  1116         1784            8.51413e-13            reflection
+  1117         1785            8.51413e-13            reflection
+  1118         1786            8.51413e-13            reflection
+  1119         1787            8.51413e-13            reflection
+  1120         1789            8.50786e-13            reflection
+  1121         1790            8.50786e-13            reflection
+  1122         1792            8.49994e-13            reflection
+  1123         1793            8.49994e-13            reflection
+  1124         1794            8.49994e-13            reflection
+  1125         1795            8.49994e-13            reflection
+  1126         1797            8.45598e-13            reflection
+  1127         1798            8.45598e-13            reflection
+  1128         1800            8.45598e-13            one dimensional contraction
+  1129         1801            8.45598e-13            reflection
+  1130         1802            8.45598e-13            reflection
+  1131         1804            8.45598e-13            one dimensional contraction
+  1132         1806            8.45598e-13            one dimensional contraction
+  1133         1807            8.45598e-13            reflection
+  1134         1808            8.45598e-13            reflection
+  1135         1810            8.45598e-13            one dimensional contraction
+  1136         1811            8.45598e-13            reflection
+  1137         1812            8.45598e-13            reflection
+  1138         1813            8.45598e-13            reflection
+  1139         1814            8.45598e-13            reflection
+  1140         1816            8.45503e-13            reflection
+  1141         1817            8.45503e-13            reflection
+  1142         1819            8.45313e-13            reflection
+  1143         1820            8.45313e-13            reflection
+  1144         1822            8.45313e-13            one dimensional contraction
+  1145         1824            8.45313e-13            one dimensional contraction
+  1146         1826            8.45313e-13            one dimensional contraction
+  1147         1827            8.45313e-13            reflection
+  1148         1828            8.45313e-13            reflection
+  1149         1830            8.44205e-13            reflection
+  1150         1832            8.44046e-13            reflection
+  1151         1834            8.44046e-13            one dimensional contraction
+  1152         1836            8.44046e-13            one dimensional contraction
+  1153         1838            8.43842e-13            reflection
+  1154         1839            8.43842e-13            reflection
+  1155         1841            8.43842e-13            one dimensional contraction
+  1156         1842            8.43842e-13            reflection
+  1157         1844            8.43652e-13            reflection
+  1158         1846            8.43609e-13            reflection
+  1159         1848            8.43562e-13            reflection
+  1160         1850            8.43336e-13            reflection
+  1161         1852            8.43336e-13            one dimensional contraction
+  1162         1854            8.42924e-13            reflection
+  1163         1856            8.42743e-13            reflection
+  1164         1857            8.42743e-13            reflection
+  1165         1858            8.42743e-13            reflection
+  1166         1860            8.42743e-13            one dimensional contraction
+  1167         1862            8.42195e-13            extrapolation
+  1168         1863            8.42195e-13            reflection
+  1169         1865            8.41191e-13            extrapolation
+  1170         1866            8.41191e-13            reflection
+  1171         1867            8.41191e-13            reflection
+  1172         1868            8.41191e-13            reflection
+  1173         1870            8.41191e-13            one dimensional contraction
+  1174         1871            8.41191e-13            reflection
+  1175         1873            8.39466e-13            extrapolation
+  1176         1874            8.39466e-13            reflection
+  1177         1875            8.39466e-13            reflection
+  1178         1876            8.39466e-13            reflection
+  1179         1877            8.39466e-13            reflection
+  1180         1879            8.37723e-13            extrapolation
+  1181         1880            8.37723e-13            reflection
+  1182         1881            8.37723e-13            reflection
+  1183         1882            8.37723e-13            reflection
+  1184         1884            8.36696e-13            extrapolation
+  1185         1885            8.36696e-13            reflection
+  1186         1887            8.35537e-13            extrapolation
+  1187         1888            8.35537e-13            reflection
+  1188         1890            8.34725e-13            extrapolation
+  1189         1892            8.29339e-13            extrapolation
+  1190         1893            8.29339e-13            reflection
+  1191         1894            8.29339e-13            reflection
+  1192         1895            8.29339e-13            reflection
+  1193         1897            8.25163e-13            extrapolation
+  1194         1898            8.25163e-13            reflection
+  1195         1899            8.25163e-13            reflection
+  1196         1900            8.25163e-13            reflection
+  1197         1901            8.25163e-13            reflection
+  1198         1903            8.17158e-13            extrapolation
+  1199         1904            8.17158e-13            reflection
+  1200         1905            8.17158e-13            reflection
+  1201         1906            8.17158e-13            reflection
+  1202         1907            8.17158e-13            reflection
+  1203         1908            8.17158e-13            reflection
+  1204         1910            8.08268e-13            extrapolation
+  1205         1911            8.08268e-13            reflection
+  1206         1912            8.08268e-13            reflection
+  1207         1914            7.99233e-13            extrapolation
+  1208         1915            7.99233e-13            reflection
+  1209         1916            7.99233e-13            reflection
+  1210         1917            7.99233e-13            reflection
+  1211         1918            7.99233e-13            reflection
+  1212         1920             7.9269e-13            extrapolation
+  1213         1922             7.8591e-13            extrapolation
+  1214         1923             7.8591e-13            reflection
+  1215         1924             7.8591e-13            reflection
+  1216         1926            7.79769e-13            extrapolation
+  1217         1927            7.79769e-13            reflection
+  1218         1928            7.79769e-13            reflection
+  1219         1929            7.79769e-13            reflection
+  1220         1931            7.71379e-13            extrapolation
+  1221         1932            7.71379e-13            reflection
+  1222         1933            7.71379e-13            reflection
+  1223         1935            7.58299e-13            extrapolation
+  1224         1936            7.58299e-13            reflection
+  1225         1937            7.58299e-13            reflection
+  1226         1938            7.58299e-13            reflection
+  1227         1939            7.58299e-13            reflection
+  1228         1940            7.58299e-13            reflection
+  1229         1941            7.58299e-13            reflection
+  1230         1942            7.58299e-13            reflection
+  1231         1944            7.54721e-13            extrapolation
+  1232         1946            7.47887e-13            extrapolation
+  1233         1948            7.33107e-13            extrapolation
+  1234         1949            7.33107e-13            reflection
+  1235         1950            7.33107e-13            reflection
+  1236         1951            7.33107e-13            reflection
+  1237         1953            7.32928e-13            reflection
+  1238         1954            7.32928e-13            reflection
+  1239         1956            7.30557e-13            reflection
+  1240         1957            7.30557e-13            reflection
+  1241         1959            7.25076e-13            reflection
+  1242         1960            7.25076e-13            reflection
+  1243         1961            7.25076e-13            reflection
+  1244         1963            7.18927e-13            reflection
+  1245         1965            7.18927e-13            one dimensional contraction
+  1246         1966            7.18927e-13            reflection
+  1247         1968            7.18868e-13            reflection
+  1248         1970            7.17468e-13            reflection
+  1249         1972            7.15035e-13            reflection
+  1250         1974            7.09751e-13            extrapolation
+  1251         1975            7.09751e-13            reflection
+  1252         1976            7.09751e-13            reflection
+  1253         1977            7.09751e-13            reflection
+  1254         1978            7.09751e-13            reflection
+  1255         1979            7.09751e-13            reflection
+  1256         1981            6.98012e-13            extrapolation
+  1257         1982            6.98012e-13            reflection
+  1258         1983            6.98012e-13            reflection
+  1259         1985            6.87609e-13            extrapolation
+  1260         1986            6.87609e-13            reflection
+  1261         1987            6.87609e-13            reflection
+  1262         1988            6.87609e-13            reflection
+  1263         1989            6.87609e-13            reflection
+  1264         1991            6.72959e-13            extrapolation
+  1265         1992            6.72959e-13            reflection
+  1266         1993            6.72959e-13            reflection
+  1267         1994            6.72959e-13            reflection
+  1268         1995            6.72959e-13            reflection
+  1269         1996            6.72959e-13            reflection
+  1270         1998            6.71226e-13            reflection
+  1271         1999            6.71226e-13            reflection
+  1272         2000            6.71226e-13            reflection
+Exceeded maximum number of function evaluations.
+ 
+Estimated parameters
+====================
+p1 = 0.185266   
+p3 = 0.320217   
+p4 = 0.357044   
+p6 = 0.638417   
+p7 = 0.889878   
+
+Estimated initial conditions
+============================
+x1=0.199999 (Experiment 1)
+x2=0.403729 (Experiment 1)
+x3=0.566726 (Experiment 1)
+u0=0.8 (Experiment 1)
+
+Optimal cost: 6.71226e-13
+
+output = 
+
+  struct with fields:
+
+         parameters: {5x1 cell}
+               Popt: [0.1853 0.3202 0.3570 0.6384 0.8899]
+    parameterslocal: {}
+          PLOCALopt: []
+            icnames: {4x1 cell}
+              ICopt: [0.2000 0.4037 0.5667 0.8000]
+            FVALopt: 6.7123e-13
+         projectopt: [1x1 IQMprojectSB]
+         estimation: [1x1 struct]
+
+[?1h=[?1h=[?1h=Building with 'gcc'.
+[?1h=[?1h=[?1h=[?1h=[?1h=[?1h=MEX completed successfully.
+	IQMprojectSB
+	============
+	Name: project
+	Number Models:			1
+	Number Experiments:		1
+	Number Measurements:	1
+	Number Estimations:		0
+
+[?1l>
+
+CPU time: 10.12+121.60 sec	Max. resident set size: 1122792 KB	 Elapsed: 25.51 sec.
