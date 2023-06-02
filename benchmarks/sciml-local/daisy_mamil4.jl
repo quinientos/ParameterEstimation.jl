@@ -33,6 +33,9 @@ p_rand = rand(Uniform(0.0, 1.0), length(ic) + length(p_true)) # Random Parameter
 prob = ODEProblem(model, ic, time_interval,
                   p_rand)
 
+sol = solve(remake(prob, u0 = p_rand[1:length(ic)]), solver, p = p_rand[(length(ic) + 1):end],
+saveat = sampling_times)
+
 function loss(p)
     sol = solve(remake(prob; u0 = p[1:length(ic)]), Tsit5(), p = p[(length(ic) + 1):end],
                 saveat = sampling_times; abstol = 1e-12, reltol = 1e-12)
