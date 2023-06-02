@@ -1,0 +1,923 @@
+[?1h=
+                                                                                               < M A T L A B (R) >
+                                                                                     Copyright 1984-2022 The MathWorks, Inc.
+                                                                                     R2022a (9.12.0.1884302) 64-bit (glnxa64)
+                                                                                                February 16, 2022
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+
+
+*********************************** 
+     AMIGO2, Copyright @CSIC      
+     AMIGO2_R2019a [March 2019]      
+*********************************** 
+
+*Date: 01-Jun-2023
+
+------>Checking inputs....
+		Problem folder has not been provided. Default: Problem
+------> WARNING message
+
+		 AMIGO_check_model: You did not specify inputs.model.exe_type, standard will be assumed
+
+[Warning: AMIGO_check_IVPsolver: Changing ivp solver to the only option compatible with charmodelC and sbmlmodel, cvodes] 
+[> In AMIGO_check_IVPsolver (line 24)
+In AMIGO_check_model (line 387)
+In AMIGO_PE (line 83)
+In daisy_ex3 (line 114)
+In run (line 91)] 
+[Warning: AMIGO_check_IVPsolver: Changing sensitivities solver to, cvodes] 
+[> In AMIGO_check_IVPsolver (line 31)
+In AMIGO_check_model (line 387)
+In AMIGO_PE (line 83)
+In daisy_ex3 (line 114)
+In run (line 91)] 
+
+
+------> WARNING message
+
+		 You have not provided the sampling times.
+ 		 Equidistant sampling will be assumed for experiment 1
+		 Note however that you may modify your input file by adding
+		 inputs.exps.t_s{iexp}
+
+ans =
+
+     1     1
+
+[Warning: Directory already exists.] 
+[> In AMIGO_gen_obs (line 38)
+In AMIGO_PE (line 128)
+In daisy_ex3 (line 114)
+In run (line 91)] 
+[Warning: Name is nonexistent or not a directory: /home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/AMIGO2_R2019b/Results/Problem/AMIGO_gen_obs_problem.m] 
+[> In path (line 109)
+In addpath (line 86)
+In AMIGO_gen_obs (line 109)
+In AMIGO_PE (line 128)
+In daisy_ex3 (line 114)
+In run (line 91)] 
+
+ans =
+
+    '/home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/AMIGO2_R2019b/Results/Problem/AMIGO_gen_obs_problem.m'
+
+
+*************************************************************************
+
+
+------>IMPORTANT!!: Most of the optimization solvers have their own
+                    tunning parameters (options).
+                    Defaults have been assigned in the *NLPsolver*_options
+                    files. You may need to modify those settings for your
+                    particular problem, specially:
+                      - maximum number of function evaluations /iterations,
+                      - maximum computational time
+
+
+******************************************************************
+
+  Solving the NLP problem with
+		>Summary of selected eSS options: 
+ess_options.
+	dim_refset:	'auto'
+	inter_save:	0
+	iterprint:	1
+	local:	(1x1 struct)
+	log_var:	(1x9 double)
+	maxeval:	100000
+	maxtime:	600
+	ndiverse:	'auto'
+nl2sol_settings.
+	display:	1
+	grad:	[]
+	iterfun:	[]
+	maxfeval:	2000
+	maxiter:	1000
+	objrtol:	1e-10
+	tolafun:	1e-10
+	tolrfun:	1e-10
+
+		>Bounds on the unknowns:
+
+		v_guess(1)=1.000000;  v_min(1)=0.000000;  v_max(1)=2.000000;
+		v_guess(2)=1.000000;  v_min(2)=0.000000;  v_max(2)=2.000000;
+		v_guess(3)=1.000000;  v_min(3)=0.000000;  v_max(3)=2.000000;
+		v_guess(4)=1.000000;  v_min(4)=0.000000;  v_max(4)=2.000000;
+		v_guess(5)=1.000000;  v_min(5)=0.000000;  v_max(5)=2.000000;
+		v_guess(6)=1.000000;  v_min(6)=0.000000;  v_max(6)=2.000000;
+		v_guess(7)=1.000000;  v_min(7)=0.000000;  v_max(7)=2.000000;
+		v_guess(8)=1.000000;  v_min(8)=0.000000;  v_max(8)=2.000000;
+		v_guess(9)=1.000000;  v_min(9)=0.000000;  v_max(9)=2.000000;
+
+
+------------------------------------------------------------------------------ 
+ eSS R2010B - Enhanced Scatter Search    
+<c> IIM-CSIC, Vigo, Spain -  email: gingproc@iim.csic.es 
+------------------------------------------------------------------------------ 
+
+Refset size automatically calculated: 10
+Number of diverse solutions automatically calculated: 90
+
+
+-----------------------------------------------
+ Initial value problem related active settings
+-----------------------------------------------
+ivpsolver: cvodes
+RelTol: 1e-12
+AbsTol: 1e-12
+MaxStepSize: Inf
+MaxNumberOfSteps: 1e+06
+
+[CVODES ERROR]  CVode
+  At t = 0.811126 and h = 4.55779e-08, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES ERROR]  CVode
+  At t = 0 and h = 5.26924e-16, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES ERROR]  CVode
+  At t = 0.0617042 and h = 1.4737e-08, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES ERROR]  CVode
+  At t = 2.56307e-07 and h = 8.62189e-14, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES ERROR]  CVode
+  At t = 0.206628 and h = 5.83087e-08, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES ERROR]  CVode
+  At t = 0.65682 and h = 7.26892e-11, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES ERROR]  CVode
+  At t = 0 and h = 5.47202e-24, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES ERROR]  CVode
+  At t = 0.0437028 and h = 1.01897e-08, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES ERROR]  CVode
+  At t = 1.3904e-09, mxstep steps taken before reaching tout.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -1
+
+
+[CVODES ERROR]  CVode
+  At t = 0.0196282 and h = 1.78574e-12, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES ERROR]  CVode
+  At t = 0.259823 and h = 1.33394e-08, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES ERROR]  CVode
+  At t = 0.790138 and h = 5.04677e-08, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES ERROR]  CVode
+  At t = 0.00476991 and h = 1.75818e-10, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES ERROR]  CVode
+  At t = 1.64827e-05, mxstep steps taken before reaching tout.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -1
+
+
+[CVODES ERROR]  CVode
+  At t = 0.0486643 and h = 4.7206e-12, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES ERROR]  CVode
+  At t = 0.0630634 and h = 6.12666e-12, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES ERROR]  CVode
+  At t = 9.57571e-07, mxstep steps taken before reaching tout.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -1
+
+
+[CVODES ERROR]  CVode
+  At t = 0.00777683 and h = 2.0058e-09, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+Initial Pop: NFunEvals: 98  Bestf: 17.6123      CPUTime: 5.400000    Var: Inf 
+
+[CVODES WARNING]  CVode
+  Internal t = 0 and h = 0 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES ERROR]  CVode
+  At t = 0 and h = 0, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0 and h = 0 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES ERROR]  CVode
+  At t = 0 and h = 0, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES ERROR]  CVode
+  At t = 0 and h = 4.25767e-16, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0 and h = 0 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES ERROR]  CVode
+  At t = 0 and h = 0, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0 and h = 0 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES ERROR]  CVode
+  At t = 0 and h = 0, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES ERROR]  CVode
+  At t = 0 and h = 6.16703e-17, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0 and h = 0 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES ERROR]  CVode
+  At t = 0 and h = 0, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES ERROR]  CVode
+  At t = 0.0192422 and h = 2.74501e-09, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0 and h = 0 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES ERROR]  CVode
+  At t = 0 and h = 0, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES ERROR]  CVode
+  At t = 0.00535465 and h = 8.24559e-10, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES ERROR]  CVode
+  At t = 0.186144 and h = 1.83714e-08, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES ERROR]  CVode
+  At t = 0.13955 and h = 1.69171e-11, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES ERROR]  CVode
+  At t = 0.96333 and h = 1.18743e-10, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0 and h = 0 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES ERROR]  CVode
+  At t = 0 and h = 0, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES ERROR]  CVode
+  At t = 0.194893 and h = 3.11676e-08, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES ERROR]  CVode
+  At t = 0.0519876, mxstep steps taken before reaching tout.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -1
+
+
+[CVODES ERROR]  CVode
+  At t = 0.015932 and h = 1.7889e-09, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES ERROR]  CVode
+  At t = 0.232366 and h = 2.63057e-11, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+Iteration: 1 NFunEvals: 213  Bestf: 3.3491      CPUTime: 27.340000    Var: 106.217 
+Call local solver: NL2SOL 
+Initial point function value: 3.349097 
+
+[CVODES ERROR]  CVode
+  At t = 0.230582 and h = 1.00528e-08, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES ERROR]  CVode
+  At t = 0 and h = 3.24118e-12, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+------------------------------------------------------------------
+ This is dn2fb_ (NL2SNO v2.3)
+ Authors: John Dennis, David Gay, Roy Welsch
+ MEX Interface J. Currie 2012
+
+ Problem Properties:
+ # Decision Variables:        9
+ # Data Points:              40
+------------------------------------------------------------------
+
+ *** SUCCESSFUL TERMINATION ***
+ *** absolute function convergence ***
+------------------------------------------------------------------
+
+NL2SOL ended after 5 iteration and 78 function evaluation:
+       Results: NL2SOL exited
+Local solution function value: 9.30658 
+Number of function evaluations in the local search: 80 
+CPU Time of the local search: 26.674147  seconds 
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0 and h = 0 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES ERROR]  CVode
+  At t = 0 and h = 0, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0 and h = 0 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES ERROR]  CVode
+  At t = 0 and h = 0, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0 and h = 0 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES ERROR]  CVode
+  At t = 0 and h = 0, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0 and h = 0 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES ERROR]  CVode
+  At t = 0 and h = 0, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES ERROR]  CVode
+  At t = 0.033844 and h = 4.17094e-09, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES WARNING]  CVode
+  Internal t = 0 and h = 0 are such that t + h = t on the next step. The solver will continue anyway.
+
+
+[CVODES ERROR]  CVode
+  At t = 0 and h = 0, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES ERROR]  CVode
+  At t = 0 and h = 2.2364e-12, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES ERROR]  CVode
+  At t = 0.042866, mxstep steps taken before reaching tout.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -1
+
+
+[CVODES ERROR]  CVode
+  At t = 0 and h = 4.3706e-12, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES ERROR]  CVode
+  At t = 0 and h = 5.43394e-12, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+Iteration: 2 NFunEvals: 400  Bestf: 2.0093      CPUTime: 100.330000    Var: 16.5006 
+
+[CVODES ERROR]  CVode
+  At t = 0.949801 and h = 1.19731e-10, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+Iteration: 3 NFunEvals: 502  Bestf: 1.977      CPUTime: 126.250000    Var: 1.76461 
+Iteration: 4 NFunEvals: 603  Bestf: 1.89593      CPUTime: 173.680000    Var: 0.377114 
+
+[CVODES ERROR]  CVode
+  At t = 0 and h = 2.76573e-12, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+Iteration: 5 NFunEvals: 705  Bestf: 1.85836      CPUTime: 227.540000    Var: 0.0258718 
+
+[CVODES ERROR]  CVode
+  At t = 0.398293 and h = 1.11308e-09, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+Iteration: 6 NFunEvals: 805  Bestf: 1.39286      CPUTime: 265.170000    Var: 0.0324495 
+
+[CVODES ERROR]  CVode
+  At t = 0 and h = 3.42924e-12, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+Iteration: 7 NFunEvals: 904  Bestf: 1.39286      CPUTime: 288.400000    Var: 0.0279278 
+
+[CVODES ERROR]  CVode
+  At t = 0 and h = 3.42604e-12, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+Iteration: 8 NFunEvals: 998  Bestf: 1.39286      CPUTime: 313.990000    Var: 0.0269627 
+
+[CVODES ERROR]  CVode
+  At t = 0.0551939 and h = 1.0918e-08, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES ERROR]  CVode
+  At t = 0.322862 and h = 1.48006e-08, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES ERROR]  CVode
+  At t = 0.492639 and h = 2.37503e-08, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+Iteration: 9 NFunEvals: 1094  Bestf: 1.39286      CPUTime: 352.590000    Var: 0.0265397 
+
+[CVODES ERROR]  CVode
+  At t = 0.333934 and h = 2.23706e-08, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES ERROR]  CVode
+  At t = 0.0703519 and h = 9.21295e-09, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES ERROR]  CVode
+  At t = 0.345444 and h = 2.30411e-08, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+Iteration: 10 NFunEvals: 1189  Bestf: 1.39286      CPUTime: 397.030000    Var: 0.0223003 
+
+[CVODES ERROR]  CVode
+  At t = 0.286102 and h = 1.52153e-08, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES ERROR]  CVode
+  At t = 0.0815401 and h = 1.09642e-08, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+Iteration: 11 NFunEvals: 1284  Bestf: 1.39286      CPUTime: 408.440000    Var: 0.0349763 
+Call local solver: NL2SOL 
+Initial point function value: 1.850974 
+
+[CVODES ERROR]  CVode
+  At t = 0 and h = 3.66426e-12, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+------------------------------------------------------------------
+ This is dn2fb_ (NL2SNO v2.3)
+ Authors: John Dennis, David Gay, Roy Welsch
+ MEX Interface J. Currie 2012
+
+ Problem Properties:
+ # Decision Variables:        9
+ # Data Points:              40
+------------------------------------------------------------------
+
+ *** TERMINATION: EARLY EXIT ***
+ *** CAUSE: false convergence. the iterates appear to be converging to a noncritical point. this may mean that the convergence tolerances are too small ***
+------------------------------------------------------------------
+
+NL2SOL ended after 7 iteration and 97 function evaluation:
+       Results: False convergence
+Local solution function value: 1.84224 
+Number of function evaluations in the local search: 99 
+CPU Time of the local search: 24.629508  seconds 
+
+
+[CVODES ERROR]  CVode
+  At t = 0.391239 and h = 2.15995e-08, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+Iteration: 12 NFunEvals: 1476  Bestf: 1.39286      CPUTime: 456.840000    Var: 0.0347064 
+
+[CVODES ERROR]  CVode
+  At t = 0.0556237 and h = 1.00733e-08, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES ERROR]  CVode
+  At t = 0.143243 and h = 2.0766e-08, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES ERROR]  CVode
+  At t = 0.232054 and h = 1.91408e-08, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES ERROR]  CVode
+  At t = 0 and h = 3.27235e-12, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+Iteration: 13 NFunEvals: 1569  Bestf: 0.547817      CPUTime: 527.310000    Var: 0.164477 
+
+[CVODES ERROR]  CVode
+  At t = 0 and h = 6.89107e-12, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES ERROR]  CVode
+  At t = 0 and h = 6.89107e-12, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES ERROR]  CVode
+  At t = 0.399439 and h = 2.16482e-08, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+Iteration: 14 NFunEvals: 1661  Bestf: 0.547817      CPUTime: 560.920000    Var: 0.155486 
+Iteration: 15 NFunEvals: 1752  Bestf: 0.129508      CPUTime: 567.620000    Var: 0.334791 
+
+[CVODES ERROR]  CVode
+  At t = 0 and h = 6.89107e-12, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+Iteration: 16 NFunEvals: 1844  Bestf: 0.129508      CPUTime: 593.910000    Var: 0.306331 
+
+[CVODES ERROR]  CVode
+  At t = 0 and h = 3.26264e-12, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+Iteration: 17 NFunEvals: 1936  Bestf: 0.129508      CPUTime: 627.970000    Var: 0.338566 
+
+Final local refinement with: NL2SOL 
+Initial point function value: 0.129508 
+
+[CVODES ERROR]  CVode
+  At t = 0.386174 and h = 1.30929e-08, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+------------------------------------------------------------------
+ This is dn2fb_ (NL2SNO v2.3)
+ Authors: John Dennis, David Gay, Roy Welsch
+ MEX Interface J. Currie 2012
+
+ Problem Properties:
+ # Decision Variables:        9
+ # Data Points:              40
+------------------------------------------------------------------
+
+ *** TERMINATION: EARLY EXIT ***
+ *** CAUSE: false convergence. the iterates appear to be converging to a noncritical point. this may mean that the convergence tolerances are too small ***
+------------------------------------------------------------------
+
+NL2SOL ended after 14 iteration and 196 function evaluation:
+       Results: False convergence
+Local solution function value: 1.844137 
+Number of function evaluations in the local search: 198 
+CPU Time of the local search: 28.241789  seconds 
+
+Maximum computation time achieved
+Best solution value		0.129508
+Decision vector
+	0.576971
+	0.212919
+	0.374893
+	1.08646
+	0.772687
+	0.49793
+	0.499162
+	0.451177
+	0.240327
+CPU time		656.22
+Number of function evaluations		2135
+
+[CVODES ERROR]  CVode
+  At t = 0.267449 and h = 2.05261e-08, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+Execution of script mklJac as a function is not supported:
+/home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/AMIGO2_R2019b/Kernel/numericalDifferentiation/mklJac.m
+
+
+------> Computing Correlation Matrix for unknowns...
+
+---------------------------------------------------
+Local sensitivity problem related active settings
+---------------------------------------------------
+senssolver: cvodes
+ivp_RelTol: 1e-12
+ivp_AbsTol: 1e-12
+sens_RelTol: ~1e-12
+sensmex: cvodesg_problem
+MaxStepSize: Inf
+MaxNumberOfSteps: 1e+06
+sens_RelTol: ~1e-12
+
+[CVODES ERROR]  CVode
+  At t = 0 and h = 4.45807e-21, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+
+------>An error was obtained when computing sensitivities.
+
+
+       Sorry, it was not possible to compute Cramer-Rao confidence intervals.
+
+--------------------------------------------------------------------------
+		
+Experiment 1: 
+		inputs.exp_data{1}=[
+		0.2  0.8
+		0.263152  0.852632
+		0.329772  0.905263
+		0.399818  0.957895
+		0.473258  1.01053
+		0.550073  1.06316
+		0.630255  1.11579
+		0.713804  1.16842
+		0.800735  1.22105
+		0.891067  1.27368
+		0.984834  1.32632
+		1.08208  1.37895
+		1.18284  1.43158
+		1.28719  1.48421
+		1.39519  1.53684
+		1.50691  1.58947
+		1.62244  1.64211
+		1.74186  1.69474
+		1.86528  1.74737
+		1.9928  1.8
+		];
+
+
+
+---------------------------------------------------------------------------------------------
+>>>>    Mean / Maximum value of the residuals in percentage (100*(data-model)/data):
+
+		Experiment 1 : 
+		 Observable 1 -->  mean error: 14.761830 %	 max error: 87.446378 %
+		 Observable 2 -->  mean error: 36.964392 %	 max error: 57.072943 %
+
+--------------------------------------------------------------------------
+
+--------------------------------------------------------------------
+>>>>    Maximum absolute value of the residuals (data-model):
+
+		Experiment 1 : 
+		 Observable 1 -->  max residual: 0.174893 max data: 1.992797
+		 Observable 2 -->  max residual: 1.027313 max data: 1.800000
+
+--------------------------------------------------------------------------	   
+
+>>>> Best objective function: 0.129508 
+	   
+
+>>>> Computational cost: 656.220000 s
+> 96.49% of successful simulationn
+> 0.00% of successful sensitivity calculations
+
+
+>>> Estimated global parameters: 
+
+	p1 : 5.7697e-01 
+	p3 : 2.1292e-01 
+
+
+>>> Estimated global initial conditions: 
+
+	x1 : 3.7489e-01
+	x2 : 1.0865e+00
+	u0 : 7.7269e-01
+
+
+>>> Estimated local parameters: 
+
+	Experiment 1, p4 : 4.9793e-01
+	Experiment 1, p6 : 4.9916e-01
+	Experiment 1, p7 : 4.5118e-01
+
+
+>>> Estimated local initial conditions: 
+
+	Experiment 1, x3 : 2.4033e-01
+
+
+------>Plotting results....
+
+
+
+------>Results (report and struct_results.mat) and plots were kept in the directory:
+
+		/home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/AMIGO2_R2019b/Results/Problem/PE_problem_eSS_run1
+
+		Click <a href="matlab: cd('/home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/AMIGO2_R2019b/Results/Problem/PE_problem_eSS_run1')">here</a> to go to the results folder or <a href="matlab: load('/home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/AMIGO2_R2019b/Results/Problem/PE_problem_eSS_run1/strreport_problem_run1.mat')">here</a> to load the results.
+[?1l>
+
+CPU time: 4.06+695.54 sec	Max. resident set size: 1290312 KB	 Elapsed: 672.21 sec.
