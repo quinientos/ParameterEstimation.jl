@@ -1,0 +1,160 @@
+Maximum number of function evaluations achieved
+Best solution value		2.12883e-22
+Decision vector
+	0.167037
+	0.333074
+	0.2
+	0.400007
+	0.8
+	0.500133
+	0.666994
+	0.832807
+	0.600085
+CPU time		84.25
+Number of function evaluations		100082
+Execution of script mklJac as a function is not supported:
+/home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/AMIGO2_R2019b/Kernel/numericalDifferentiation/mklJac.m
+
+
+------> Computing Correlation Matrix for unknowns...
+
+---------------------------------------------------
+Local sensitivity problem related active settings
+---------------------------------------------------
+senssolver: cvodes
+ivp_RelTol: 1e-12
+ivp_AbsTol: 1e-12
+sens_RelTol: ~1e-12
+sensmex: cvodesg_problem
+MaxStepSize: Inf
+MaxNumberOfSteps: 1e+06
+sens_RelTol: ~1e-12
+
+----------------------------------------------------------
+------> WARNING message
+		The Fisher Information Matrix is nearly singular.
+----------------------------------------------------------
+
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.929871e-19. 
+> In AMIGO_corr_mat (line 81)
+In AMIGO_CramerRao (line 345)
+In AMIGO_PE (line 287)
+In daisy_ex3_JRB2 (line 115)
+In run (line 91)
+ 
+
+
+--------------------------------------------------------------------------
+		
+Experiment 1: 
+		inputs.exp_data{1}=[
+		0.2  0.8
+		0.263152  0.852632
+		0.329772  0.905263
+		0.399818  0.957895
+		0.473258  1.01053
+		0.550073  1.06316
+		0.630255  1.11579
+		0.713804  1.16842
+		0.800735  1.22105
+		0.891067  1.27368
+		0.984834  1.32632
+		1.08208  1.37895
+		1.18284  1.43158
+		1.28719  1.48421
+		1.39519  1.53684
+		1.50691  1.58947
+		1.62244  1.64211
+		1.74186  1.69474
+		1.86528  1.74737
+		1.9928  1.8
+		];
+
+
+
+---------------------------------------------------------------------------------------------
+>>>>    Mean / Maximum value of the residuals in percentage (100*(data-model)/data):
+
+		Experiment 1 : 
+		 Observable 1 -->  mean error: 0.000000 %	 max error: 0.000000 %
+		 Observable 2 -->  mean error: 0.000000 %	 max error: 0.000000 %
+
+--------------------------------------------------------------------------
+
+--------------------------------------------------------------------
+>>>>    Maximum absolute value of the residuals (data-model):
+
+		Experiment 1 : 
+		 Observable 1 -->  max residual: 0.000000 max data: 1.992797
+		 Observable 2 -->  max residual: 0.000000 max data: 1.800000
+
+--------------------------------------------------------------------------	   
+
+>>>> Best objective function: 0.000000 
+	   
+
+>>>> Computational cost: 84.250000 s
+> 100.00% of successful simulationn
+> 100.00% of successful sensitivity calculations
+
+
+>>> Best values found and the corresponding asymptotic confidence intervals
+
+
+
+>>> Estimated global parameters: 
+
+	p1 : 1.6704e-01  +-  3.3644e-10 (2.01e-07%); 
+	p3 : 3.3307e-01  +-  3.0019e-08 (9.01e-06%); 
+
+
+>>> Estimated global initial conditions: 
+
+	x1 : 2.0000e-01  +-  1.1675e-08 (5.84e-06%); 
+	x2 : 4.0001e-01  +-  3.5203e-08 ( 8.8e-06%); 
+	u0 : 8.0000e-01  +-  5.3270e-08 (6.66e-06%); 
+
+
+>>> Estimated local parameters: 
+
+	Experiment 1, p4 : 5.0013e-01  +-  1.6617e-04 (  0.0332%); 
+	Experiment 1, p6 : 6.6699e-01  +-  3.3483e-04 (  0.0502%); 
+	Experiment 1, p7 : 8.3281e-01  +-  5.9904e-04 (  0.0719%); 
+
+
+>>> Estimated local initial conditions: 
+
+	Experiment 1, x3 : 6.0008e-01  +-  1.6617e-04 (2.77e-02%); 
+
+
+>>> Correlation matrix for the global unknowns:
+
+	 1.000000e+00	 8.129430e-01	 7.214381e-01	 -7.826500e-01	 8.620654e-01
+	 8.129430e-01	 1.000000e+00	 9.895100e-01	 -9.981901e-01	 9.949795e-01
+	 7.214381e-01	 9.895100e-01	 1.000000e+00	 -9.955381e-01	 9.705664e-01
+	 -7.826500e-01	 -9.981901e-01	 -9.955381e-01	 1.000000e+00	 -9.872805e-01
+	 8.620654e-01	 9.949795e-01	 9.705664e-01	 -9.872805e-01	 1.000000e+00
+
+
+>>> Correlation matrix for the experiment 1
+
+	 1.000000e+00	 9.999991e-01	 9.999422e-01	 -9.972186e-01	 -9.999681e-01	 3.434003e-01	 1.000000e+00	 9.999790e-01	 1.289207e-08
+	 9.999991e-01	 1.000000e+00	 9.999558e-01	 -9.971170e-01	 -9.999780e-01	 3.430816e-01	 9.999991e-01	 9.999868e-01	 1.180248e-08
+	 9.999422e-01	 9.999558e-01	 1.000000e+00	 -9.963596e-01	 -9.999962e-01	 3.406151e-01	 9.999422e-01	 9.999909e-01	 1.133699e-08
+	 -9.972186e-01	 -9.971170e-01	 -9.963596e-01	 1.000000e+00	 9.965916e-01	 -3.620342e-01	 -9.972183e-01	 -9.967145e-01	 -6.407439e-09
+	 -9.999681e-01	 -9.999780e-01	 -9.999962e-01	 9.965916e-01	 1.000000e+00	 -3.413073e-01	 -9.999681e-01	 -9.999989e-01	 -1.151077e-08
+	 3.434003e-01	 3.430816e-01	 3.406151e-01	 -3.620342e-01	 -3.413073e-01	 1.000000e+00	 3.433975e-01	 3.417227e-01	 3.606654e-09
+	 1.000000e+00	 9.999991e-01	 9.999422e-01	 -9.972183e-01	 -9.999681e-01	 3.433975e-01	 1.000000e+00	 9.999790e-01	 -1.791895e-08
+	 9.999790e-01	 9.999868e-01	 9.999909e-01	 -9.967145e-01	 -9.999989e-01	 3.417227e-01	 9.999790e-01	 1.000000e+00	 1.077341e-08
+	 1.289207e-08	 1.180248e-08	 1.133699e-08	 -6.407439e-09	 -1.151077e-08	 3.606654e-09	 -1.791895e-08	 1.077341e-08	 1.000000e+00
+
+
+------>Plotting results....
+
+
+
+------>Results (report and struct_results.mat) and plots were kept in the directory:
+
+		/home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/AMIGO2_R2019b/Results/Problem/PE_problem_eSS_run1
+
+		Click <a href="matlab: cd('/home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/AMIGO2_R2019b/Results/Problem/PE_problem_eSS_run1')">here</a> to go to the results folder or <a href="matlab: load('/home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/AMIGO2_R2019b/Results/Problem/PE_problem_eSS_run1/strreport_problem_run1.mat')">here</a> to load the results.

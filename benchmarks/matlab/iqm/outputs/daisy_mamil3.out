@@ -1,9 +1,10 @@
 [?1h=
-                                       < M A T L A B (R) >
-                             Copyright 1984-2022 The MathWorks, Inc.
-                             R2022a (9.12.0.1884302) 64-bit (glnxa64)
-                                        February 16, 2022
+                                                              < M A T L A B (R) >
+                                                    Copyright 1984-2023 The MathWorks, Inc.
+                                               R2023a Update 2 (9.14.0.2254940) 64-bit (glnxa64)
+                                                                 April 17, 2023
 
+Warning: X does not support locale en_US.UTF-8
  
 To get started, type doc.
 For product information, visit www.mathworks.com.
@@ -2030,35 +2031,378 @@ Experiment 1:
   1256         1998            2.30044e-12            reflection
   1257         1999            2.30044e-12            reflection
   1258         2000            2.30044e-12            reflection
-Exceeded maximum number of function evaluations.
+  1259         2002             2.2993e-12            reflection
+  1260         2004            2.28842e-12            reflection
+  1261         2005            2.28842e-12            reflection
+  1262         2006            2.28842e-12            reflection
+  1263         2008            2.23588e-12            extrapolation
+  1264         2009            2.23588e-12            reflection
+  1265         2010            2.23588e-12            reflection
+  1266         2011            2.23588e-12            reflection
+  1267         2013            2.23588e-12            one dimensional contraction
+  1268         2014            2.23588e-12            reflection
+  1269         2015            2.23588e-12            reflection
+  1270         2016            2.23588e-12            reflection
+  1271         2018             2.2232e-12            reflection
+  1272         2019             2.2232e-12            reflection
+  1273         2020             2.2232e-12            reflection
+  1274         2022             2.2232e-12            one dimensional contraction
+  1275         2023             2.2232e-12            reflection
+  1276         2024             2.2232e-12            reflection
+  1277         2026             2.2232e-12            one dimensional contraction
+  1278         2028            2.21537e-12            reflection
+  1279         2030            2.21122e-12            reflection
+  1280         2032            2.20312e-12            reflection
+  1281         2033            2.20312e-12            reflection
+  1282         2034            2.20312e-12            reflection
+  1283         2035            2.20312e-12            reflection
+  1284         2037            2.18289e-12            extrapolation
+  1285         2039            2.17868e-12            reflection
+  1286         2040            2.17868e-12            reflection
+  1287         2041            2.17868e-12            reflection
+  1288         2043            2.16328e-12            reflection
+  1289         2044            2.16328e-12            reflection
+  1290         2045            2.16328e-12            reflection
+  1291         2046            2.16328e-12            reflection
+  1292         2047            2.16328e-12            reflection
+  1293         2049            2.14889e-12            reflection
+  1294         2050            2.14889e-12            reflection
+  1295         2051            2.14889e-12            reflection
+  1296         2053            2.14688e-12            reflection
+  1297         2055            2.14688e-12            one dimensional contraction
+  1298         2057            2.14688e-12            one dimensional contraction
+  1299         2059            2.12593e-12            extrapolation
+  1300         2060            2.12593e-12            reflection
+  1301         2061            2.12593e-12            reflection
+  1301         2061            2.12593e-12            initial simplex
+  1302         2063            2.12593e-12            one dimensional contraction
+  1303         2065            2.12593e-12            one dimensional contraction
+  1304         2067            2.12593e-12            one dimensional contraction
+  1305         2069            2.12593e-12            one dimensional contraction
+  1306         2070            2.12593e-12            reflection
+  1307         2072            2.12593e-12            one dimensional contraction
+  1308         2073            2.12593e-12            reflection
+  1309         2075            2.12593e-12            one dimensional contraction
+  1310         2076            2.12593e-12            reflection
+  1311         2077            2.12593e-12            reflection
+  1312         2078            2.12593e-12            reflection
+  1313         2080            2.12593e-12            one dimensional contraction
+  1314         2082            2.12593e-12            one dimensional contraction
+  1315         2084            2.12593e-12            one dimensional contraction
+  1316         2085            2.12593e-12            reflection
+  1317         2094            2.12593e-12            contraction around best point
+  1318         2096            2.12593e-12            one dimensional contraction
+  1319         2097            2.12593e-12            reflection
+  1320         2098            2.12593e-12            reflection
+  1321         2099            2.12593e-12            reflection
+  1322         2101            2.12593e-12            one dimensional contraction
+  1323         2102            2.12593e-12            reflection
+  1324         2104            2.12593e-12            one dimensional contraction
+  1325         2105            2.12593e-12            reflection
+  1326         2106            2.12593e-12            reflection
+  1327         2108            2.12593e-12            one dimensional contraction
+  1328         2109            2.12593e-12            reflection
+  1329         2110            2.12593e-12            reflection
+  1330         2112            2.12593e-12            one dimensional contraction
+  1331         2114            2.12593e-12            one dimensional contraction
+  1332         2123            2.12593e-12            contraction around best point
+  1333         2125            2.12593e-12            one dimensional contraction
+  1334         2126            2.12593e-12            reflection
+  1335         2128            2.12593e-12            one dimensional contraction
+  1336         2130            2.12593e-12            one dimensional contraction
+  1337         2131            2.12593e-12            reflection
+  1338         2132            2.12593e-12            reflection
+  1339         2133            2.12593e-12            reflection
+  1340         2134            2.12593e-12            reflection
+  1341         2136            2.12593e-12            one dimensional contraction
+  1342         2138            2.12593e-12            one dimensional contraction
+  1343         2139            2.12593e-12            reflection
+  1344         2140            2.12593e-12            reflection
+  1345         2142            2.12593e-12            one dimensional contraction
+  1346         2144            2.12593e-12            one dimensional contraction
+  1347         2146            2.12593e-12            one dimensional contraction
+  1348         2147            2.12593e-12            reflection
+  1349         2156            2.12593e-12            contraction around best point
+  1350         2158            2.12593e-12            one dimensional contraction
+  1351         2159            2.12593e-12            reflection
+  1352         2160            2.12593e-12            reflection
+  1353         2162            2.12593e-12            one dimensional contraction
+  1354         2163            2.12593e-12            reflection
+  1355         2164            2.12593e-12            reflection
+  1356         2165            2.12593e-12            reflection
+  1357         2166            2.12593e-12            reflection
+  1358         2167            2.12593e-12            reflection
+  1359         2168            2.12593e-12            reflection
+  1360         2170            2.12593e-12            one dimensional contraction
+  1361         2171            2.12593e-12            reflection
+  1362         2173            2.12593e-12            one dimensional contraction
+  1363         2174            2.12593e-12            reflection
+  1364         2176            2.12593e-12            one dimensional contraction
+  1365         2178            2.12593e-12            one dimensional contraction
+  1366         2179            2.12593e-12            reflection
+  1367         2180            2.12593e-12            reflection
+  1368         2182            2.12593e-12            one dimensional contraction
+  1369         2183            2.12593e-12            reflection
+  1370         2185            2.12593e-12            one dimensional contraction
+  1371         2187            2.12593e-12            one dimensional contraction
+  1372         2189            2.12593e-12            one dimensional contraction
+  1373         2190            2.12593e-12            reflection
+  1374         2191            2.12593e-12            reflection
+  1375         2193            2.12593e-12            one dimensional contraction
+  1376         2195            2.12593e-12            one dimensional contraction
+  1377         2197            2.12593e-12            one dimensional contraction
+  1378         2199            2.12593e-12            one dimensional contraction
+  1379         2201            2.12593e-12            one dimensional contraction
+  1380         2202            2.12593e-12            reflection
+  1381         2203            2.12593e-12            reflection
+  1382         2205            2.12593e-12            one dimensional contraction
+  1383         2206            2.12593e-12            reflection
+  1384         2207            2.12593e-12            reflection
+  1385         2209            2.12593e-12            one dimensional contraction
+  1386         2210            2.12593e-12            reflection
+  1387         2211            2.12593e-12            reflection
+  1388         2213            2.12593e-12            one dimensional contraction
+  1389         2215            2.12593e-12            one dimensional contraction
+  1390         2224            2.12593e-12            contraction around best point
+  1391         2226            2.12593e-12            one dimensional contraction
+  1392         2227            2.12593e-12            reflection
+  1393         2228            2.12593e-12            reflection
+  1394         2230            2.12593e-12            one dimensional contraction
+  1395         2231            2.12593e-12            reflection
+  1396         2232            2.12593e-12            reflection
+  1397         2233            2.12593e-12            reflection
+  1398         2235            2.12593e-12            one dimensional contraction
+  1399         2237            2.12593e-12            one dimensional contraction
+  1400         2239            2.12593e-12            one dimensional contraction
+  1401         2240            2.12593e-12            reflection
+  1402         2242            2.12593e-12            one dimensional contraction
+  1403         2243            2.12593e-12            reflection
+  1404         2244            2.12593e-12            reflection
+  1405         2246            2.12593e-12            one dimensional contraction
+  1406         2248            2.12593e-12            one dimensional contraction
+  1407         2249            2.12593e-12            reflection
+  1408         2251            2.12593e-12            one dimensional contraction
+  1409         2252            2.12593e-12            reflection
+  1410         2253            2.12593e-12            reflection
+  1411         2254            2.12593e-12            reflection
+  1412         2255            2.12593e-12            reflection
+  1413         2257            2.12593e-12            one dimensional contraction
+  1414         2258            2.12593e-12            reflection
+  1415         2259            2.12593e-12            reflection
+  1416         2261            2.12593e-12            one dimensional contraction
+  1417         2263            2.12593e-12            one dimensional contraction
+  1418         2265            2.12593e-12            one dimensional contraction
+  1419         2274            2.12593e-12            contraction around best point
+  1420         2276            2.12593e-12            one dimensional contraction
+  1421         2277            2.12593e-12            reflection
+  1422         2278            2.12593e-12            reflection
+  1423         2279            2.12593e-12            reflection
+  1424         2280            2.12593e-12            reflection
+  1425         2282            2.12593e-12            one dimensional contraction
+  1426         2284            2.12593e-12            one dimensional contraction
+  1427         2285            2.12593e-12            reflection
+  1428         2286            2.12593e-12            reflection
+  1429         2287            2.12593e-12            reflection
+  1430         2289            2.12593e-12            one dimensional contraction
+  1431         2291            2.12593e-12            one dimensional contraction
+  1432         2292            2.12593e-12            reflection
+  1433         2294            2.12593e-12            one dimensional contraction
+  1434         2295            2.12593e-12            reflection
+  1435         2296            2.12593e-12            reflection
+  1436         2297            2.12593e-12            reflection
+  1437         2299            2.12593e-12            one dimensional contraction
+  1438         2301            2.12593e-12            one dimensional contraction
+  1439         2303            2.12593e-12            one dimensional contraction
+  1440         2304            2.12593e-12            reflection
+  1441         2306            2.12593e-12            one dimensional contraction
+  1442         2308            2.12593e-12            one dimensional contraction
+  1443         2310            2.12593e-12            one dimensional contraction
+  1444         2312            2.12593e-12            one dimensional contraction
+  1445         2313            2.12593e-12            reflection
+  1446         2314            2.12593e-12            reflection
+  1447         2316            2.12593e-12            one dimensional contraction
+  1448         2318            2.12593e-12            one dimensional contraction
+  1449         2319            2.12593e-12            reflection
+  1450         2321            2.12593e-12            one dimensional contraction
+  1451         2323            2.12593e-12            one dimensional contraction
+  1452         2324            2.12593e-12            reflection
+  1453         2326            2.12593e-12            one dimensional contraction
+  1454         2327            2.12593e-12            reflection
+  1455         2329            2.12593e-12            one dimensional contraction
+  1456         2330            2.12593e-12            reflection
+  1457         2331            2.12593e-12            reflection
+  1458         2332            2.12593e-12            reflection
+  1459         2333            2.12593e-12            reflection
+  1460         2334            2.12593e-12            reflection
+  1461         2335            2.12593e-12            reflection
+  1462         2337            2.12593e-12            one dimensional contraction
+  1463         2339            2.12593e-12            one dimensional contraction
+  1464         2340            2.12593e-12            reflection
+  1465         2341            2.12593e-12            reflection
+  1466         2343            2.12593e-12            one dimensional contraction
+  1467         2345            2.12593e-12            one dimensional contraction
+  1468         2346            2.12593e-12            reflection
+  1469         2347            2.12593e-12            reflection
+  1470         2349            2.11657e-12            reflection
+  1471         2351            2.11657e-12            one dimensional contraction
+  1472         2352            2.11657e-12            reflection
+  1473         2353            2.11657e-12            reflection
+  1474         2355            2.11657e-12            one dimensional contraction
+  1475         2357            2.11657e-12            one dimensional contraction
+  1476         2358            2.11657e-12            reflection
+  1477         2367            2.11657e-12            contraction around best point
+  1478         2369            2.11657e-12            one dimensional contraction
+  1479         2371            2.11626e-12            reflection
+  1480         2372            2.11626e-12            reflection
+  1481         2373            2.11626e-12            reflection
+  1482         2375            2.11346e-12            extrapolation
+  1483         2376            2.11346e-12            reflection
+  1484         2377            2.11346e-12            reflection
+  1485         2378            2.11346e-12            reflection
+  1486         2380             2.1134e-12            reflection
+  1487         2381             2.1134e-12            reflection
+  1488         2382             2.1134e-12            reflection
+  1489         2384             2.1134e-12            one dimensional contraction
+  1490         2385             2.1134e-12            reflection
+  1491         2386             2.1134e-12            reflection
+  1492         2388             2.1123e-12            reflection
+  1493         2390             2.1123e-12            one dimensional contraction
+  1494         2392             2.1123e-12            one dimensional contraction
+  1495         2393             2.1123e-12            reflection
+  1496         2394             2.1123e-12            reflection
+  1497         2395             2.1123e-12            reflection
+  1498         2396             2.1123e-12            reflection
+  1499         2397             2.1123e-12            reflection
+  1500         2398             2.1123e-12            reflection
+  1501         2399             2.1123e-12            reflection
+  1502         2401             2.1121e-12            reflection
+  1503         2403            2.11164e-12            reflection
+  1504         2405            2.11126e-12            reflection
+  1505         2407            2.11126e-12            one dimensional contraction
+  1506         2408            2.11126e-12            reflection
+  1507         2410            2.11126e-12            one dimensional contraction
+  1508         2411            2.11126e-12            reflection
+  1509         2412            2.11126e-12            reflection
+  1510         2414            2.11102e-12            reflection
+  1511         2416             2.1107e-12            reflection
+  1512         2418             2.1107e-12            one dimensional contraction
+  1513         2420             2.1107e-12            one dimensional contraction
+  1514         2421             2.1107e-12            reflection
+  1515         2422             2.1107e-12            reflection
+  1516         2423             2.1107e-12            reflection
+  1517         2424             2.1107e-12            reflection
+  1518         2426             2.1104e-12            reflection
+  1519         2428             2.1104e-12            one dimensional contraction
+  1520         2430             2.1104e-12            one dimensional contraction
+  1521         2431             2.1104e-12            reflection
+  1522         2432             2.1104e-12            reflection
+  1523         2433             2.1104e-12            reflection
+  1524         2434             2.1104e-12            reflection
+  1525         2435             2.1104e-12            reflection
+  1526         2436             2.1104e-12            reflection
+  1527         2437             2.1104e-12            reflection
+  1528         2439             2.1104e-12            one dimensional contraction
+  1529         2440             2.1104e-12            reflection
+  1530         2441             2.1104e-12            reflection
+  1531         2442             2.1104e-12            reflection
+  1532         2444             2.1104e-12            one dimensional contraction
+  1533         2446             2.1104e-12            one dimensional contraction
+  1534         2448            2.11031e-12            reflection
+  1535         2449            2.11031e-12            reflection
+  1536         2450            2.11031e-12            reflection
+  1537         2452            2.11031e-12            one dimensional contraction
+  1538         2454            2.11031e-12            one dimensional contraction
+  1539         2455            2.11031e-12            reflection
+  1540         2456            2.11031e-12            reflection
+  1541         2458            2.11031e-12            reflection
+  1542         2460            2.11031e-12            one dimensional contraction
+  1543         2462            2.11028e-12            reflection
+  1544         2464            2.11022e-12            reflection
+  1545         2466            2.11022e-12            one dimensional contraction
+  1546         2467            2.11022e-12            reflection
+  1547         2468            2.11022e-12            reflection
+  1548         2470            2.11022e-12            reflection
+  1549         2471            2.11022e-12            reflection
+  1550         2473            2.11016e-12            reflection
+  1551         2474            2.11016e-12            reflection
+  1552         2475            2.11016e-12            reflection
+  1553         2476            2.11016e-12            reflection
+  1554         2478            2.11016e-12            one dimensional contraction
+  1555         2479            2.11016e-12            reflection
+  1556         2480            2.11016e-12            reflection
+  1557         2482            2.11016e-12            one dimensional contraction
+  1558         2484            2.11013e-12            reflection
+  1559         2485            2.11013e-12            reflection
+  1560         2486            2.11013e-12            reflection
+  1561         2488            2.11012e-12            reflection
+  1562         2489            2.11012e-12            reflection
+  1563         2491            2.11012e-12            reflection
+  1564         2492            2.11012e-12            reflection
+  1565         2494            2.11012e-12            reflection
+  1566         2496            2.11012e-12            one dimensional contraction
+  1567         2498            2.11012e-12            one dimensional contraction
+  1568         2499            2.11012e-12            reflection
+  1569         2501            2.11011e-12            reflection
+  1570         2503             2.1101e-12            reflection
+  1571         2505             2.1101e-12            one dimensional contraction
+  1572         2507             2.1101e-12            reflection
+  1573         2508             2.1101e-12            reflection
+  1574         2510            2.11008e-12            reflection
+  1575         2511            2.11008e-12            reflection
+  1576         2513            2.11008e-12            one dimensional contraction
+  1577         2515            2.11008e-12            one dimensional contraction
+  1578         2517            2.11008e-12            reflection
+  1579         2518            2.11008e-12            reflection
+  1580         2519            2.11008e-12            reflection
+  1581         2521            2.11008e-12            one dimensional contraction
+  1582         2523            2.11008e-12            one dimensional contraction
+  1583         2524            2.11008e-12            reflection
+  1584         2525            2.11008e-12            reflection
+  1585         2527            2.11008e-12            one dimensional contraction
+  1586         2529            2.11007e-12            reflection
+  1587         2530            2.11007e-12            reflection
+  1588         2531            2.11007e-12            reflection
+  1589         2532            2.11007e-12            reflection
+  1590         2534            2.11007e-12            one dimensional contraction
+  1591         2536            2.11007e-12            one dimensional contraction
+  1592         2537            2.11007e-12            reflection
+  1593         2538            2.11007e-12            reflection
+  1594         2539            2.11007e-12            reflection
+  1595         2541            2.11007e-12            one dimensional contraction
+  1596         2543            2.11007e-12            one dimensional contraction
+  1597         2545            2.11007e-12            one dimensional contraction
+  1598         2547            2.11007e-12            reflection
+  1599         2548            2.11007e-12            reflection
+  1600         2557            2.11007e-12            contraction around best point
+Exceeded maximum number of iterations.
  
 Estimated parameters
 ====================
-a12 = 0.167011   
-a13 = 0.419949   
-a21 = 0.500029   
-a31 = 0.769379   
-a01 = 0.677394   
+a12 = 0.167   
+a13 = 0.419951   
+a21 = 0.499999   
+a31 = 0.769421   
+a01 = 0.677325   
 
 Estimated initial conditions
 ============================
 x1=0.250001 (Experiment 1)
 x2=0.5 (Experiment 1)
-x3=0.562979 (Experiment 1)
+x3=0.562956 (Experiment 1)
 
-Optimal cost: 2.30044e-12
+Optimal cost: 2.11007e-12
 
 output = 
 
   struct with fields:
 
          parameters: {5x1 cell}
-               Popt: [0.1670 0.4199 0.5000 0.7694 0.6774]
+               Popt: [0.1670 0.4200 0.5000 0.7694 0.6773]
     parameterslocal: {}
           PLOCALopt: []
             icnames: {3x1 cell}
               ICopt: [0.2500 0.5000 0.5630]
-            FVALopt: 2.3004e-12
+            FVALopt: 2.1101e-12
          projectopt: [1x1 IQMprojectSB]
          estimation: [1x1 struct]
 
@@ -2074,4 +2418,4 @@ output =
 
 [?1l>
 
-CPU time: 8.87+127.68 sec	Max. resident set size: 1144472 KB	 Elapsed: 28.58 sec.
+CPU time: 9.86+115.38 sec	Max. resident set size: 1416744 KB	 Elapsed: 48.70 sec.

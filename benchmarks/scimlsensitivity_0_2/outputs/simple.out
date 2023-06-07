@@ -1,3 +1,6 @@
-27.603889 seconds (42.50 M allocations: 2.547 GiB, 10.60% gc time, 99.17% compilation time)
-[0.3330000000002004, 0.666999999999623, 0.33300000000161223, 0.6669999999953898]
-Max. relative abs. error between true and estimated parameters:6.911845741763062e-12
+ 39.835153 seconds (75.27 M allocations: 7.268 GiB, 8.15% gc time, 79.09% compilation time: <1% of which was recompilation)
+[0.33300000000000085, 0.6669999999999999, 0.33299999999995644, 0.6670000000000693]
+Max. relative abs. error between true and estimated parameters:1.3085962077038255e-13
+
+
+CPU time: 12.08+172.29 sec	Max. resident set size: 2214220 KB	 Elapsed: 175.72 sec.

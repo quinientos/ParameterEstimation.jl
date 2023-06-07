@@ -87,10 +87,10 @@ inputs.PEsol.lsq_type='Q_I';             % Weights:
                                          % a local non linear least squares
                                          % method.AMIGO_Prep(inputs);
 % %
- inputs.nlpsol.nlpsolver='ess';                      % Solver used for optimization
+ inputs.nlpsol.nlpsolver='eSS';                      % Solver used for optimization
 %  inputs.nlpsol.eSS.log_var = 1:3;                    % Index of parameters to be considered in log scale
- inputs.nlpsol.eSS.maxeval = 20000;                  % Maximum number of cost function evaluations
- inputs.nlpsol.eSS.maxtime = 600;                    % Maximum time spent for optimization
+ inputs.nlpsol.eSS.maxeval = 100000;                  % Maximum number of cost function evaluations
+ inputs.nlpsol.eSS.maxtime = 1000;                    % Maximum time spent for optimization
  inputs.nlpsol.eSS.local.solver = 'nl2sol';
  inputs.nlpsol.eSS.local.finish = 'nl2sol';
   inputs.nlpsol.eSS.local.nl2sol.maxiter             =      1000;

@@ -1,9 +1,10 @@
 [?1h=
-                                                                                < M A T L A B (R) >
-                                                                      Copyright 1984-2022 The MathWorks, Inc.
-                                                                      R2022a (9.12.0.1884302) 64-bit (glnxa64)
-                                                                                 February 16, 2022
+                                                              < M A T L A B (R) >
+                                                    Copyright 1984-2023 The MathWorks, Inc.
+                                               R2023a Update 2 (9.14.0.2254940) 64-bit (glnxa64)
+                                                                 April 17, 2023
 
+Warning: X does not support locale en_US.UTF-8
  
 To get started, type doc.
 For product information, visit www.mathworks.com.
@@ -1403,4 +1404,4 @@ output =
 
 [?1l>
 
-CPU time: 14.27+110.21 sec	Max. resident set size: 1146724 KB	 Elapsed: 30.20 sec.
+CPU time: 9.32+115.13 sec	Max. resident set size: 1409836 KB	 Elapsed: 47.96 sec.

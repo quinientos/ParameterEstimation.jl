@@ -1,9 +1,10 @@
 [?1h=
-                                                                                < M A T L A B (R) >
-                                                                      Copyright 1984-2022 The MathWorks, Inc.
-                                                                      R2022a (9.12.0.1884302) 64-bit (glnxa64)
-                                                                                 February 16, 2022
+                                                              < M A T L A B (R) >
+                                                    Copyright 1984-2023 The MathWorks, Inc.
+                                               R2023a Update 2 (9.14.0.2254940) 64-bit (glnxa64)
+                                                                 April 17, 2023
 
+Warning: X does not support locale en_US.UTF-8
  
 To get started, type doc.
 For product information, visit www.mathworks.com.
@@ -2055,35 +2056,353 @@ Experiment 1:
   1281         1997            8.82582e-10            reflection
   1282         1999            8.79866e-10            extrapolation
   1283         2000            8.79866e-10            reflection
-Exceeded maximum number of function evaluations.
+  1284         2001            8.79866e-10            reflection
+  1285         2002            8.79866e-10            reflection
+  1286         2004            8.79761e-10            extrapolation
+  1287         2006            8.78203e-10            extrapolation
+  1288         2007            8.78203e-10            reflection
+  1289         2009            8.77558e-10            reflection
+  1290         2011            8.71983e-10            extrapolation
+  1291         2012            8.71983e-10            reflection
+  1292         2013            8.71983e-10            reflection
+  1293         2014            8.71983e-10            reflection
+  1294         2015            8.71983e-10            reflection
+  1295         2016            8.71983e-10            reflection
+  1296         2017            8.71983e-10            reflection
+  1297         2019            8.70689e-10            extrapolation
+  1298         2021             8.6672e-10            extrapolation
+  1299         2023            8.59552e-10            extrapolation
+  1300         2024            8.59552e-10            reflection
+  1301         2025            8.59552e-10            reflection
+  1301         2025            8.59552e-10            initial simplex
+  1302         2027            8.59552e-10            one dimensional contraction
+  1303         2029            8.59552e-10            one dimensional contraction
+  1304         2031            8.59552e-10            one dimensional contraction
+  1305         2033            8.59552e-10            one dimensional contraction
+  1306         2034            8.59552e-10            reflection
+  1307         2036            8.59552e-10            one dimensional contraction
+  1308         2037            8.59552e-10            reflection
+  1309         2039            8.59552e-10            one dimensional contraction
+  1310         2040            8.59552e-10            reflection
+  1311         2041            8.59552e-10            reflection
+  1312         2042            8.59552e-10            reflection
+  1313         2044            8.59552e-10            one dimensional contraction
+  1314         2045            8.59552e-10            reflection
+  1315         2047            8.59552e-10            one dimensional contraction
+  1316         2048            8.59552e-10            reflection
+  1317         2057            8.59552e-10            contraction around best point
+  1318         2059            8.59552e-10            one dimensional contraction
+  1319         2060            8.59552e-10            reflection
+  1320         2062            8.59552e-10            one dimensional contraction
+  1321         2071            8.59552e-10            contraction around best point
+  1322         2073            8.59552e-10            one dimensional contraction
+  1323         2074            8.59552e-10            reflection
+  1324         2075            8.59552e-10            reflection
+  1325         2076            8.59552e-10            reflection
+  1326         2077            8.59552e-10            reflection
+  1327         2079            8.59552e-10            one dimensional contraction
+  1328         2081            8.59552e-10            one dimensional contraction
+  1329         2090            8.59552e-10            contraction around best point
+  1330         2092            8.59552e-10            one dimensional contraction
+  1331         2093            8.59552e-10            reflection
+  1332         2094            8.59552e-10            reflection
+  1333         2095            8.59552e-10            reflection
+  1334         2097            8.59552e-10            one dimensional contraction
+  1335         2098            8.59552e-10            reflection
+  1336         2099            8.59552e-10            reflection
+  1337         2100            8.59552e-10            reflection
+  1338         2102            8.59552e-10            one dimensional contraction
+  1339         2104            8.59552e-10            one dimensional contraction
+  1340         2106            8.59552e-10            one dimensional contraction
+  1341         2107            8.59552e-10            reflection
+  1342         2108            8.59552e-10            reflection
+  1343         2109            8.59552e-10            reflection
+  1344         2111            8.59552e-10            one dimensional contraction
+  1345         2120            8.59552e-10            contraction around best point
+  1346         2122            8.59552e-10            one dimensional contraction
+  1347         2123            8.59552e-10            reflection
+  1348         2125            8.59552e-10            one dimensional contraction
+  1349         2127            8.59552e-10            one dimensional contraction
+  1350         2128            8.59552e-10            reflection
+  1351         2130            8.59552e-10            one dimensional contraction
+  1352         2132            8.59552e-10            one dimensional contraction
+  1353         2133            8.59552e-10            reflection
+  1354         2134            8.59552e-10            reflection
+  1355         2136            8.59552e-10            one dimensional contraction
+  1356         2138            8.59552e-10            one dimensional contraction
+  1357         2140            8.59552e-10            one dimensional contraction
+  1358         2142            8.59552e-10            one dimensional contraction
+  1359         2143            8.59552e-10            reflection
+  1360         2144            8.59552e-10            reflection
+  1361         2145            8.59552e-10            reflection
+  1362         2146            8.59552e-10            reflection
+  1363         2147            8.59552e-10            reflection
+  1364         2148            8.59552e-10            reflection
+  1365         2150            8.59552e-10            one dimensional contraction
+  1366         2152            8.59552e-10            one dimensional contraction
+  1367         2153            8.59552e-10            reflection
+  1368         2154            8.59552e-10            reflection
+  1369         2156            8.59552e-10            one dimensional contraction
+  1370         2158            8.59552e-10            one dimensional contraction
+  1371         2160            8.59552e-10            one dimensional contraction
+  1372         2162            8.59552e-10            one dimensional contraction
+  1373         2163            8.59552e-10            reflection
+  1374         2172            8.59552e-10            contraction around best point
+  1375         2174            8.59552e-10            one dimensional contraction
+  1376         2175            8.59552e-10            reflection
+  1377         2177            8.59552e-10            one dimensional contraction
+  1378         2178            8.59552e-10            reflection
+  1379         2179            8.59552e-10            reflection
+  1380         2181            8.59552e-10            one dimensional contraction
+  1381         2182            8.59552e-10            reflection
+  1382         2183            8.59552e-10            reflection
+  1383         2184            8.59552e-10            reflection
+  1384         2186            8.57173e-10            reflection
+  1385         2188            8.53024e-10            reflection
+  1386         2189            8.53024e-10            reflection
+  1387         2191            8.53024e-10            one dimensional contraction
+  1388         2192            8.53024e-10            reflection
+  1389         2194            8.53024e-10            one dimensional contraction
+  1390         2196            8.53024e-10            one dimensional contraction
+  1391         2198             8.5243e-10            reflection
+  1392         2200            8.47809e-10            reflection
+  1393         2202            8.46878e-10            reflection
+  1394         2204            8.44177e-10            one dimensional contraction
+  1395         2205            8.44177e-10            reflection
+  1396         2206            8.44177e-10            reflection
+  1397         2215            8.40886e-10            contraction around best point
+  1398         2217            8.40886e-10            one dimensional contraction
+  1399         2219            8.33869e-10            extrapolation
+  1400         2221            8.26913e-10            extrapolation
+  1401         2222            8.26913e-10            reflection
+  1402         2223            8.26913e-10            reflection
+  1403         2224            8.26913e-10            reflection
+  1404         2226            8.26913e-10            one dimensional contraction
+  1405         2227            8.26913e-10            reflection
+  1406         2229            8.26913e-10            one dimensional contraction
+  1407         2231            8.26297e-10            extrapolation
+  1408         2232            8.26297e-10            reflection
+  1409         2233            8.26297e-10            reflection
+  1410         2235            8.26297e-10            one dimensional contraction
+  1411         2237            8.19622e-10            extrapolation
+  1412         2238            8.19622e-10            reflection
+  1413         2239            8.19622e-10            reflection
+  1414         2241            8.17821e-10            reflection
+  1415         2242            8.17821e-10            reflection
+  1416         2244            8.08333e-10            extrapolation
+  1417         2245            8.08333e-10            reflection
+  1418         2247            8.08333e-10            one dimensional contraction
+  1419         2248            8.08333e-10            reflection
+  1420         2250            8.02543e-10            extrapolation
+  1421         2251            8.02543e-10            reflection
+  1422         2252            8.02543e-10            reflection
+  1423         2253            8.02543e-10            reflection
+  1424         2255            7.90759e-10            extrapolation
+  1425         2256            7.90759e-10            reflection
+  1426         2257            7.90759e-10            reflection
+  1427         2258            7.90759e-10            reflection
+  1428         2259            7.90759e-10            reflection
+  1429         2260            7.90759e-10            reflection
+  1430         2261            7.90759e-10            reflection
+  1431         2263            7.88328e-10            extrapolation
+  1432         2264            7.88328e-10            reflection
+  1433         2266            7.81735e-10            extrapolation
+  1434         2268            7.74148e-10            extrapolation
+  1435         2269            7.74148e-10            reflection
+  1436         2271            7.66938e-10            extrapolation
+  1437         2273            7.50356e-10            extrapolation
+  1438         2274            7.50356e-10            reflection
+  1439         2275            7.50356e-10            reflection
+  1440         2276            7.50356e-10            reflection
+  1441         2278            7.47691e-10            reflection
+  1442         2279            7.47691e-10            reflection
+  1443         2280            7.47691e-10            reflection
+  1444         2281            7.47691e-10            reflection
+  1445         2283            7.43583e-10            reflection
+  1446         2285            7.43583e-10            one dimensional contraction
+  1447         2287            7.29632e-10            extrapolation
+  1448         2288            7.29632e-10            reflection
+  1449         2289            7.29632e-10            reflection
+  1450         2290            7.29632e-10            reflection
+  1451         2291            7.29632e-10            reflection
+  1452         2292            7.29632e-10            reflection
+  1453         2293            7.29632e-10            reflection
+  1454         2294            7.29632e-10            reflection
+  1455         2296             7.2891e-10            reflection
+  1456         2297             7.2891e-10            reflection
+  1457         2299            7.07044e-10            extrapolation
+  1458         2301            7.07044e-10            one dimensional contraction
+  1459         2303            7.07044e-10            one dimensional contraction
+  1460         2304            7.07044e-10            reflection
+  1461         2305            7.07044e-10            reflection
+  1462         2306            7.07044e-10            reflection
+  1463         2308            7.07044e-10            one dimensional contraction
+  1464         2309            7.07044e-10            reflection
+  1465         2310            7.07044e-10            reflection
+  1466         2311            7.07044e-10            reflection
+  1467         2313            6.85784e-10            extrapolation
+  1468         2314            6.85784e-10            reflection
+  1469         2315            6.85784e-10            reflection
+  1470         2316            6.85784e-10            reflection
+  1471         2317            6.85784e-10            reflection
+  1472         2318            6.85784e-10            reflection
+  1473         2319            6.85784e-10            reflection
+  1474         2320            6.85784e-10            reflection
+  1475         2322            6.73695e-10            extrapolation
+  1476         2323            6.73695e-10            reflection
+  1477         2324            6.73695e-10            reflection
+  1478         2325            6.73695e-10            reflection
+  1479         2327            6.55037e-10            extrapolation
+  1480         2328            6.55037e-10            reflection
+  1481         2329            6.55037e-10            reflection
+  1482         2331            6.55037e-10            one dimensional contraction
+  1483         2332            6.55037e-10            reflection
+  1484         2334            6.24358e-10            extrapolation
+  1485         2335            6.24358e-10            reflection
+  1486         2336            6.24358e-10            reflection
+  1487         2337            6.24358e-10            reflection
+  1488         2338            6.24358e-10            reflection
+  1489         2340            6.10425e-10            extrapolation
+  1490         2341            6.10425e-10            reflection
+  1491         2342            6.10425e-10            reflection
+  1492         2343            6.10425e-10            reflection
+  1493         2345            5.97652e-10            extrapolation
+  1494         2347            5.53919e-10            extrapolation
+  1495         2348            5.53919e-10            reflection
+  1496         2349            5.53919e-10            reflection
+  1497         2350            5.53919e-10            reflection
+  1498         2351            5.53919e-10            reflection
+  1499         2352            5.53919e-10            reflection
+  1500         2353            5.53919e-10            reflection
+  1501         2355            5.38154e-10            extrapolation
+  1502         2357             4.9024e-10            extrapolation
+  1503         2358             4.9024e-10            reflection
+  1504         2359             4.9024e-10            reflection
+  1505         2360             4.9024e-10            reflection
+  1506         2361             4.9024e-10            reflection
+  1507         2363            4.73108e-10            reflection
+  1508         2364            4.73108e-10            reflection
+  1509         2366            4.69777e-10            reflection
+  1510         2368            4.50342e-10            reflection
+  1511         2370            4.14925e-10            extrapolation
+  1512         2371            4.14925e-10            reflection
+  1513         2372            4.14925e-10            reflection
+  1514         2373            4.14925e-10            reflection
+  1515         2375            4.14436e-10            reflection
+  1516         2377            3.95161e-10            extrapolation
+  1517         2378            3.95161e-10            reflection
+  1518         2379            3.95161e-10            reflection
+  1519         2381            3.93801e-10            reflection
+  1520         2383            3.86169e-10            reflection
+  1521         2384            3.86169e-10            reflection
+  1522         2386            3.84808e-10            reflection
+  1523         2387            3.84808e-10            reflection
+  1524         2388            3.84808e-10            reflection
+  1525         2390            3.67496e-10            reflection
+  1526         2391            3.67496e-10            reflection
+  1527         2393            3.64015e-10            reflection
+  1528         2395            3.64015e-10            one dimensional contraction
+  1529         2396            3.64015e-10            reflection
+  1530         2398            3.64015e-10            one dimensional contraction
+  1531         2399            3.64015e-10            reflection
+  1532         2400            3.64015e-10            reflection
+  1533         2402            3.64015e-10            one dimensional contraction
+  1534         2404            3.64015e-10            one dimensional contraction
+  1535         2406            3.64015e-10            one dimensional contraction
+  1536         2408             3.6344e-10            reflection
+  1537         2410            3.57465e-10            reflection
+  1538         2411            3.57465e-10            reflection
+  1539         2412            3.57465e-10            reflection
+  1540         2413            3.57465e-10            reflection
+  1541         2414            3.57465e-10            reflection
+  1542         2415            3.57465e-10            reflection
+  1543         2416            3.57465e-10            reflection
+  1544         2418            3.57465e-10            one dimensional contraction
+  1545         2419            3.57465e-10            reflection
+  1546         2420            3.57465e-10            reflection
+  1547         2422            3.57465e-10            one dimensional contraction
+  1548         2424            3.57465e-10            one dimensional contraction
+  1549         2426            3.57465e-10            one dimensional contraction
+  1550         2428            3.57465e-10            one dimensional contraction
+  1551         2430            3.57465e-10            one dimensional contraction
+  1552         2432            3.57465e-10            one dimensional contraction
+  1553         2433            3.57465e-10            reflection
+  1554         2435            3.57465e-10            one dimensional contraction
+  1555         2437            3.57465e-10            one dimensional contraction
+  1556         2438            3.57465e-10            reflection
+  1557         2440            3.57465e-10            one dimensional contraction
+  1558         2442            3.57465e-10            one dimensional contraction
+  1559         2444            3.57238e-10            reflection
+  1560         2445            3.57238e-10            reflection
+  1561         2447            3.55435e-10            reflection
+  1562         2449            3.55435e-10            one dimensional contraction
+  1563         2451            3.55435e-10            one dimensional contraction
+  1564         2452            3.55435e-10            reflection
+  1565         2453            3.55435e-10            reflection
+  1566         2455            3.55435e-10            one dimensional contraction
+  1567         2456            3.55435e-10            reflection
+  1568         2458            3.55435e-10            one dimensional contraction
+  1569         2459            3.55435e-10            reflection
+  1570         2461             3.5475e-10            extrapolation
+  1571         2462             3.5475e-10            reflection
+  1572         2463             3.5475e-10            reflection
+  1573         2464             3.5475e-10            reflection
+  1574         2466            3.54196e-10            reflection
+  1575         2468            3.54086e-10            reflection
+  1576         2469            3.54086e-10            reflection
+  1577         2470            3.54086e-10            reflection
+  1578         2471            3.54086e-10            reflection
+  1579         2472            3.54086e-10            reflection
+  1580         2474            3.53349e-10            reflection
+  1581         2475            3.53349e-10            reflection
+  1582         2477            3.53349e-10            one dimensional contraction
+  1583         2478            3.53349e-10            reflection
+  1584         2480            3.52132e-10            extrapolation
+  1585         2481            3.52132e-10            reflection
+  1586         2482            3.52132e-10            reflection
+  1587         2483            3.52132e-10            reflection
+  1588         2484            3.52132e-10            reflection
+  1589         2485            3.52132e-10            reflection
+  1590         2487            3.50589e-10            extrapolation
+  1591         2488            3.50589e-10            reflection
+  1592         2489            3.50589e-10            reflection
+  1593         2490            3.50589e-10            reflection
+  1594         2491            3.50589e-10            reflection
+  1595         2492            3.50589e-10            reflection
+  1596         2493            3.50589e-10            reflection
+  1597         2495            3.50585e-10            reflection
+  1598         2497            3.50337e-10            reflection
+  1599         2498            3.50337e-10            reflection
+  1600         2500            3.49767e-10            reflection
+Exceeded maximum number of iterations.
  
 Estimated parameters
 ====================
-a12 = 0.166167   
-a13 = 0.420148   
-a21 = 0.497859   
-a31 = 0.774127   
-a01 = 0.69964   
+a12 = 0.16766   
+a13 = 0.419359   
+a21 = 0.50169   
+a31 = 0.768229   
+a01 = 0.69259   
 
 Estimated initial conditions
 ============================
-x1=0.250018 (Experiment 1)
-x2=0.500015 (Experiment 1)
-x3=0.577801 (Experiment 1)
+x1=0.250009 (Experiment 1)
+x2=0.499989 (Experiment 1)
+x3=0.571988 (Experiment 1)
 
-Optimal cost: 8.79866e-10
+Optimal cost: 3.49767e-10
 
 output = 
 
   struct with fields:
 
          parameters: {5x1 cell}
-               Popt: [0.1662 0.4201 0.4979 0.7741 0.6996]
+               Popt: [0.1677 0.4194 0.5017 0.7682 0.6926]
     parameterslocal: {}
           PLOCALopt: []
             icnames: {3x1 cell}
-              ICopt: [0.2500 0.5000 0.5778]
-            FVALopt: 8.7987e-10
+              ICopt: [0.2500 0.5000 0.5720]
+            FVALopt: 3.4977e-10
          projectopt: [1x1 IQMprojectSB]
          estimation: [1x1 struct]
 
@@ -2099,4 +2418,4 @@ output =
 
 [?1l>
 
-CPU time: 10.12+122.65 sec	Max. resident set size: 1160672 KB	 Elapsed: 25.89 sec.
+CPU time: 9.62+115.74 sec	Max. resident set size: 1436692 KB	 Elapsed: 49.48 sec.

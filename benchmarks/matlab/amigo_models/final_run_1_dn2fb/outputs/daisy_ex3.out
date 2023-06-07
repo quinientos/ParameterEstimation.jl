@@ -1,0 +1,316 @@
+[?1h=
+                                                                                               < M A T L A B (R) >
+                                                                                     Copyright 1984-2022 The MathWorks, Inc.
+                                                                                    R2022a (9.12.0.1884302) 64-bit (glnxa64)
+                                                                                                February 16, 2022
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+
+
+*********************************** 
+     AMIGO2, Copyright @CSIC      
+     AMIGO2_R2019a [March 2019]      
+*********************************** 
+
+*Date: 01-Jun-2023
+
+------>Checking inputs....
+		Problem folder has not been provided. Default: Problem
+------> WARNING message
+
+		 AMIGO_check_model: You did not specify inputs.model.exe_type, standard will be assumed
+
+[Warning: AMIGO_check_IVPsolver: Changing ivp solver to the only option compatible with charmodelC and sbmlmodel, cvodes] 
+[> In AMIGO_check_IVPsolver (line 24)
+In AMIGO_check_model (line 387)
+In AMIGO_PE (line 83)
+In daisy_ex3 (line 114)
+In run (line 91)] 
+[Warning: AMIGO_check_IVPsolver: Changing sensitivities solver to, cvodes] 
+[> In AMIGO_check_IVPsolver (line 31)
+In AMIGO_check_model (line 387)
+In AMIGO_PE (line 83)
+In daisy_ex3 (line 114)
+In run (line 91)] 
+
+
+------> WARNING message
+
+		 You have not provided the sampling times.
+ 		 Equidistant sampling will be assumed for experiment 1
+		 Note however that you may modify your input file by adding
+		 inputs.exps.t_s{iexp}
+
+ans =
+
+    0.5000    0.5000
+
+[Warning: Directory already exists.] 
+[> In AMIGO_gen_obs (line 38)
+In AMIGO_PE (line 128)
+In daisy_ex3 (line 114)
+In run (line 91)] 
+[Warning: Name is nonexistent or not a directory: /home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/AMIGO2_R2019b/Results/Problem/AMIGO_gen_obs_problem.m] 
+[> In path (line 109)
+In addpath (line 86)
+In AMIGO_gen_obs (line 109)
+In AMIGO_PE (line 128)
+In daisy_ex3 (line 114)
+In run (line 91)] 
+
+ans =
+
+    '/home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/AMIGO2_R2019b/Results/Problem/AMIGO_gen_obs_problem.m'
+
+
+*************************************************************************
+
+
+------>IMPORTANT!!: Most of the optimization solvers have their own
+                    tunning parameters (options).
+                    Defaults have been assigned in the *NLPsolver*_options
+                    files. You may need to modify those settings for your
+                    particular problem, specially:
+                      - maximum number of function evaluations /iterations,
+                      - maximum computational time
+
+
+******************************************************************
+
+  Solving the NLP problem with
+		>Summary of selected eSS options: 
+ess_options.
+	dim_refset:	'auto'
+	inter_save:	0
+	iterprint:	1
+	local:	(1x1 struct)
+	log_var:	(1x9 double)
+	maxeval:	100000
+	maxtime:	600
+	ndiverse:	'auto'
+
+		  default options are used. 
+
+
+		>Bounds on the unknowns:
+
+		v_guess(1)=0.500000;  v_min(1)=0.000000;  v_max(1)=1.000000;
+		v_guess(2)=0.500000;  v_min(2)=0.000000;  v_max(2)=1.000000;
+		v_guess(3)=0.500000;  v_min(3)=0.000000;  v_max(3)=1.000000;
+		v_guess(4)=0.500000;  v_min(4)=0.000000;  v_max(4)=1.000000;
+		v_guess(5)=0.500000;  v_min(5)=0.000000;  v_max(5)=1.000000;
+		v_guess(6)=0.500000;  v_min(6)=0.000000;  v_max(6)=1.000000;
+		v_guess(7)=0.500000;  v_min(7)=0.000000;  v_max(7)=1.000000;
+		v_guess(8)=0.500000;  v_min(8)=0.000000;  v_max(8)=1.000000;
+		v_guess(9)=0.500000;  v_min(9)=0.000000;  v_max(9)=1.000000;
+
+
+------------------------------------------------------------------------------ 
+ eSS R2010B - Enhanced Scatter Search    
+<c> IIM-CSIC, Vigo, Spain -  email: gingproc@iim.csic.es 
+------------------------------------------------------------------------------ 
+
+Refset size automatically calculated: 10
+Number of diverse solutions automatically calculated: 90
+
+
+-----------------------------------------------
+ Initial value problem related active settings
+-----------------------------------------------
+ivpsolver: cvodes
+RelTol: 1e-12
+AbsTol: 1e-12
+MaxStepSize: Inf
+MaxNumberOfSteps: 1e+06
+
+[CVODES ERROR]  CVode
+  At t = 0 and h = 1.53031e-10, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES ERROR]  CVode
+  At t = 0 and h = 1.15893e-14, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES ERROR]  CVode
+  At t = 0.389953 and h = 2.13633e-07, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES ERROR]  CVode
+  At t = 0.908544 and h = 2.37369e-07, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+Initial Pop: NFunEvals: 98  Bestf: 28.1828      CPUTime: 1.980000    Var: 230.053 
+
+[CVODES ERROR]  CVode
+  At t = 0.208476 and h = 2.00481e-08, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+Iteration: 1 NFunEvals: 222  Bestf: 10.0923      CPUTime: 3.170000    Var: 126.655 
+Call local solver: DN2FB 
+Initial point function value: 10.092343 
+Local solution function value: 4.3957 
+Number of function evaluations in the local search: 109 
+CPU Time of the local search: 11.295428  seconds 
+
+
+[CVODES ERROR]  CVode
+  At t = 0 and h = 4.81907e-11, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES ERROR]  CVode
+  At t = 0.447386 and h = 3.76852e-08, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES ERROR]  CVode
+  At t = 0 and h = 9.55349e-12, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES ERROR]  CVode
+  At t = 0 and h = 2.61683e-18, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+Iteration: 2 NFunEvals: 446  Bestf: 4.14526      CPUTime: 26.800000    Var: 35.5346 
+
+[CVODES ERROR]  CVode
+  At t = 0 and h = 2.65652e-12, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+Iteration: 3 NFunEvals: 559  Bestf: 2.92907      CPUTime: 34.020000    Var: 2.74824 
+Iteration: 4 NFunEvals: 658  Bestf: 0.991188      CPUTime: 57.370000    Var: 1.14954 
+
+[CVODES ERROR]  CVode
+  At t = 0.046471, mxstep steps taken before reaching tout.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -1
+
+Iteration: 5 NFunEvals: 748  Bestf: 0.991188      CPUTime: 61.920000    Var: 1.14954 
+Iteration: 6 NFunEvals: 840  Bestf: 0.991188      CPUTime: 71.760000    Var: 0.769544 
+Iteration: 7 NFunEvals: 931  Bestf: 0.991188      CPUTime: 76.840000    Var: 0.705982 
+
+[CVODES ERROR]  CVode
+  At t = 0.51407 and h = 1.85111e-08, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+Iteration: 8 NFunEvals: 1022  Bestf: 0.991188      CPUTime: 83.710000    Var: 0.455745 
+
+[CVODES ERROR]  CVode
+  At t = 0.535114 and h = 3.82896e-08, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+Iteration: 9 NFunEvals: 1113  Bestf: 0.991188      CPUTime: 98.040000    Var: 0.404916 
+
+[CVODES ERROR]  CVode
+  At t = 0.192428 and h = 3.99894e-08, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+
+[CVODES ERROR]  CVode
+  At t = 0.488984 and h = 3.99425e-08, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+Iteration: 10 NFunEvals: 1205  Bestf: 0.991188      CPUTime: 125.870000    Var: 0.339562 
+
+[CVODES ERROR]  CVode
+  At t = 0.162712 and h = 2.56199e-08, the corrector convergence test failed repeatedly or with |h| = hmin.
+
+
+SUNDIALS_ERROR: CVode() failed with flag = -4
+
+Iteration: 11 NFunEvals: 1295  Bestf: 0.991188      CPUTime: 131.660000    Var: 0.339562 
+Call local solver: DN2FB 
+Initial point function value: 3.748816 
+Local solution function value: 4.39556 
+Number of function evaluations in the local search: 141 
+CPU Time of the local search: 15.513204  seconds 
+
+[?1l>{Operation terminated by user during AMIGO_ivpsol
+
+
+In AMIGO_PEcost (line 154)
+                AMIGO_ivpsol(inputs,...
+
+In ssm_evalfc (line 44)
+    value=feval(fobj,x,varargin{:});
+
+In ess_kernel (line 835)
+        [val,val_penalty,pena,nlc,include,x] = ssm_evalfc(new_comb(i,:),x_L,x_U,fobj,nconst,c_L,c_U,...
+
+In AMIGO_call_OPTsolver (line 233)
+                [res_ssm]=ess_kernel(problem,inputs.nlpsol.eSS,inputs,results,privstruct);
+
+In AMIGO_PE (line 181)
+[results,privstruct]=AMIGO_call_OPTsolver(...
+
+In daisy_ex3 (line 114)
+AMIGO_PE(inputs);
+
+In run (line 91)
+evalin('caller', strcat(script, ';'));
+} 
+{Operation terminated by user during AMIGO_ivpsol
+
+
+In AMIGO_PEcost (line 154)
+                AMIGO_ivpsol(inputs,...
+
+In ssm_evalfc (line 44)
+    value=feval(fobj,x,varargin{:});
+
+In ess_kernel (line 835)
+        [val,val_penalty,pena,nlc,include,x] = ssm_evalfc(new_comb(i,:),x_L,x_U,fobj,nconst,c_L,c_U,...
+
+In AMIGO_call_OPTsolver (line 233)
+                [res_ssm]=ess_kernel(problem,inputs.nlpsol.eSS,inputs,results,privstruct);
+
+In AMIGO_PE (line 181)
+[results,privstruct]=AMIGO_call_OPTsolver(...
+
+In daisy_ex3 (line 114)
+AMIGO_PE(inputs);
+
+In run (line 91)
+evalin('caller', strcat(script, ';'));
+} 
+
+Command terminated by signal 15
+
+
+CPU time: 13451.45+432.20 sec	Max. resident set size: 941028 KB	 Elapsed: 8045.24 sec.

@@ -63,7 +63,7 @@ adtype = Optimization.AutoForwardDiff()
 optf = Optimization.OptimizationFunction((x, p) -> loss(x), adtype)
 optprob = Optimization.OptimizationProblem(optf, p_rand)
 
-@time result_ode = Optimization.solve(optprob, PolyOpt(), callback = callback, maxiters = 1000)
+@time result_ode = Optimization.solve(optprob, PolyOpt(), callback = callback, maxiters = 100000)
 
 println(result_ode.u)
 

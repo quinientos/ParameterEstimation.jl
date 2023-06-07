@@ -1,0 +1,3 @@
+ 31.004283 seconds (58.35 M allocations: 3.500 GiB, 8.63% gc time, 99.41% compilation time: <1% of which was recompilation)
+[0.33299999999992796, 0.6670000000000321, 0.33300000000009994, 0.6670000000002866]
+Max. relative abs. error between true and estimated parameters:4.296080399636475e-13

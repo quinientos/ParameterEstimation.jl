@@ -11,36 +11,24 @@
 
 	/* *** Definition of the states *** */
 
-#define	n Ith(y,0)
-#define	e Ith(y,1)
-#define	s Ith(y,2)
-#define	m Ith(y,3)
-#define	p Ith(y,4)
+#define	x1 Ith(y,0)
+#define	x2 Ith(y,1)
+#define	x3 Ith(y,2)
 #define iexp amigo_model->exp_num
 
 	/* *** Definition of the sates derivative *** */
 
-#define	dn Ith(ydot,0)
-#define	de Ith(ydot,1)
-#define	ds Ith(ydot,2)
-#define	dm Ith(ydot,3)
-#define	dp Ith(ydot,4)
+#define	dx1 Ith(ydot,0)
+#define	dx2 Ith(ydot,1)
+#define	dx3 Ith(ydot,2)
 
 	/* *** Definition of the parameters *** */
 
-#define	muN     (*amigo_model).pars[0]
-#define	muEE    (*amigo_model).pars[1]
-#define	muLE    (*amigo_model).pars[2]
-#define	muLL    (*amigo_model).pars[3]
-#define	muM     (*amigo_model).pars[4]
-#define	muP     (*amigo_model).pars[5]
-#define	muPE    (*amigo_model).pars[6]
-#define	muPL    (*amigo_model).pars[7]
-#define	deltaNE (*amigo_model).pars[8]
-#define	deltaEL (*amigo_model).pars[9]
-#define	deltaLM (*amigo_model).pars[10]
-#define	rhoE    (*amigo_model).pars[11]
-#define	rhoP    (*amigo_model).pars[12]
+#define	a12 (*amigo_model).pars[0]
+#define	a13 (*amigo_model).pars[1]
+#define	a21 (*amigo_model).pars[2]
+#define	a31 (*amigo_model).pars[3]
+#define	a01 (*amigo_model).pars[4]
 
 	/* *** Definition of the algebraic variables *** */
 
@@ -52,11 +40,9 @@ int amigoRHS(realtype t, N_Vector y, N_Vector ydot, void *data){
 
 	/* *** Equations *** */
 
-	dn=-1*n*muN-n*p*deltaNE;
-	de=n*p*deltaNE-e*e*muEE-e*deltaEL+e*p*rhoE;
-	ds=s*deltaEL-s*deltaLM-s*s*muLL-e*s*muLE;
-	dm=s*deltaLM-muM*m;
-	dp=p*p*rhoP-p*muP-e*p*muPE-s*p*muPL;
+	dx1=-(a21+a31+a01)*x1+a12*x2+a13*x3;
+	dx2=a21*x1-a12*x2;
+	dx3=a31*x1-a13*x3;
 
 	return(0);
 

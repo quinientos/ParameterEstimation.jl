@@ -63,7 +63,7 @@ estimation.experiments.weight = [1];%, 1, 1, 1];
 
 % Optimization settings
 estimation.optimization.method = 'simplexIQM';
-estimation.optimization.options.maxfunevals = 2000;
+estimation.optimization.options.maxfunevals = 100000;
 
 % Integrator settings
 estimation.integrator.options.abstol = 1e-12;

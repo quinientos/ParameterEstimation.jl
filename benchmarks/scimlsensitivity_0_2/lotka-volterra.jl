@@ -58,7 +58,7 @@ optprob = Optimization.OptimizationProblem(optf, p_rand)
 
 @time result_ode = Optimization.solve(optprob, PolyOpt(),
                                 callback = callback,
-                                maxiters = 1000)
+                                maxiters = 100000)
 
 println(result_ode.u)
 

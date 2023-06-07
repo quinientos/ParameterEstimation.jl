@@ -1,0 +1,546 @@
+[?1h=
+                                                   < M A T L A B (R) >
+                                         Copyright 1984-2022 The MathWorks, Inc.
+                                        R2022a (9.12.0.1884302) 64-bit (glnxa64)
+                                                    February 16, 2022
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+
+
+*********************************** 
+     AMIGO2, Copyright @CSIC      
+     AMIGO2_R2019a [March 2019]      
+*********************************** 
+
+*Date: 01-Jun-2023
+
+------>Pre processing....this may take a few seconds.
+
+
+------>Checking inputs....
+		Problem folder has not been provided. Default: Problem
+------> WARNING message
+
+		 AMIGO_check_model: You did not specify inputs.model.exe_type, standard will be assumed
+
+[Warning: AMIGO_check_IVPsolver: Changing ivp solver to the only option compatible with charmodelC and sbmlmodel, cvodes] 
+[> In AMIGO_check_IVPsolver (line 24)
+In AMIGO_check_model (line 387)
+In AMIGO_Prep (line 55)
+In crauste (line 131)
+In run (line 91)] 
+[Warning: AMIGO_check_IVPsolver: Changing sensitivities solver to, cvodes] 
+[> In AMIGO_check_IVPsolver (line 31)
+In AMIGO_check_model (line 387)
+In AMIGO_Prep (line 55)
+In crauste (line 131)
+In run (line 91)] 
+------> Generating C code ...
+
+
+------> Mexing files....
+
+
+[?1h=[?1h=
+
+[?1h=Building with 'gcc'.
+[?1h=
+
+[?1h=
+[?1h=
+[?1h=
+[?1h=/home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/AMIGO2_R2019b/Kernel/IVP_solvers/cvodes/C_src4Amigo/src/src_amigo/simulate_amigo_model.c: In function ‘simulate_amigo_model’:
+/home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/AMIGO2_R2019b/Kernel/IVP_solvers/cvodes/C_src4Amigo/src/src_amigo/simulate_amigo_model.c:278:11: warning: passing argument 1 of ‘mexPrintf’ from incompatible pointer type [-Wincompatible-pointer-types]
+  278 | mexPrintf(stderr,"\nSolver failed at flag = CVode(cvode_mem, tout, y, &t, CV_TSTOP_RETURN);. . .\n");
+      |           ^~~~~~
+      |           |
+      |           FILE * {aka struct _IO_FILE *}
+In file included from /home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/AMIGO2_R2019b/Kernel/IVP_solvers/cvodes/C_src4Amigo/include/include_amigo/simulate_amigo_model.h:4,
+                 from /home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/AMIGO2_R2019b/Kernel/IVP_solvers/cvodes/C_src4Amigo/src/src_amigo/simulate_amigo_model.c:1:
+/local/MATLAB/R2022a/extern/include/mex.h:192:17: note: expected ‘const char *’ but argument is of type ‘FILE *’ {aka ‘struct _IO_FILE *’}
+  192 |     const char *fmt, /* printf style format */
+      |     ~~~~~~~~~~~~^~~
+
+
+[?1h=/home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/AMIGO2_R2019b/Kernel/IVP_solvers/cvodes/C_src4Amigo/src/src_interface/interface_with_matlab.c: In function ‘mexFunction’:
+/home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/AMIGO2_R2019b/Kernel/IVP_solvers/cvodes/C_src4Amigo/src/src_interface/interface_with_matlab.c:181:14: warning: assignment to ‘mxArray *’ {aka ‘struct mxArray_tag *’} from incompatible pointer type ‘double *’ [-Wincompatible-pointer-types]
+  181 | stats_struct = mxGetPr(plhs[5]);
+      |              ^
+
+
+[?1h=
+[?1h=
+[?1h=/home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/AMIGO2_R2019b/Kernel/IVP_solvers/cvodes/C_src4Amigo/src/src_cvodes/cvodes.c: In function ‘cvProcessError’:
+/home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/AMIGO2_R2019b/Kernel/IVP_solvers/cvodes/C_src4Amigo/src/src_cvodes/cvodes.c:8961:21: warning: format not a string literal and no format arguments [-Wformat-security]
+ 8961 |     fprintf(stderr, msg);
+      |                     ^~~
+
+
+[?1h=
+[?1h=
+[?1h=
+[?1h=
+[?1h=
+[?1h=
+[?1h=
+[?1h=
+[?1h=
+[?1h=
+[?1h=
+[?1h=
+[?1h=
+[?1h=
+[?1h=
+[?1h=
+[?1h=
+[?1h=
+[?1h=
+[?1h=
+[?1h=
+[?1h=
+[?1h=
+[?1h=
+[?1h=MEX completed successfully.
+
+
+------>Files generated....
+
+
+*********************************** 
+     AMIGO2, Copyright @CSIC      
+     AMIGO2_R2019a [March 2019]      
+*********************************** 
+
+*Date: 01-Jun-2023
+
+------>Checking inputs....
+		Problem folder has not been provided. Default: Problem
+------> WARNING message
+
+		 AMIGO_check_model: You did not specify inputs.model.exe_type, standard will be assumed
+
+[Warning: AMIGO_check_IVPsolver: Changing ivp solver to the only option compatible with charmodelC and sbmlmodel, cvodes] 
+[> In AMIGO_check_IVPsolver (line 24)
+In AMIGO_check_model (line 387)
+In AMIGO_PE (line 83)
+In crauste (line 132)
+In run (line 91)] 
+[Warning: AMIGO_check_IVPsolver: Changing sensitivities solver to, cvodes] 
+[> In AMIGO_check_IVPsolver (line 31)
+In AMIGO_check_model (line 387)
+In AMIGO_PE (line 83)
+In crauste (line 132)
+In run (line 91)] 
+
+
+------> WARNING message
+
+		 You have not provided the sampling times.
+ 		 Equidistant sampling will be assumed for experiment 1
+		 Note however that you may modify your input file by adding
+		 inputs.exps.t_s{iexp}
+
+ans =
+
+  Columns 1 through 12
+
+    0.5000    0.5000    0.5000    0.5000    0.5000    0.5000    0.5000    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Column 13
+
+    0.5000
+
+[Warning: Directory already exists.] 
+[> In AMIGO_gen_obs (line 38)
+In AMIGO_PE (line 128)
+In crauste (line 132)
+In run (line 91)] 
+[Warning: Name is nonexistent or not a directory:
+/home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/AMIGO2_R2019b/Results/Problem/AMIGO_gen_obs_problem.m] 
+[> In path (line 109)
+In addpath (line 86)
+In AMIGO_gen_obs (line 109)
+In AMIGO_PE (line 128)
+In crauste (line 132)
+In run (line 91)] 
+
+ans =
+
+    '/home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/AMIGO2_R2019b/Results/Problem/AMIGO_gen_obs_problem.m'
+
+
+*************************************************************************
+
+
+------>IMPORTANT!!: Most of the optimization solvers have their own
+                    tunning parameters (options).
+                    Defaults have been assigned in the *NLPsolver*_options
+                    files. You may need to modify those settings for your
+                    particular problem, specially:
+                      - maximum number of function evaluations /iterations,
+                      - maximum computational time
+
+
+******************************************************************
+
+  Solving the NLP problem with
+		>Summary of selected eSS options: 
+ess_options.
+	dim_refset:	'auto'
+	inter_save:	0
+	iterprint:	1
+	local:	(1x1 struct)
+	log_var:	(1x18 double)
+	maxeval:	100000
+	maxtime:	600
+	ndiverse:	'auto'
+
+		  default options are used. 
+
+
+		>Bounds on the unknowns:
+
+		v_guess(1)=0.500000;  v_min(1)=0.000000;  v_max(1)=1.000000;
+		v_guess(2)=0.500000;  v_min(2)=0.000000;  v_max(2)=1.000000;
+		v_guess(3)=0.500000;  v_min(3)=0.000000;  v_max(3)=1.000000;
+		v_guess(4)=0.500000;  v_min(4)=0.000000;  v_max(4)=1.000000;
+		v_guess(5)=0.500000;  v_min(5)=0.000000;  v_max(5)=1.000000;
+		v_guess(6)=0.500000;  v_min(6)=0.000000;  v_max(6)=1.000000;
+		v_guess(7)=0.500000;  v_min(7)=0.000000;  v_max(7)=1.000000;
+		v_guess(8)=0.500000;  v_min(8)=0.000000;  v_max(8)=1.000000;
+		v_guess(9)=0.500000;  v_min(9)=0.000000;  v_max(9)=1.000000;
+		v_guess(10)=0.500000;  v_min(10)=0.000000;  v_max(10)=1.000000;
+		v_guess(11)=0.500000;  v_min(11)=0.000000;  v_max(11)=1.000000;
+		v_guess(12)=0.500000;  v_min(12)=0.000000;  v_max(12)=1.000000;
+		v_guess(13)=0.500000;  v_min(13)=0.000000;  v_max(13)=1.000000;
+		v_guess(14)=0.500000;  v_min(14)=0.000000;  v_max(14)=1.000000;
+		v_guess(15)=0.500000;  v_min(15)=0.000000;  v_max(15)=1.000000;
+		v_guess(16)=0.500000;  v_min(16)=0.000000;  v_max(16)=1.000000;
+		v_guess(17)=0.500000;  v_min(17)=0.000000;  v_max(17)=1.000000;
+		v_guess(18)=0.500000;  v_min(18)=0.000000;  v_max(18)=1.000000;
+
+
+------------------------------------------------------------------------------ 
+ eSS R2010B - Enhanced Scatter Search    
+<c> IIM-CSIC, Vigo, Spain -  email: gingproc@iim.csic.es 
+------------------------------------------------------------------------------ 
+
+Refset size automatically calculated: 14
+Number of diverse solutions automatically calculated: 180
+
+
+-----------------------------------------------
+ Initial value problem related active settings
+-----------------------------------------------
+ivpsolver: cvodes
+RelTol: 1e-12
+AbsTol: 1e-12
+MaxStepSize: Inf
+MaxNumberOfSteps: 1e+06
+Initial Pop: NFunEvals: 188  Bestf: 6.56187      CPUTime: 1.370000    Var: 187.28 
+Iteration: 1 NFunEvals: 409  Bestf: 2.47207      CPUTime: 1.670000    Var: 17.8173 
+Call local solver: DN2FB 
+Initial point function value: 2.472071 
+Local solution function value: 1.96768e-17 
+Number of function evaluations in the local search: 30477 
+CPU Time of the local search: 23.417678  seconds 
+
+Iteration: 2 NFunEvals: 31092  Bestf: 1.96768e-17      CPUTime: 27.790000    Var: 2.33095 
+Iteration: 3 NFunEvals: 31291  Bestf: 1.96768e-17      CPUTime: 27.970000    Var: 0.124898 
+Iteration: 4 NFunEvals: 31495  Bestf: 1.96768e-17      CPUTime: 28.180000    Var: 0.013928 
+Iteration: 5 NFunEvals: 31693  Bestf: 1.96768e-17      CPUTime: 28.650000    Var: 0.00669888 
+Iteration: 6 NFunEvals: 31892  Bestf: 1.96768e-17      CPUTime: 28.890000    Var: 0.000304741 
+Iteration: 7 NFunEvals: 32088  Bestf: 1.96768e-17      CPUTime: 29.080000    Var: 0.000136561 
+Iteration: 8 NFunEvals: 32283  Bestf: 1.96768e-17      CPUTime: 29.230000    Var: 2.0616e-05 
+Iteration: 9 NFunEvals: 32478  Bestf: 1.96768e-17      CPUTime: 29.400000    Var: 3.64853e-06 
+Iteration: 10 NFunEvals: 32672  Bestf: 1.96768e-17      CPUTime: 29.570000    Var: 3.59587e-06 
+Iteration: 11 NFunEvals: 32867  Bestf: 1.96768e-17      CPUTime: 29.730000    Var: 2.61762e-07 
+Call local solver: DN2FB 
+Initial point function value: 0.001221 
+Local solution function value: 6.64209e-20 
+Number of function evaluations in the local search: 654 
+CPU Time of the local search: 0.526727  seconds 
+
+Iteration: 12 NFunEvals: 33715  Bestf: 6.64209e-20      CPUTime: 30.550000    Var: 8.33223e-08 
+Iteration: 13 NFunEvals: 33908  Bestf: 6.64209e-20      CPUTime: 30.710000    Var: 3.75353e-08 
+Iteration: 14 NFunEvals: 34101  Bestf: 6.64209e-20      CPUTime: 30.870000    Var: 1.65331e-08 
+Iteration: 15 NFunEvals: 34295  Bestf: 6.64209e-20      CPUTime: 31.030000    Var: 8.45691e-09 
+Iteration: 16 NFunEvals: 34483  Bestf: 6.64209e-20      CPUTime: 31.180000    Var: 1.74283e-09 
+Iteration: 17 NFunEvals: 34677  Bestf: 6.64209e-20      CPUTime: 31.330000    Var: 1.30665e-09 
+Iteration: 18 NFunEvals: 34865  Bestf: 6.64209e-20      CPUTime: 31.480000    Var: 1.48358e-09 
+Iteration: 19 NFunEvals: 35057  Bestf: 6.64209e-20      CPUTime: 31.630000    Var: 1.47145e-09 
+Iteration: 20 NFunEvals: 35252  Bestf: 6.64209e-20      CPUTime: 31.910000    Var: 1.51869e-09 
+Iteration: 21 NFunEvals: 35445  Bestf: 6.64209e-20      CPUTime: 32.070000    Var: 1.38584e-09 
+Call local solver: DN2FB 
+Initial point function value: 0.000036 
+Local solution function value: 1.85061e-19 
+Number of function evaluations in the local search: 29902 
+CPU Time of the local search: 23.036923  seconds 
+
+Iteration: 22 NFunEvals: 65538  Bestf: 6.64209e-20      CPUTime: 55.320000    Var: 0.182142 
+Iteration: 23 NFunEvals: 65728  Bestf: 6.64209e-20      CPUTime: 55.470000    Var: 0.00974716 
+Iteration: 24 NFunEvals: 65923  Bestf: 6.64209e-20      CPUTime: 55.610000    Var: 0.000273594 
+Iteration: 25 NFunEvals: 66115  Bestf: 6.64209e-20      CPUTime: 55.760000    Var: 1.51292e-05 
+Iteration: 26 NFunEvals: 66303  Bestf: 6.64209e-20      CPUTime: 55.910000    Var: 6.57615e-08 
+Iteration: 27 NFunEvals: 66490  Bestf: 6.64209e-20      CPUTime: 56.040000    Var: 2.60065e-09 
+Iteration: 28 NFunEvals: 66676  Bestf: 6.64209e-20      CPUTime: 56.170000    Var: 1.23449e-09 
+Iteration: 29 NFunEvals: 66865  Bestf: 6.64209e-20      CPUTime: 56.320000    Var: 9.6715e-10 
+Iteration: 30 NFunEvals: 67052  Bestf: 6.64209e-20      CPUTime: 56.460000    Var: 9.72168e-10 
+Iteration: 31 NFunEvals: 67241  Bestf: 6.64209e-20      CPUTime: 56.590000    Var: 4.48119e-10 
+Call local solver: DN2FB 
+Initial point function value: 0.000022 
+Local solution function value: 1.35452e-19 
+Number of function evaluations in the local search: 17654 
+CPU Time of the local search: 13.112444  seconds 
+
+Iteration: 32 NFunEvals: 85083  Bestf: 6.64209e-20      CPUTime: 69.900000    Var: 0.239341 
+Iteration: 33 NFunEvals: 85270  Bestf: 6.64209e-20      CPUTime: 70.050000    Var: 0.00661083 
+Iteration: 34 NFunEvals: 85458  Bestf: 6.64209e-20      CPUTime: 70.190000    Var: 2.16614e-06 
+Iteration: 35 NFunEvals: 85646  Bestf: 6.64209e-20      CPUTime: 70.330000    Var: 2.16616e-06 
+Iteration: 36 NFunEvals: 85833  Bestf: 6.64209e-20      CPUTime: 70.470000    Var: 3.38016e-07 
+Iteration: 37 NFunEvals: 86021  Bestf: 6.64209e-20      CPUTime: 70.610000    Var: 0.17079 
+Iteration: 38 NFunEvals: 86211  Bestf: 6.64209e-20      CPUTime: 70.760000    Var: 0.000394069 
+Iteration: 39 NFunEvals: 86396  Bestf: 6.64209e-20      CPUTime: 70.890000    Var: 9.26959e-06 
+Iteration: 40 NFunEvals: 86584  Bestf: 6.64209e-20      CPUTime: 71.030000    Var: 2.24616e-08 
+Iteration: 41 NFunEvals: 86771  Bestf: 6.64209e-20      CPUTime: 71.180000    Var: 1.58018e-10 
+Call local solver: DN2FB 
+Initial point function value: 0.000000 
+Local solution function value: 5.22021e-21 
+Number of function evaluations in the local search: 176 
+CPU Time of the local search: 0.139341  seconds 
+
+Iteration: 42 NFunEvals: 87141  Bestf: 5.22021e-21      CPUTime: 71.520000    Var: 0.0261913 
+Iteration: 43 NFunEvals: 87332  Bestf: 5.22021e-21      CPUTime: 71.770000    Var: 0.000187407 
+Iteration: 44 NFunEvals: 87520  Bestf: 5.22021e-21      CPUTime: 71.920000    Var: 3.05325e-06 
+Iteration: 45 NFunEvals: 87707  Bestf: 5.22021e-21      CPUTime: 72.060000    Var: 2.30954e-07 
+Iteration: 46 NFunEvals: 87899  Bestf: 5.22021e-21      CPUTime: 72.200000    Var: 1.04817e-08 
+Iteration: 47 NFunEvals: 88082  Bestf: 5.22021e-21      CPUTime: 72.330000    Var: 5.1991e-11 
+Iteration: 48 NFunEvals: 88270  Bestf: 5.22021e-21      CPUTime: 72.470000    Var: 4.40385e-12 
+Iteration: 49 NFunEvals: 88459  Bestf: 5.22021e-21      CPUTime: 72.600000    Var: 1.22613e-13 
+Iteration: 50 NFunEvals: 88649  Bestf: 5.22021e-21      CPUTime: 72.750000    Var: 0.0310725 
+Iteration: 51 NFunEvals: 88836  Bestf: 5.22021e-21      CPUTime: 72.880000    Var: 0.00107504 
+Call local solver: DN2FB 
+Initial point function value: 0.000000 
+Local solution function value: 1.74217e-19 
+Number of function evaluations in the local search: 7166 
+CPU Time of the local search: 5.252573  seconds 
+
+Iteration: 52 NFunEvals: 96189  Bestf: 5.22021e-21      CPUTime: 78.340000    Var: 0.000243264 
+Iteration: 53 NFunEvals: 96377  Bestf: 5.22021e-21      CPUTime: 78.480000    Var: 1.3327e-05 
+Iteration: 54 NFunEvals: 96567  Bestf: 5.22021e-21      CPUTime: 78.630000    Var: 2.77346 
+Iteration: 55 NFunEvals: 96756  Bestf: 5.22021e-21      CPUTime: 78.780000    Var: 0.00514761 
+Iteration: 56 NFunEvals: 96944  Bestf: 5.22021e-21      CPUTime: 78.930000    Var: 0.000113941 
+Iteration: 57 NFunEvals: 97132  Bestf: 5.22021e-21      CPUTime: 79.070000    Var: 2.13261e-06 
+Iteration: 58 NFunEvals: 97321  Bestf: 5.22021e-21      CPUTime: 79.220000    Var: 0.326058 
+Iteration: 59 NFunEvals: 97513  Bestf: 5.22021e-21      CPUTime: 79.370000    Var: 0.0014709 
+Iteration: 60 NFunEvals: 97703  Bestf: 5.22021e-21      CPUTime: 79.510000    Var: 1.13726e-05 
+Iteration: 61 NFunEvals: 97893  Bestf: 5.22021e-21      CPUTime: 79.660000    Var: 3.80649e-08 
+Call local solver: DN2FB 
+Initial point function value: 0.000001 
+Local solution function value: 5.24406e-21 
+Number of function evaluations in the local search: 156 
+CPU Time of the local search: 0.111880  seconds 
+
+Iteration: 62 NFunEvals: 98239  Bestf: 5.22021e-21      CPUTime: 80.040000    Var: 0.274676 
+Iteration: 63 NFunEvals: 98426  Bestf: 5.22021e-21      CPUTime: 80.180000    Var: 0.00172378 
+Iteration: 64 NFunEvals: 98615  Bestf: 5.22021e-21      CPUTime: 80.320000    Var: 0.0648198 
+Iteration: 65 NFunEvals: 98803  Bestf: 5.22021e-21      CPUTime: 80.450000    Var: 0.000673928 
+Iteration: 66 NFunEvals: 98989  Bestf: 5.22021e-21      CPUTime: 80.590000    Var: 1.12448e-05 
+Iteration: 67 NFunEvals: 99179  Bestf: 5.22021e-21      CPUTime: 80.730000    Var: 0.685549 
+Iteration: 68 NFunEvals: 99374  Bestf: 5.22021e-21      CPUTime: 80.880000    Var: 0.40753 
+Iteration: 69 NFunEvals: 99561  Bestf: 5.22021e-21      CPUTime: 81.010000    Var: 0.00769039 
+Iteration: 70 NFunEvals: 99750  Bestf: 5.22021e-21      CPUTime: 81.160000    Var: 0.000174321 
+Iteration: 71 NFunEvals: 99939  Bestf: 5.22021e-21      CPUTime: 81.290000    Var: 5.42001e-06 
+Call local solver: DN2FB 
+Initial point function value: 0.000000 
+Local solution function value: 9.27512e-20 
+Number of function evaluations in the local search: 305 
+CPU Time of the local search: 0.216752  seconds 
+
+
+Final local refinement with: DN2FB 
+Initial point function value: 0.000000 
+Local solution function value: 0.000000 
+Number of function evaluations in the local search: 22 
+CPU Time of the local search: 0.017645  seconds 
+
+Maximum number of function evaluations achieved
+Best solution value		5.22021e-21
+Decision vector
+	0.071
+	0.143
+	0.213488
+	0.285825
+	0.357262
+	0.428848
+	0.498438
+	0.569552
+	0.643
+	0.714
+	0.786016
+	0.857
+	0.927368
+	0.167
+	0.333
+	0.500064
+	0.666936
+	0.833
+CPU time		81.6
+Number of function evaluations		100268
+Execution of script mklJac as a function is not supported:
+/home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/AMIGO2_R2019b/Kernel/numericalDifferentiation/mklJac.m
+
+
+------> Computing Correlation Matrix for unknowns...
+
+---------------------------------------------------
+Local sensitivity problem related active settings
+---------------------------------------------------
+senssolver: cvodes
+ivp_RelTol: 1e-12
+ivp_AbsTol: 1e-12
+sens_RelTol: ~1e-12
+sensmex: cvodesg_problem
+MaxStepSize: Inf
+MaxNumberOfSteps: 1e+06
+sens_RelTol: ~1e-12
+
+----------------------------------------------------------
+------> WARNING message
+		The Fisher Information Matrix is nearly singular.
+----------------------------------------------------------
+
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  4.067234e-18.] 
+[> In AMIGO_corr_mat (line 81)
+In AMIGO_CramerRao (line 330)
+In AMIGO_PE (line 287)
+In crauste (line 132)
+In run (line 91)
+] 
+
+
+--------------------------------------------------------------------------
+		
+Experiment 1: 
+		inputs.exp_data{1}=[
+		0.167  0.333  1.167  0.833
+		0.161765  0.336739  1.16746  0.828272
+		0.15672  0.340216  1.16762  0.823484
+		0.151857  0.343437  1.16748  0.818637
+		0.147168  0.346407  1.16707  0.813732
+		0.142649  0.349131  1.16638  0.80877
+		0.138292  0.351615  1.16543  0.803752
+		0.13409  0.353863  1.16423  0.798679
+		0.130039  0.35588  1.16279  0.793552
+		0.126132  0.357672  1.16111  0.788372
+		0.122364  0.359242  1.15922  0.78314
+		0.11873  0.360597  1.15711  0.777858
+		0.115224  0.361739  1.1548  0.772527
+		0.111842  0.362675  1.1523  0.767147
+		0.108579  0.363409  1.1496  0.76172
+		0.105431  0.363946  1.14673  0.756248
+		0.102393  0.364289  1.14368  0.750731
+		0.0994617  0.364444  1.14048  0.745171
+		0.0966322  0.364416  1.13711  0.739568
+		0.0939011  0.364208  1.1336  0.733925
+		];
+
+
+
+---------------------------------------------------------------------------------------------
+>>>>    Mean / Maximum value of the residuals in percentage (100*(data-model)/data):
+
+		Experiment 1 : 
+		 Observable 1 -->  mean error: 0.000000 %	 max error: 0.000000 %
+		 Observable 2 -->  mean error: 0.000000 %	 max error: 0.000000 %
+		 Observable 3 -->  mean error: 0.000000 %	 max error: 0.000000 %
+		 Observable 4 -->  mean error: 0.000000 %	 max error: 0.000000 %
+
+--------------------------------------------------------------------------
+
+--------------------------------------------------------------------
+>>>>    Maximum absolute value of the residuals (data-model):
+
+		Experiment 1 : 
+		 Observable 1 -->  max residual: 0.000000 max data: 0.167000
+		 Observable 2 -->  max residual: 0.000000 max data: 0.364444
+		 Observable 3 -->  max residual: 0.000000 max data: 1.167620
+		 Observable 4 -->  max residual: 0.000000 max data: 0.833000
+
+--------------------------------------------------------------------------	   
+
+>>>> Best objective function: 0.000000 
+	   
+
+>>>> Computational cost: 81.600000 s
+> 100.00% of successful simulationn
+> 100.00% of successful sensitivity calculations
+
+
+>>> Best values found and the corresponding asymptotic confidence intervals
+
+
+
+>>> Estimated global parameters: 
+
+	muN     : 7.1000e-02  +-  5.5625e-09 (7.83e-06%); 
+	muEE    : 1.4300e-01  +-  4.1626e-08 (2.91e-05%); 
+	muLE    : 2.1349e-01  +-  1.3448e-04 (   0.063%); 
+	muLL    : 2.8583e-01  +-  4.5970e-05 (  0.0161%); 
+	muM     : 3.5726e-01  +-  6.8774e-05 (  0.0193%); 
+	muP     : 4.2885e-01  +-  3.9819e-05 ( 0.00929%); 
+	muPE    : 4.9844e-01  +-  4.1044e-04 (  0.0823%); 
+	muPL    : 5.6955e-01  +-  3.8146e-04 (   0.067%); 
+	deltaNE : 6.4300e-01  +-  7.0452e-09 ( 1.1e-06%); 
+	deltaEL : 7.1400e-01  +-  2.0321e-08 (2.85e-06%); 
+	deltaLM : 7.8602e-01  +-  4.1788e-06 (0.000532%); 
+	rhoE    : 8.5700e-01  +-  1.2978e-08 (1.51e-06%); 
+	rhoP    : 9.2737e-01  +-  4.2932e-04 (  0.0463%); 
+
+
+>>> Estimated global initial conditions: 
+
+	n : 1.6700e-01  +-  1.0360e-11 ( 6.2e-09%); 
+	e : 3.3300e-01  +-  1.1993e-11 ( 3.6e-09%); 
+	s : 5.0006e-01  +-  1.6778e-05 ( 0.00336%); 
+	m : 6.6694e-01  +-  1.6777e-05 ( 0.00252%); 
+	p : 8.3300e-01  +-  1.4492e-11 (1.74e-09%); 
+
+
+>>> Correlation matrix for the global unknowns:
+
+	 1.000000e+00	 6.058007e-01	 1.277512e-03	 1.208111e-03	 -1.272093e-03	 1.258102e-03	 1.222491e-03	 1.196783e-03	 -9.998554e-01	 -2.343841e-01	 -2.339643e-03	 6.069072e-01	 1.215622e-03	 -6.496729e-01	 2.638256e-02	 -1.123930e-03	 1.123930e-03	 1.757783e-03
+	 6.058007e-01	 1.000000e+00	 -3.666911e-03	 -4.055199e-03	 3.712738e-03	 -4.394013e-03	 -5.267273e-03	 -5.838756e-03	 -6.060308e-01	 -9.115919e-01	 -4.477466e-04	 -2.455717e-01	 -5.503357e-03	 -4.058092e-01	 -4.624705e-01	 4.240806e-03	 -4.240806e-03	 -9.233383e-04
+	 1.277512e-03	 -3.666911e-03	 1.000000e+00	 9.993710e-01	 -9.999742e-01	 9.989486e-01	 9.946369e-01	 9.909054e-01	 -1.330091e-03	 7.016485e-03	 -9.999759e-01	 8.751524e-03	 9.931820e-01	 6.190507e-03	 -9.044542e-03	 -9.999780e-01	 9.999780e-01	 -2.988484e-01
+	 1.208111e-03	 -4.055199e-03	 9.993710e-01	 1.000000e+00	 -9.995998e-01	 9.998974e-01	 9.975827e-01	 9.949147e-01	 -1.260670e-03	 7.466103e-03	 -9.994913e-01	 9.069038e-03	 9.965750e-01	 6.217583e-03	 -8.780667e-03	 -9.991168e-01	 9.991168e-01	 -2.971335e-01
+	 -1.272093e-03	 3.712738e-03	 -9.999742e-01	 -9.995998e-01	 1.000000e+00	 -9.992421e-01	 -9.953341e-01	 -9.918175e-01	 1.324677e-03	 -7.072008e-03	 9.999788e-01	 -8.794372e-03	 -9.939696e-01	 -6.190908e-03	 9.011974e-03	 9.999053e-01	 -9.999053e-01	 2.985316e-01
+	 1.258102e-03	 -4.394013e-03	 9.989486e-01	 9.998974e-01	 -9.992421e-01	 1.000000e+00	 9.983321e-01	 9.960323e-01	 -1.310753e-03	 7.908659e-03	 -9.991030e-01	 9.467856e-03	 9.974818e-01	 6.197866e-03	 -8.579955e-03	 -9.986358e-01	 9.986358e-01	 -3.015932e-01
+	 1.222491e-03	 -5.267273e-03	 9.946369e-01	 9.975827e-01	 -9.953341e-01	 9.983321e-01	 1.000000e+00	 9.995074e-01	 -1.275076e-03	 8.965379e-03	 -9.950185e-01	 1.029673e-02	 9.999122e-01	 6.190989e-03	 -7.967104e-03	 -9.939562e-01	 9.939562e-01	 -3.036741e-01
+	 1.196783e-03	 -5.838756e-03	 9.909054e-01	 9.949147e-01	 -9.918175e-01	 9.960323e-01	 9.995074e-01	 1.000000e+00	 -1.249265e-03	 9.653505e-03	 -9.914071e-01	 1.083214e-02	 9.998355e-01	 6.185559e-03	 -7.569500e-03	 -9.900292e-01	 9.900292e-01	 -3.052285e-01
+	 -9.998554e-01	 -6.060308e-01	 -1.330091e-03	 -1.260670e-03	 1.324677e-03	 -1.310753e-03	 -1.275076e-03	 -1.249265e-03	 1.000000e+00	 2.344857e-01	 2.392687e-03	 -6.070655e-01	 -1.268172e-03	 6.600308e-01	 -2.639403e-02	 1.176433e-03	 -1.176433e-03	 -1.760132e-03
+	 -2.343841e-01	 -9.115919e-01	 7.016485e-03	 7.466103e-03	 -7.072008e-03	 7.908659e-03	 8.965379e-03	 9.653505e-03	 2.344857e-01	 1.000000e+00	 -2.503404e-03	 6.220967e-01	 9.251929e-03	 1.574787e-01	 5.234972e-01	 -7.641833e-03	 7.641833e-03	 1.039992e-03
+	 -2.339643e-03	 -4.477466e-04	 -9.999759e-01	 -9.994913e-01	 9.999788e-01	 -9.991030e-01	 -9.950185e-01	 -9.914071e-01	 2.392687e-03	 -2.503404e-03	 1.000000e+00	 -5.945547e-03	 -9.936141e-01	 -5.475168e-03	 1.138983e-02	 9.999213e-01	 -9.999213e-01	 2.986803e-01
+	 6.069072e-01	 -2.455717e-01	 8.751524e-03	 9.069038e-03	 -8.794372e-03	 9.467856e-03	 1.029673e-02	 1.083214e-02	 -6.070655e-01	 6.220967e-01	 -5.945547e-03	 1.000000e+00	 1.052316e-02	 -4.038898e-01	 3.742084e-01	 -9.133740e-03	 9.133740e-03	 1.106195e-03
+	 1.215622e-03	 -5.503357e-03	 9.931820e-01	 9.965750e-01	 -9.939696e-01	 9.974818e-01	 9.999122e-01	 9.998355e-01	 -1.268172e-03	 9.251929e-03	 -9.936141e-01	 1.052316e-02	 1.000000e+00	 6.187276e-03	 -7.804587e-03	 -9.924191e-01	 9.924190e-01	 -3.044542e-01
+	 -6.496729e-01	 -4.058092e-01	 6.190507e-03	 6.217583e-03	 -6.190908e-03	 6.197866e-03	 6.190989e-03	 6.185559e-03	 6.600308e-01	 1.574787e-01	 -5.475168e-03	 -4.038898e-01	 6.187276e-03	 1.000000e+00	 -1.789316e-02	 -6.296303e-03	 6.296303e-03	 1.797879e-03
+	 2.638256e-02	 -4.624705e-01	 -9.044542e-03	 -8.780667e-03	 9.011974e-03	 -8.579955e-03	 -7.967104e-03	 -7.569500e-03	 -2.639403e-02	 5.234972e-01	 1.138983e-02	 3.742084e-01	 -7.804587e-03	 -1.789316e-02	 1.000000e+00	 8.724418e-03	 -8.724418e-03	 -1.108711e-02
+	 -1.123930e-03	 4.240806e-03	 -9.999780e-01	 -9.991168e-01	 9.999053e-01	 -9.986358e-01	 -9.939562e-01	 -9.900292e-01	 1.176433e-03	 -7.641833e-03	 9.999213e-01	 -9.133740e-03	 -9.924191e-01	 -6.296303e-03	 8.724418e-03	 1.000000e+00	 -1.000000e+00	 2.991214e-01
+	 1.123930e-03	 -4.240806e-03	 9.999780e-01	 9.991168e-01	 -9.999053e-01	 9.986358e-01	 9.939562e-01	 9.900292e-01	 -1.176433e-03	 7.641833e-03	 -9.999213e-01	 9.133740e-03	 9.924190e-01	 6.296303e-03	 -8.724418e-03	 -1.000000e+00	 1.000000e+00	 -2.991214e-01
+	 1.757783e-03	 -9.233383e-04	 -2.988484e-01	 -2.971335e-01	 2.985316e-01	 -3.015932e-01	 -3.036741e-01	 -3.052285e-01	 -1.760132e-03	 1.039992e-03	 2.986803e-01	 1.106195e-03	 -3.044542e-01	 1.797879e-03	 -1.108711e-02	 2.991214e-01	 -2.991214e-01	 1.000000e+00
+
+
+------>Plotting results....
+
+
+
+------>Results (report and struct_results.mat) and plots were kept in the directory:
+
+		/home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/AMIGO2_R2019b/Results/Problem/PE_problem_eSS_run1
+
+		Click <a href="matlab: cd('/home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/AMIGO2_R2019b/Results/Problem/PE_problem_eSS_run1')">here</a> to go to the results folder or <a href="matlab: load('/home/soogo/ParameterEstimation.jl/benchmarks/matlab/src/AMIGO2_R2019b/Results/Problem/PE_problem_eSS_run1/strreport_problem_run1.mat')">here</a> to load the results.
+[?1l>
+
+CPU time: 7.95+191.97 sec	Max. resident set size: 1412948 KB	 Elapsed: 413.77 sec.

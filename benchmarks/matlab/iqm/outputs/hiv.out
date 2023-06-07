@@ -1,9 +1,10 @@
 [?1h=
-                                                    < M A T L A B (R) >
-                                          Copyright 1984-2022 The MathWorks, Inc.
-                                          R2022a (9.12.0.1884302) 64-bit (glnxa64)
-                                                     February 16, 2022
+                                                              < M A T L A B (R) >
+                                                    Copyright 1984-2023 The MathWorks, Inc.
+                                               R2023a Update 2 (9.14.0.2254940) 64-bit (glnxa64)
+                                                                 April 17, 2023
 
+Warning: X does not support locale en_US.UTF-8
  
 To get started, type doc.
 For product information, visit www.mathworks.com.
@@ -2236,42 +2237,1579 @@ Experiment 1: Exp 2
   1462         1997             2.7906e-07            reflection
   1463         1999             2.7906e-07            one dimensional contraction
   1464         2001             2.7906e-07            one dimensional contraction
-Exceeded maximum number of function evaluations.
+  1465         2003             2.7906e-07            one dimensional contraction
+  1466         2005             2.7906e-07            one dimensional contraction
+  1467         2006             2.7906e-07            reflection
+  1468         2008             2.7906e-07            one dimensional contraction
+  1469         2010             2.7906e-07            one dimensional contraction
+  1470         2011             2.7906e-07            reflection
+  1471         2012             2.7906e-07            reflection
+  1472         2014             2.7906e-07            one dimensional contraction
+  1473         2016             2.7906e-07            one dimensional contraction
+  1474         2017             2.7906e-07            reflection
+  1475         2018             2.7906e-07            reflection
+  1476         2020             2.7906e-07            one dimensional contraction
+  1477         2022             2.7906e-07            one dimensional contraction
+  1478         2023             2.7906e-07            reflection
+  1479         2024             2.7906e-07            reflection
+  1480         2026             2.7906e-07            one dimensional contraction
+  1481         2027             2.7906e-07            reflection
+  1482         2028             2.7906e-07            reflection
+  1483         2029             2.7906e-07            reflection
+  1484         2030             2.7906e-07            reflection
+  1485         2032             2.7906e-07            one dimensional contraction
+  1486         2034             2.7906e-07            one dimensional contraction
+  1487         2036             2.7906e-07            one dimensional contraction
+  1488         2037             2.7906e-07            reflection
+  1489         2038             2.7906e-07            reflection
+  1490         2040             2.7906e-07            one dimensional contraction
+  1491         2041             2.7906e-07            reflection
+  1492         2042             2.7906e-07            reflection
+  1493         2044             2.7906e-07            one dimensional contraction
+  1494         2046             2.7906e-07            one dimensional contraction
+  1495         2048             2.7906e-07            one dimensional contraction
+  1496         2050             2.7906e-07            one dimensional contraction
+  1497         2051             2.7906e-07            reflection
+  1498         2052             2.7906e-07            reflection
+  1499         2053             2.7906e-07            reflection
+  1500         2054             2.7906e-07            reflection
+  1501         2056             2.7906e-07            one dimensional contraction
+  1502         2058             2.7906e-07            one dimensional contraction
+  1503         2059             2.7906e-07            reflection
+  1504         2061             2.7906e-07            one dimensional contraction
+  1505         2063             2.7906e-07            one dimensional contraction
+  1506         2064             2.7906e-07            reflection
+  1507         2065             2.7906e-07            reflection
+  1508         2067             2.7906e-07            one dimensional contraction
+  1509         2069             2.7906e-07            one dimensional contraction
+  1510         2070             2.7906e-07            reflection
+  1511         2071             2.7906e-07            reflection
+  1512         2072             2.7906e-07            reflection
+  1513         2073             2.7906e-07            reflection
+  1514         2074             2.7906e-07            reflection
+  1515         2075             2.7906e-07            reflection
+  1516         2077             2.7906e-07            one dimensional contraction
+  1517         2078             2.7906e-07            reflection
+  1518         2079             2.7906e-07            reflection
+  1519         2080             2.7906e-07            reflection
+  1520         2082             2.7906e-07            one dimensional contraction
+  1521         2083             2.7906e-07            reflection
+  1522         2084             2.7906e-07            reflection
+  1523         2086             2.7906e-07            one dimensional contraction
+  1524         2088             2.7906e-07            one dimensional contraction
+  1525         2090             2.7906e-07            one dimensional contraction
+  1526         2092             2.7906e-07            one dimensional contraction
+  1527         2093             2.7906e-07            reflection
+  1528         2095             2.7906e-07            one dimensional contraction
+  1529         2096             2.7906e-07            reflection
+  1530         2098             2.7906e-07            one dimensional contraction
+  1531         2100             2.7906e-07            one dimensional contraction
+  1532         2116             2.7906e-07            contraction around best point
+  1533         2118             2.7906e-07            one dimensional contraction
+  1534         2119             2.7906e-07            reflection
+  1535         2120             2.7906e-07            reflection
+  1536         2122             2.7906e-07            one dimensional contraction
+  1537         2123             2.7906e-07            reflection
+  1538         2124             2.7906e-07            reflection
+  1539         2125             2.7906e-07            reflection
+  1540         2127             2.7906e-07            one dimensional contraction
+  1541         2128             2.7906e-07            reflection
+  1542         2129             2.7906e-07            reflection
+  1543         2131             2.7906e-07            one dimensional contraction
+  1544         2132             2.7906e-07            reflection
+  1545         2133             2.7906e-07            reflection
+  1546         2134             2.7906e-07            reflection
+  1547         2135             2.7906e-07            reflection
+  1548         2136             2.7906e-07            reflection
+  1549         2137             2.7906e-07            reflection
+  1550         2139             2.7906e-07            one dimensional contraction
+  1551         2141             2.7906e-07            one dimensional contraction
+  1552         2142             2.7906e-07            reflection
+  1553         2143             2.7906e-07            reflection
+  1554         2145             2.7906e-07            one dimensional contraction
+  1555         2146             2.7906e-07            reflection
+  1556         2148             2.7906e-07            one dimensional contraction
+  1557         2150             2.7906e-07            one dimensional contraction
+  1558         2151             2.7906e-07            reflection
+  1559         2153             2.7906e-07            one dimensional contraction
+  1560         2155             2.7906e-07            one dimensional contraction
+  1561         2157             2.7906e-07            one dimensional contraction
+  1562         2158             2.7906e-07            reflection
+  1563         2160             2.7906e-07            one dimensional contraction
+  1564         2161             2.7906e-07            reflection
+  1565         2163             2.7906e-07            one dimensional contraction
+  1566         2165             2.7906e-07            one dimensional contraction
+  1567         2167             2.7906e-07            one dimensional contraction
+  1568         2168             2.7906e-07            reflection
+  1569         2169             2.7906e-07            reflection
+  1570         2170             2.7906e-07            reflection
+  1571         2171             2.7906e-07            reflection
+  1572         2172             2.7906e-07            reflection
+  1573         2174             2.7906e-07            one dimensional contraction
+  1574         2176             2.7906e-07            one dimensional contraction
+  1575         2178             2.7906e-07            one dimensional contraction
+  1576         2180             2.7906e-07            one dimensional contraction
+  1577         2182             2.7906e-07            one dimensional contraction
+  1578         2183             2.7906e-07            reflection
+  1579         2184             2.7906e-07            reflection
+  1580         2186             2.7906e-07            one dimensional contraction
+  1581         2187             2.7906e-07            reflection
+  1582         2188             2.7906e-07            reflection
+  1583         2189             2.7906e-07            reflection
+  1584         2190             2.7906e-07            reflection
+  1585         2192             2.7906e-07            one dimensional contraction
+  1586         2193             2.7906e-07            reflection
+  1587         2195             2.7906e-07            one dimensional contraction
+  1588         2196             2.7906e-07            reflection
+  1589         2197             2.7906e-07            reflection
+  1590         2198             2.7906e-07            reflection
+  1591         2199             2.7906e-07            reflection
+  1592         2201             2.7906e-07            one dimensional contraction
+  1593         2203             2.7906e-07            one dimensional contraction
+  1594         2204             2.7906e-07            reflection
+  1595         2206             2.7906e-07            one dimensional contraction
+  1596         2208             2.7906e-07            one dimensional contraction
+  1597         2210             2.7906e-07            one dimensional contraction
+  1598         2211             2.7906e-07            reflection
+  1599         2212             2.7906e-07            reflection
+  1600         2213             2.7906e-07            reflection
+  1601         2214             2.7906e-07            reflection
+  1602         2216             2.7906e-07            one dimensional contraction
+  1603         2217             2.7906e-07            reflection
+  1604         2218             2.7906e-07            reflection
+  1605         2220             2.7906e-07            one dimensional contraction
+  1606         2222             2.7906e-07            one dimensional contraction
+  1607         2223             2.7906e-07            reflection
+  1608         2224             2.7906e-07            reflection
+  1609         2225             2.7906e-07            reflection
+  1610         2226             2.7906e-07            reflection
+  1611         2228             2.7906e-07            one dimensional contraction
+  1612         2229             2.7906e-07            reflection
+  1613         2230             2.7906e-07            reflection
+  1614         2231             2.7906e-07            reflection
+  1615         2232             2.7906e-07            reflection
+  1616         2233             2.7906e-07            reflection
+  1617         2235            2.78653e-07            reflection
+  1618         2236            2.78653e-07            reflection
+  1619         2238            2.78653e-07            one dimensional contraction
+  1620         2240            2.77667e-07            reflection
+  1621         2241            2.77667e-07            reflection
+  1622         2242            2.77667e-07            reflection
+  1623         2243            2.77667e-07            reflection
+  1624         2245            2.77667e-07            one dimensional contraction
+  1625         2246            2.77667e-07            reflection
+  1626         2247            2.77667e-07            reflection
+  1627         2249            2.77667e-07            one dimensional contraction
+  1628         2250            2.77667e-07            reflection
+  1629         2251            2.77667e-07            reflection
+  1630         2253            2.77667e-07            one dimensional contraction
+  1631         2254            2.77667e-07            reflection
+  1632         2255            2.77667e-07            reflection
+  1633         2256            2.77667e-07            reflection
+  1634         2258            2.77667e-07            one dimensional contraction
+  1635         2260            2.77667e-07            one dimensional contraction
+  1636         2261            2.77667e-07            reflection
+  1637         2262            2.77667e-07            reflection
+  1638         2264            2.77667e-07            one dimensional contraction
+  1639         2265            2.77667e-07            reflection
+  1640         2267            2.77667e-07            one dimensional contraction
+  1641         2268            2.77667e-07            reflection
+  1642         2270            2.77667e-07            one dimensional contraction
+  1643         2272            2.77155e-07            reflection
+  1644         2274            2.77155e-07            one dimensional contraction
+  1645         2275            2.77155e-07            reflection
+  1646         2277            2.77155e-07            one dimensional contraction
+  1647         2279            2.77096e-07            reflection
+  1648         2281            2.77096e-07            one dimensional contraction
+  1649         2282            2.77096e-07            reflection
+  1650         2283            2.77096e-07            reflection
+  1651         2285             2.7686e-07            reflection
+  1652         2286             2.7686e-07            reflection
+  1653         2287             2.7686e-07            reflection
+  1654         2288             2.7686e-07            reflection
+  1655         2290             2.7686e-07            one dimensional contraction
+  1656         2291             2.7686e-07            reflection
+  1657         2292             2.7686e-07            reflection
+  1658         2293             2.7686e-07            reflection
+  1659         2294             2.7686e-07            reflection
+  1660         2295             2.7686e-07            reflection
+  1661         2297             2.7686e-07            one dimensional contraction
+  1662         2298             2.7686e-07            reflection
+  1663         2300             2.7686e-07            one dimensional contraction
+  1664         2301             2.7686e-07            reflection
+  1665         2302             2.7686e-07            reflection
+  1666         2303             2.7686e-07            reflection
+  1667         2305            2.76705e-07            reflection
+  1668         2306            2.76705e-07            reflection
+  1669         2307            2.76705e-07            reflection
+  1670         2309            2.76705e-07            one dimensional contraction
+  1671         2311            2.76705e-07            one dimensional contraction
+  1672         2313            2.76705e-07            one dimensional contraction
+  1673         2315            2.76705e-07            one dimensional contraction
+  1674         2317            2.76602e-07            reflection
+  1675         2318            2.76602e-07            reflection
+  1676         2319            2.76602e-07            reflection
+  1677         2321            2.76602e-07            one dimensional contraction
+  1678         2323            2.76242e-07            reflection
+  1679         2324            2.76242e-07            reflection
+  1680         2325            2.76242e-07            reflection
+  1681         2326            2.76242e-07            reflection
+  1682         2327            2.76242e-07            reflection
+  1683         2329            2.76242e-07            one dimensional contraction
+  1684         2331            2.76146e-07            reflection
+  1685         2333            2.76146e-07            one dimensional contraction
+  1686         2334            2.76146e-07            reflection
+  1687         2335            2.76146e-07            reflection
+  1688         2337            2.76146e-07            one dimensional contraction
+  1689         2338            2.76146e-07            reflection
+  1690         2339            2.76146e-07            reflection
+  1691         2340            2.76146e-07            reflection
+  1692         2341            2.76146e-07            reflection
+  1693         2342            2.76146e-07            reflection
+  1694         2344            2.76146e-07            one dimensional contraction
+  1695         2345            2.76146e-07            reflection
+  1696         2346            2.76146e-07            reflection
+  1697         2348            2.76008e-07            reflection
+  1698         2349            2.76008e-07            reflection
+  1699         2351            2.75913e-07            reflection
+  1700         2352            2.75913e-07            reflection
+  1701         2354            2.75417e-07            extrapolation
+  1702         2355            2.75417e-07            reflection
+  1703         2356            2.75417e-07            reflection
+  1704         2357            2.75417e-07            reflection
+  1705         2358            2.75417e-07            reflection
+  1706         2360            2.75417e-07            one dimensional contraction
+  1707         2361            2.75417e-07            reflection
+  1708         2362            2.75417e-07            reflection
+  1709         2363            2.75417e-07            reflection
+  1710         2364            2.75417e-07            reflection
+  1711         2366            2.75417e-07            one dimensional contraction
+  1712         2367            2.75417e-07            reflection
+  1713         2368            2.75417e-07            reflection
+  1714         2369            2.75417e-07            reflection
+  1715         2370            2.75417e-07            reflection
+  1716         2371            2.75417e-07            reflection
+  1717         2373            2.74676e-07            extrapolation
+  1718         2374            2.74676e-07            reflection
+  1719         2375            2.74676e-07            reflection
+  1720         2376            2.74676e-07            reflection
+  1721         2377            2.74676e-07            reflection
+  1722         2378            2.74676e-07            reflection
+  1723         2379            2.74676e-07            reflection
+  1724         2380            2.74676e-07            reflection
+  1725         2381            2.74676e-07            reflection
+  1726         2382            2.74676e-07            reflection
+  1727         2384            2.74661e-07            reflection
+  1728         2386            2.74625e-07            reflection
+  1729         2387            2.74625e-07            reflection
+  1730         2388            2.74625e-07            reflection
+  1731         2389            2.74625e-07            reflection
+  1732         2391            2.74386e-07            reflection
+  1733         2393            2.73745e-07            extrapolation
+  1734         2394            2.73745e-07            reflection
+  1735         2395            2.73745e-07            reflection
+  1736         2396            2.73745e-07            reflection
+  1737         2397            2.73745e-07            reflection
+  1738         2399            2.73447e-07            extrapolation
+  1739         2400            2.73447e-07            reflection
+  1740         2401            2.73447e-07            reflection
+  1741         2402            2.73447e-07            reflection
+  1742         2403            2.73447e-07            reflection
+  1743         2404            2.73447e-07            reflection
+  1744         2406            2.73267e-07            extrapolation
+  1745         2408             2.7236e-07            extrapolation
+  1746         2409             2.7236e-07            reflection
+  1747         2410             2.7236e-07            reflection
+  1748         2411             2.7236e-07            reflection
+  1749         2412             2.7236e-07            reflection
+  1750         2413             2.7236e-07            reflection
+  1751         2414             2.7236e-07            reflection
+  1752         2415             2.7236e-07            reflection
+  1753         2417            2.71325e-07            extrapolation
+  1754         2418            2.71325e-07            reflection
+  1755         2419            2.71325e-07            reflection
+  1756         2420            2.71325e-07            reflection
+  1757         2421            2.71325e-07            reflection
+  1758         2423            2.70263e-07            extrapolation
+  1759         2424            2.70263e-07            reflection
+  1760         2425            2.70263e-07            reflection
+  1761         2426            2.70263e-07            reflection
+  1762         2427            2.70263e-07            reflection
+  1763         2428            2.70263e-07            reflection
+  1764         2429            2.70263e-07            reflection
+  1765         2430            2.70263e-07            reflection
+  1766         2431            2.70263e-07            reflection
+  1767         2432            2.70263e-07            reflection
+  1768         2433            2.70263e-07            reflection
+  1769         2434            2.70263e-07            reflection
+  1770         2436            2.70004e-07            reflection
+  1771         2438            2.69779e-07            reflection
+  1772         2440            2.68976e-07            extrapolation
+  1773         2441            2.68976e-07            reflection
+  1774         2442            2.68976e-07            reflection
+  1775         2443            2.68976e-07            reflection
+  1776         2444            2.68976e-07            reflection
+  1777         2445            2.68976e-07            reflection
+  1778         2446            2.68976e-07            reflection
+  1779         2447            2.68976e-07            reflection
+  1780         2448            2.68976e-07            reflection
+  1781         2449            2.68976e-07            reflection
+  1782         2450            2.68976e-07            reflection
+  1783         2452            2.67659e-07            extrapolation
+  1784         2453            2.67659e-07            reflection
+  1785         2454            2.67659e-07            reflection
+  1786         2455            2.67659e-07            reflection
+  1787         2457             2.6685e-07            extrapolation
+  1788         2458             2.6685e-07            reflection
+  1789         2459             2.6685e-07            reflection
+  1790         2460             2.6685e-07            reflection
+  1791         2461             2.6685e-07            reflection
+  1792         2462             2.6685e-07            reflection
+  1793         2463             2.6685e-07            reflection
+  1794         2465            2.65964e-07            extrapolation
+  1795         2466            2.65964e-07            reflection
+  1796         2467            2.65964e-07            reflection
+  1797         2468            2.65964e-07            reflection
+  1798         2469            2.65964e-07            reflection
+  1799         2471            2.64504e-07            extrapolation
+  1800         2472            2.64504e-07            reflection
+  1801         2473            2.64504e-07            reflection
+  1802         2474            2.64504e-07            reflection
+  1803         2475            2.64504e-07            reflection
+  1804         2476            2.64504e-07            reflection
+  1805         2478            2.62917e-07            extrapolation
+  1806         2479            2.62917e-07            reflection
+  1807         2480            2.62917e-07            reflection
+  1808         2481            2.62917e-07            reflection
+  1809         2482            2.62917e-07            reflection
+  1810         2483            2.62917e-07            reflection
+  1811         2485            2.60947e-07            extrapolation
+  1812         2486            2.60947e-07            reflection
+  1813         2487            2.60947e-07            reflection
+  1814         2488            2.60947e-07            reflection
+  1815         2489            2.60947e-07            reflection
+  1816         2490            2.60947e-07            reflection
+  1817         2491            2.60947e-07            reflection
+  1818         2492            2.60947e-07            reflection
+  1819         2494            2.59634e-07            extrapolation
+  1820         2495            2.59634e-07            reflection
+  1821         2496            2.59634e-07            reflection
+  1822         2497            2.59634e-07            reflection
+  1823         2499            2.57562e-07            extrapolation
+  1824         2500            2.57562e-07            reflection
+  1825         2501            2.57562e-07            reflection
+  1826         2502            2.57562e-07            reflection
+  1827         2503            2.57562e-07            reflection
+  1828         2505            2.56063e-07            extrapolation
+  1829         2506            2.56063e-07            reflection
+  1830         2508            2.54493e-07            extrapolation
+  1831         2509            2.54493e-07            reflection
+  1832         2510            2.54493e-07            reflection
+  1833         2511            2.54493e-07            reflection
+  1834         2512            2.54493e-07            reflection
+  1835         2513            2.54493e-07            reflection
+  1836         2515            2.52234e-07            extrapolation
+  1837         2516            2.52234e-07            reflection
+  1838         2517            2.52234e-07            reflection
+  1839         2518            2.52234e-07            reflection
+  1840         2519            2.52234e-07            reflection
+  1841         2520            2.52234e-07            reflection
+  1842         2521            2.52234e-07            reflection
+  1843         2522            2.52234e-07            reflection
+  1844         2524            2.50891e-07            reflection
+  1845         2525            2.50891e-07            reflection
+  1846         2526            2.50891e-07            reflection
+  1847         2528            2.50485e-07            reflection
+  1848         2529            2.50485e-07            reflection
+  1849         2531            2.48386e-07            extrapolation
+  1850         2532            2.48386e-07            reflection
+  1851         2533            2.48386e-07            reflection
+  1852         2534            2.48386e-07            reflection
+  1853         2535            2.48386e-07            reflection
+  1854         2536            2.48386e-07            reflection
+  1855         2537            2.48386e-07            reflection
+  1856         2538            2.48386e-07            reflection
+  1857         2539            2.48386e-07            reflection
+  1858         2540            2.48386e-07            reflection
+  1859         2541            2.48386e-07            reflection
+  1860         2542            2.48386e-07            reflection
+  1861         2544            2.48158e-07            reflection
+  1862         2546            2.47689e-07            reflection
+  1863         2547            2.47689e-07            reflection
+  1864         2548            2.47689e-07            reflection
+  1865         2549            2.47689e-07            reflection
+  1866         2550            2.47689e-07            reflection
+  1867         2551            2.47689e-07            reflection
+  1868         2553             2.4692e-07            reflection
+  1869         2554             2.4692e-07            reflection
+  1870         2556            2.46715e-07            reflection
+  1871         2557            2.46715e-07            reflection
+  1872         2559            2.44772e-07            extrapolation
+  1873         2560            2.44772e-07            reflection
+  1874         2561            2.44772e-07            reflection
+  1875         2562            2.44772e-07            reflection
+  1876         2564            2.44772e-07            one dimensional contraction
+  1877         2565            2.44772e-07            reflection
+  1878         2566            2.44772e-07            reflection
+  1879         2567            2.44772e-07            reflection
+  1880         2568            2.44772e-07            reflection
+  1881         2569            2.44772e-07            reflection
+  1882         2570            2.44772e-07            reflection
+  1883         2572            2.44561e-07            reflection
+  1884         2574            2.42604e-07            extrapolation
+  1885         2575            2.42604e-07            reflection
+  1886         2576            2.42604e-07            reflection
+  1887         2577            2.42604e-07            reflection
+  1888         2578            2.42604e-07            reflection
+  1889         2579            2.42604e-07            reflection
+  1890         2581            2.41599e-07            extrapolation
+  1891         2582            2.41599e-07            reflection
+  1892         2583            2.41599e-07            reflection
+  1893         2584            2.41599e-07            reflection
+  1894         2585            2.41599e-07            reflection
+  1895         2586            2.41599e-07            reflection
+  1896         2588            2.41187e-07            reflection
+  1897         2589            2.41187e-07            reflection
+  1898         2591            2.40724e-07            reflection
+  1899         2592            2.40724e-07            reflection
+  1900         2594            2.40273e-07            reflection
+  1901         2595            2.40273e-07            reflection
+  1902         2597            2.39893e-07            reflection
+  1903         2598            2.39893e-07            reflection
+  1904         2599            2.39893e-07            reflection
+  1905         2601            2.39445e-07            reflection
+  1906         2602            2.39445e-07            reflection
+  1907         2604            2.39244e-07            reflection
+  1908         2606            2.39069e-07            reflection
+  1909         2607            2.39069e-07            reflection
+  1910         2608            2.39069e-07            reflection
+  1911         2609            2.39069e-07            reflection
+  1912         2611            2.38118e-07            reflection
+  1913         2613            2.37754e-07            reflection
+  1914         2614            2.37754e-07            reflection
+  1915         2616            2.35894e-07            extrapolation
+  1916         2617            2.35894e-07            reflection
+  1917         2619            2.35894e-07            one dimensional contraction
+  1918         2620            2.35894e-07            reflection
+  1919         2621            2.35894e-07            reflection
+  1920         2623            2.34265e-07            extrapolation
+  1921         2624            2.34265e-07            reflection
+  1922         2625            2.34265e-07            reflection
+  1923         2626            2.34265e-07            reflection
+  1924         2627            2.34265e-07            reflection
+  1925         2628            2.34265e-07            reflection
+  1926         2629            2.34265e-07            reflection
+  1927         2630            2.34265e-07            reflection
+  1928         2631            2.34265e-07            reflection
+  1929         2632            2.34265e-07            reflection
+  1930         2634            2.30059e-07            extrapolation
+  1931         2635            2.30059e-07            reflection
+  1932         2636            2.30059e-07            reflection
+  1933         2637            2.30059e-07            reflection
+  1934         2639            2.28999e-07            extrapolation
+  1935         2640            2.28999e-07            reflection
+  1936         2641            2.28999e-07            reflection
+  1937         2642            2.28999e-07            reflection
+  1938         2644            2.28773e-07            extrapolation
+  1939         2646             2.2627e-07            extrapolation
+  1940         2647             2.2627e-07            reflection
+  1941         2649             2.2397e-07            extrapolation
+  1942         2650             2.2397e-07            reflection
+  1943         2651             2.2397e-07            reflection
+  1944         2652             2.2397e-07            reflection
+  1945         2654            2.17939e-07            extrapolation
+  1946         2655            2.17939e-07            reflection
+  1947         2656            2.17939e-07            reflection
+  1948         2657            2.17939e-07            reflection
+  1949         2658            2.17939e-07            reflection
+  1950         2659            2.17939e-07            reflection
+  1951         2660            2.17939e-07            reflection
+  1952         2661            2.17939e-07            reflection
+  1953         2662            2.17939e-07            reflection
+  1954         2663            2.17939e-07            reflection
+  1955         2664            2.17939e-07            reflection
+  1956         2666            2.16426e-07            reflection
+  1957         2667            2.16426e-07            reflection
+  1958         2669            2.13895e-07            extrapolation
+  1959         2670            2.13895e-07            reflection
+  1960         2672            2.13082e-07            extrapolation
+  1961         2673            2.13082e-07            reflection
+  1962         2674            2.13082e-07            reflection
+  1963         2675            2.13082e-07            reflection
+  1964         2676            2.13082e-07            reflection
+  1965         2677            2.13082e-07            reflection
+  1966         2679            2.11289e-07            reflection
+  1967         2681            2.03488e-07            extrapolation
+  1968         2682            2.03488e-07            reflection
+  1969         2683            2.03488e-07            reflection
+  1970         2684            2.03488e-07            reflection
+  1971         2685            2.03488e-07            reflection
+  1972         2686            2.03488e-07            reflection
+  1973         2687            2.03488e-07            reflection
+  1974         2688            2.03488e-07            reflection
+  1975         2690            2.03488e-07            one dimensional contraction
+  1976         2692            2.03325e-07            reflection
+  1977         2693            2.03325e-07            reflection
+  1978         2694            2.03325e-07            reflection
+  1979         2695            2.03325e-07            reflection
+  1980         2697            2.02766e-07            reflection
+  1981         2699             2.0202e-07            reflection
+  1982         2700             2.0202e-07            reflection
+  1983         2701             2.0202e-07            reflection
+  1984         2702             2.0202e-07            reflection
+  1985         2704            1.95273e-07            extrapolation
+  1986         2705            1.95273e-07            reflection
+  1987         2706            1.95273e-07            reflection
+  1988         2707            1.95273e-07            reflection
+  1989         2708            1.95273e-07            reflection
+  1990         2709            1.95273e-07            reflection
+  1991         2711            1.94662e-07            reflection
+  1992         2712            1.94662e-07            reflection
+  1993         2713            1.94662e-07            reflection
+  1994         2714            1.94662e-07            reflection
+  1995         2716            1.90813e-07            extrapolation
+  1996         2717            1.90813e-07            reflection
+  1997         2718            1.90813e-07            reflection
+  1998         2720            1.89634e-07            reflection
+  1999         2721            1.89634e-07            reflection
+  2000         2723            1.85767e-07            extrapolation
+  2001         2724            1.85767e-07            reflection
+  2002         2725            1.85767e-07            reflection
+  2003         2726            1.85767e-07            reflection
+  2004         2727            1.85767e-07            reflection
+  2005         2729            1.83535e-07            reflection
+  2006         2730            1.83535e-07            reflection
+  2007         2732            1.82839e-07            reflection
+  2008         2734            1.81852e-07            reflection
+  2009         2736            1.81804e-07            reflection
+  2010         2737            1.81804e-07            reflection
+  2011         2739            1.74404e-07            extrapolation
+  2012         2740            1.74404e-07            reflection
+  2013         2741            1.74404e-07            reflection
+  2014         2742            1.74404e-07            reflection
+  2015         2743            1.74404e-07            reflection
+  2016         2744            1.74404e-07            reflection
+  2017         2746             1.7389e-07            reflection
+  2018         2747             1.7389e-07            reflection
+  2019         2749            1.71451e-07            reflection
+  2020         2750            1.71451e-07            reflection
+  2021         2751            1.71451e-07            reflection
+  2022         2753            1.71372e-07            reflection
+  2023         2754            1.71372e-07            reflection
+  2024         2755            1.71372e-07            reflection
+  2025         2756            1.71372e-07            reflection
+  2026         2757            1.71372e-07            reflection
+  2027         2758            1.71372e-07            reflection
+  2028         2760            1.69612e-07            reflection
+  2029         2761            1.69612e-07            reflection
+  2030         2763            1.65121e-07            extrapolation
+  2031         2764            1.65121e-07            reflection
+  2032         2765            1.65121e-07            reflection
+  2033         2766            1.65121e-07            reflection
+  2034         2767            1.65121e-07            reflection
+  2035         2768            1.65121e-07            reflection
+  2036         2770             1.6468e-07            reflection
+  2037         2771             1.6468e-07            reflection
+  2038         2773             1.6468e-07            one dimensional contraction
+  2039         2775             1.6468e-07            one dimensional contraction
+  2040         2776             1.6468e-07            reflection
+  2041         2778             1.6468e-07            one dimensional contraction
+  2042         2779             1.6468e-07            reflection
+  2043         2780             1.6468e-07            reflection
+  2044         2781             1.6468e-07            reflection
+  2045         2782             1.6468e-07            reflection
+  2046         2783             1.6468e-07            reflection
+  2047         2784             1.6468e-07            reflection
+  2048         2785             1.6468e-07            reflection
+  2049         2786             1.6468e-07            reflection
+  2050         2788             1.6468e-07            one dimensional contraction
+  2051         2789             1.6468e-07            reflection
+  2052         2790             1.6468e-07            reflection
+  2053         2791             1.6468e-07            reflection
+  2054         2792             1.6468e-07            reflection
+  2055         2794             1.6468e-07            one dimensional contraction
+  2056         2795             1.6468e-07            reflection
+  2057         2797             1.6468e-07            one dimensional contraction
+  2058         2798             1.6468e-07            reflection
+  2059         2799             1.6468e-07            reflection
+  2060         2801            1.64452e-07            one dimensional contraction
+  2061         2802            1.64452e-07            reflection
+  2062         2804            1.64149e-07            one dimensional contraction
+  2063         2806            1.63776e-07            reflection
+  2064         2808            1.63036e-07            reflection
+  2065         2809            1.63036e-07            reflection
+  2066         2811            1.63036e-07            one dimensional contraction
+  2067         2813            1.63036e-07            one dimensional contraction
+  2068         2815            1.63036e-07            one dimensional contraction
+  2069         2816            1.63036e-07            reflection
+  2070         2818            1.62477e-07            reflection
+  2071         2820            1.62477e-07            one dimensional contraction
+  2072         2821            1.62477e-07            reflection
+  2073         2823            1.62477e-07            one dimensional contraction
+  2074         2825            1.62477e-07            one dimensional contraction
+  2075         2827            1.62477e-07            one dimensional contraction
+  2076         2828            1.62477e-07            reflection
+  2077         2829            1.62477e-07            reflection
+  2078         2830            1.62477e-07            reflection
+  2079         2831            1.62477e-07            reflection
+  2080         2833              1.624e-07            reflection
+  2081         2835            1.61658e-07            reflection
+  2082         2837            1.61658e-07            one dimensional contraction
+  2083         2839            1.61658e-07            one dimensional contraction
+  2084         2841            1.61658e-07            one dimensional contraction
+  2085         2842            1.61658e-07            reflection
+  2086         2843            1.61658e-07            reflection
+  2087         2844            1.61658e-07            reflection
+  2088         2845            1.61658e-07            reflection
+  2089         2847            1.61658e-07            one dimensional contraction
+  2090         2848            1.61658e-07            reflection
+  2091         2850            1.61516e-07            reflection
+  2092         2851            1.61516e-07            reflection
+  2093         2852            1.61516e-07            reflection
+  2094         2854            1.61516e-07            one dimensional contraction
+  2095         2855            1.61516e-07            reflection
+  2096         2857            1.61516e-07            one dimensional contraction
+  2097         2858            1.61516e-07            reflection
+  2098         2859            1.61516e-07            reflection
+  2099         2860            1.61516e-07            reflection
+  2100         2861            1.61516e-07            reflection
+  2101         2862            1.61516e-07            reflection
+  2102         2864            1.61261e-07            reflection
+  2103         2865            1.61261e-07            reflection
+  2104         2867            1.61261e-07            one dimensional contraction
+  2105         2869            1.61261e-07            one dimensional contraction
+  2106         2871            1.61261e-07            one dimensional contraction
+  2107         2873            1.61261e-07            one dimensional contraction
+  2108         2874            1.61261e-07            reflection
+  2109         2876            1.61261e-07            one dimensional contraction
+  2110         2877            1.61261e-07            reflection
+  2111         2879            1.61261e-07            one dimensional contraction
+  2112         2881            1.61144e-07            reflection
+  2113         2882            1.61144e-07            reflection
+  2114         2883            1.61144e-07            reflection
+  2115         2884            1.61144e-07            reflection
+  2116         2885            1.61144e-07            reflection
+  2117         2886            1.61144e-07            reflection
+  2118         2887            1.61144e-07            reflection
+  2119         2889            1.61144e-07            one dimensional contraction
+  2120         2890            1.61144e-07            reflection
+  2121         2892            1.61144e-07            one dimensional contraction
+  2122         2894            1.61144e-07            one dimensional contraction
+  2123         2895            1.61144e-07            reflection
+  2124         2897            1.61144e-07            one dimensional contraction
+  2125         2898            1.61144e-07            reflection
+  2126         2900            1.60939e-07            reflection
+  2127         2901            1.60939e-07            reflection
+  2128         2902            1.60939e-07            reflection
+  2129         2904            1.60861e-07            reflection
+  2130         2905            1.60861e-07            reflection
+  2131         2907            1.60861e-07            one dimensional contraction
+  2132         2909            1.60732e-07            reflection
+  2133         2911            1.60732e-07            one dimensional contraction
+  2134         2913            1.60656e-07            reflection
+  2135         2914            1.60656e-07            reflection
+  2136         2915            1.60656e-07            reflection
+  2137         2917            1.60542e-07            reflection
+  2138         2918            1.60542e-07            reflection
+  2139         2919            1.60542e-07            reflection
+  2140         2920            1.60542e-07            reflection
+  2141         2922            1.60542e-07            one dimensional contraction
+  2142         2923            1.60542e-07            reflection
+  2143         2924            1.60542e-07            reflection
+  2144         2925            1.60542e-07            reflection
+  2145         2927            1.60542e-07            one dimensional contraction
+  2146         2929            1.60542e-07            one dimensional contraction
+  2147         2930            1.60542e-07            reflection
+  2148         2932            1.60353e-07            extrapolation
+  2149         2934            1.60353e-07            one dimensional contraction
+  2150         2936            1.60353e-07            one dimensional contraction
+  2151         2937            1.60353e-07            reflection
+  2152         2938            1.60353e-07            reflection
+  2153         2939            1.60353e-07            reflection
+  2154         2941            1.60216e-07            extrapolation
+  2155         2942            1.60216e-07            reflection
+  2156         2943            1.60216e-07            reflection
+  2157         2944            1.60216e-07            reflection
+  2158         2945            1.60216e-07            reflection
+  2159         2947            1.59869e-07            extrapolation
+  2160         2948            1.59869e-07            reflection
+  2161         2949            1.59869e-07            reflection
+  2162         2951            1.59727e-07            extrapolation
+  2163         2952            1.59727e-07            reflection
+  2164         2953            1.59727e-07            reflection
+  2165         2954            1.59727e-07            reflection
+  2166         2955            1.59727e-07            reflection
+  2167         2956            1.59727e-07            reflection
+  2168         2957            1.59727e-07            reflection
+  2169         2958            1.59727e-07            reflection
+  2170         2959            1.59727e-07            reflection
+  2171         2961            1.59197e-07            extrapolation
+  2172         2962            1.59197e-07            reflection
+  2173         2963            1.59197e-07            reflection
+  2174         2964            1.59197e-07            reflection
+  2175         2965            1.59197e-07            reflection
+  2176         2966            1.59197e-07            reflection
+  2177         2967            1.59197e-07            reflection
+  2178         2968            1.59197e-07            reflection
+  2179         2969            1.59197e-07            reflection
+  2180         2971            1.58302e-07            extrapolation
+  2181         2972            1.58302e-07            reflection
+  2182         2973            1.58302e-07            reflection
+  2183         2974            1.58302e-07            reflection
+  2184         2975            1.58302e-07            reflection
+  2185         2976            1.58302e-07            reflection
+  2186         2977            1.58302e-07            reflection
+  2187         2978            1.58302e-07            reflection
+  2188         2979            1.58302e-07            reflection
+  2189         2980            1.58302e-07            reflection
+  2190         2981            1.58302e-07            reflection
+  2191         2982            1.58302e-07            reflection
+  2192         2984            1.58008e-07            extrapolation
+  2193         2985            1.58008e-07            reflection
+  2194         2986            1.58008e-07            reflection
+  2195         2987            1.58008e-07            reflection
+  2196         2988            1.58008e-07            reflection
+  2197         2990            1.57714e-07            extrapolation
+  2198         2992            1.57659e-07            extrapolation
+  2199         2994            1.57395e-07            extrapolation
+  2200         2995            1.57395e-07            reflection
+  2201         2996            1.57395e-07            reflection
+  2202         2998            1.57322e-07            reflection
+  2203         3000            1.55959e-07            extrapolation
+  2204         3001            1.55959e-07            reflection
+  2205         3002            1.55959e-07            reflection
+  2206         3003            1.55959e-07            reflection
+  2207         3004            1.55959e-07            reflection
+  2208         3005            1.55959e-07            reflection
+  2209         3007             1.5536e-07            extrapolation
+  2210         3008             1.5536e-07            reflection
+  2211         3009             1.5536e-07            reflection
+  2212         3010             1.5536e-07            reflection
+  2213         3012            1.55347e-07            reflection
+  2214         3013            1.55347e-07            reflection
+  2215         3015            1.55319e-07            reflection
+  2216         3017            1.54901e-07            reflection
+  2217         3018            1.54901e-07            reflection
+  2218         3019            1.54901e-07            reflection
+  2219         3021            1.53205e-07            extrapolation
+  2220         3022            1.53205e-07            reflection
+  2221         3023            1.53205e-07            reflection
+  2222         3024            1.53205e-07            reflection
+  2223         3026            1.51576e-07            extrapolation
+  2224         3027            1.51576e-07            reflection
+  2225         3028            1.51576e-07            reflection
+  2226         3029            1.51576e-07            reflection
+  2227         3030            1.51576e-07            reflection
+  2228         3031            1.51576e-07            reflection
+  2229         3032            1.51576e-07            reflection
+  2230         3033            1.51576e-07            reflection
+  2231         3034            1.51576e-07            reflection
+  2232         3035            1.51576e-07            reflection
+  2233         3036            1.51576e-07            reflection
+  2234         3038            1.49851e-07            extrapolation
+  2235         3039            1.49851e-07            reflection
+  2236         3040            1.49851e-07            reflection
+  2237         3041            1.49851e-07            reflection
+  2238         3043            1.48046e-07            extrapolation
+  2239         3044            1.48046e-07            reflection
+  2240         3045            1.48046e-07            reflection
+  2241         3046            1.48046e-07            reflection
+  2242         3047            1.48046e-07            reflection
+  2243         3049            1.47229e-07            extrapolation
+  2244         3051            1.45316e-07            extrapolation
+  2245         3052            1.45316e-07            reflection
+  2246         3053            1.45316e-07            reflection
+  2247         3054            1.45316e-07            reflection
+  2248         3055            1.45316e-07            reflection
+  2249         3057            1.45162e-07            extrapolation
+  2250         3058            1.45162e-07            reflection
+  2251         3060            1.42382e-07            extrapolation
+  2252         3061            1.42382e-07            reflection
+  2253         3062            1.42382e-07            reflection
+  2254         3064            1.40877e-07            extrapolation
+  2255         3065            1.40877e-07            reflection
+  2256         3066            1.40877e-07            reflection
+  2257         3067            1.40877e-07            reflection
+  2258         3069            1.40704e-07            reflection
+  2259         3071            1.37606e-07            extrapolation
+  2260         3072            1.37606e-07            reflection
+  2261         3073            1.37606e-07            reflection
+  2262         3074            1.37606e-07            reflection
+  2263         3076            1.33934e-07            extrapolation
+  2264         3077            1.33934e-07            reflection
+  2265         3078            1.33934e-07            reflection
+  2266         3079            1.33934e-07            reflection
+  2267         3080            1.33934e-07            reflection
+  2268         3081            1.33934e-07            reflection
+  2269         3082            1.33934e-07            reflection
+  2270         3083            1.33934e-07            reflection
+  2271         3084            1.33934e-07            reflection
+  2272         3086            1.33045e-07            reflection
+  2273         3088            1.26278e-07            extrapolation
+  2274         3089            1.26278e-07            reflection
+  2275         3090            1.26278e-07            reflection
+  2276         3091            1.26278e-07            reflection
+  2277         3092            1.26278e-07            reflection
+  2278         3093            1.26278e-07            reflection
+  2279         3094            1.26278e-07            reflection
+  2280         3095            1.26278e-07            reflection
+  2281         3096            1.26278e-07            reflection
+  2282         3097            1.26278e-07            reflection
+  2283         3098            1.26278e-07            reflection
+  2284         3099            1.26278e-07            reflection
+  2285         3101            1.24573e-07            extrapolation
+  2286         3102            1.24573e-07            reflection
+  2287         3103            1.24573e-07            reflection
+  2288         3104            1.24573e-07            reflection
+  2289         3106            1.19649e-07            extrapolation
+  2290         3107            1.19649e-07            reflection
+  2291         3108            1.19649e-07            reflection
+  2292         3109            1.19649e-07            reflection
+  2293         3110            1.19649e-07            reflection
+  2294         3112            1.18976e-07            extrapolation
+  2295         3113            1.18976e-07            reflection
+  2296         3115            1.17868e-07            reflection
+  2297         3116            1.17868e-07            reflection
+  2298         3118            1.16786e-07            reflection
+  2299         3119            1.16786e-07            reflection
+  2300         3120            1.16786e-07            reflection
+  2301         3122            1.15544e-07            reflection
+  2302         3123            1.15544e-07            reflection
+  2303         3125            1.13473e-07            reflection
+  2304         3126            1.13473e-07            reflection
+  2305         3127            1.13473e-07            reflection
+  2306         3129            1.11371e-07            reflection
+  2307         3130            1.11371e-07            reflection
+  2308         3131            1.11371e-07            reflection
+  2309         3132            1.11371e-07            reflection
+  2310         3133            1.11371e-07            reflection
+  2311         3134            1.11371e-07            reflection
+  2312         3135            1.11371e-07            reflection
+  2313         3137            1.10205e-07            reflection
+  2314         3138            1.10205e-07            reflection
+  2315         3140            1.10205e-07            one dimensional contraction
+  2316         3141            1.10205e-07            reflection
+  2317         3142            1.10205e-07            reflection
+  2318         3143            1.10205e-07            reflection
+  2319         3145            1.10205e-07            one dimensional contraction
+  2320         3146            1.10205e-07            reflection
+  2321         3148            1.08902e-07            reflection
+  2322         3150            1.08262e-07            reflection
+  2323         3151            1.08262e-07            reflection
+  2324         3152            1.08262e-07            reflection
+  2325         3153            1.08262e-07            reflection
+  2326         3155            1.08262e-07            one dimensional contraction
+  2327         3157            1.07106e-07            reflection
+  2328         3159            1.06292e-07            reflection
+  2329         3160            1.06292e-07            reflection
+  2330         3161            1.06292e-07            reflection
+  2331         3162            1.06292e-07            reflection
+  2332         3163            1.06292e-07            reflection
+  2333         3165            1.06292e-07            one dimensional contraction
+  2334         3167            1.05898e-07            reflection
+  2335         3168            1.05898e-07            reflection
+  2336         3169            1.05898e-07            reflection
+  2337         3171            1.02818e-07            extrapolation
+  2338         3172            1.02818e-07            reflection
+  2339         3173            1.02818e-07            reflection
+  2340         3174            1.02818e-07            reflection
+  2341         3175            1.02818e-07            reflection
+  2342         3177            1.02818e-07            one dimensional contraction
+  2343         3179            1.02331e-07            reflection
+  2344         3180            1.02331e-07            reflection
+  2345         3181            1.02331e-07            reflection
+  2346         3182            1.02331e-07            reflection
+  2347         3183            1.02331e-07            reflection
+  2348         3184            1.02331e-07            reflection
+  2349         3185            1.02331e-07            reflection
+  2350         3186            1.02331e-07            reflection
+  2351         3188            1.01332e-07            reflection
+  2352         3189            1.01332e-07            reflection
+  2353         3190            1.01332e-07            reflection
+  2354         3191            1.01332e-07            reflection
+  2355         3192            1.01332e-07            reflection
+  2356         3194            9.70931e-08            extrapolation
+  2357         3195            9.70931e-08            reflection
+  2358         3196            9.70931e-08            reflection
+  2359         3197            9.70931e-08            reflection
+  2360         3198            9.70931e-08            reflection
+  2361         3199            9.70931e-08            reflection
+  2362         3200            9.70931e-08            reflection
+  2363         3202            9.70931e-08            one dimensional contraction
+  2364         3203            9.70931e-08            reflection
+  2365         3204            9.70931e-08            reflection
+  2366         3205            9.70931e-08            reflection
+  2367         3206            9.70931e-08            reflection
+  2368         3208            9.70931e-08            one dimensional contraction
+  2369         3209            9.70931e-08            reflection
+  2370         3210            9.70931e-08            reflection
+  2371         3211            9.70931e-08            reflection
+  2372         3212            9.70931e-08            reflection
+  2373         3214            9.52463e-08            extrapolation
+  2374         3215            9.52463e-08            reflection
+  2375         3216            9.52463e-08            reflection
+  2376         3218            9.42922e-08            extrapolation
+  2377         3219            9.42922e-08            reflection
+  2378         3220            9.42922e-08            reflection
+  2379         3221            9.42922e-08            reflection
+  2380         3222            9.42922e-08            reflection
+  2381         3223            9.42922e-08            reflection
+  2382         3224            9.42922e-08            reflection
+  2383         3225            9.42922e-08            reflection
+  2384         3227            8.89885e-08            extrapolation
+  2385         3228            8.89885e-08            reflection
+  2386         3229            8.89885e-08            reflection
+  2387         3230            8.89885e-08            reflection
+  2388         3231            8.89885e-08            reflection
+  2389         3232            8.89885e-08            reflection
+  2390         3233            8.89885e-08            reflection
+  2391         3234            8.89885e-08            reflection
+  2392         3235            8.89885e-08            reflection
+  2393         3236            8.89885e-08            reflection
+  2394         3237            8.89885e-08            reflection
+  2395         3238            8.89885e-08            reflection
+  2396         3240             8.8416e-08            reflection
+  2397         3242            8.82328e-08            reflection
+  2398         3244            8.67228e-08            reflection
+  2399         3245            8.67228e-08            reflection
+  2400         3247            8.50255e-08            extrapolation
+  2401         3248            8.50255e-08            reflection
+  2402         3249            8.50255e-08            reflection
+  2403         3250            8.50255e-08            reflection
+  2404         3251            8.50255e-08            reflection
+  2405         3253            8.40839e-08            reflection
+  2406         3254            8.40839e-08            reflection
+  2407         3255            8.40839e-08            reflection
+  2408         3257            8.37901e-08            reflection
+  2409         3258            8.37901e-08            reflection
+  2410         3259            8.37901e-08            reflection
+  2411         3261             8.1141e-08            extrapolation
+  2412         3262             8.1141e-08            reflection
+  2413         3264            8.01052e-08            reflection
+  2414         3265            8.01052e-08            reflection
+  2415         3266            8.01052e-08            reflection
+  2416         3267            8.01052e-08            reflection
+  2417         3268            8.01052e-08            reflection
+  2418         3270            7.96083e-08            reflection
+  2419         3271            7.96083e-08            reflection
+  2420         3272            7.96083e-08            reflection
+  2421         3273            7.96083e-08            reflection
+  2422         3275            7.81356e-08            reflection
+  2423         3277            7.57615e-08            extrapolation
+  2424         3278            7.57615e-08            reflection
+  2425         3279            7.57615e-08            reflection
+  2426         3280            7.57615e-08            reflection
+  2427         3281            7.57615e-08            reflection
+  2428         3282            7.57615e-08            reflection
+  2429         3283            7.57615e-08            reflection
+  2430         3285            7.40473e-08            reflection
+  2431         3287            7.40473e-08            one dimensional contraction
+  2432         3288            7.40473e-08            reflection
+  2433         3289            7.40473e-08            reflection
+  2434         3291             7.3129e-08            reflection
+  2435         3292             7.3129e-08            reflection
+  2436         3293             7.3129e-08            reflection
+  2437         3295            7.25004e-08            reflection
+  2438         3296            7.25004e-08            reflection
+  2438         3296            7.25004e-08            initial simplex
+  2439         3298            7.25004e-08            one dimensional contraction
+  2440         3300            7.25004e-08            one dimensional contraction
+  2441         3302            7.25004e-08            one dimensional contraction
+  2442         3303            7.25004e-08            reflection
+  2443         3304            7.25004e-08            reflection
+  2444         3306            7.25004e-08            one dimensional contraction
+  2445         3307            7.25004e-08            reflection
+  2446         3309            7.25004e-08            one dimensional contraction
+  2447         3311            7.25004e-08            one dimensional contraction
+  2448         3312            7.25004e-08            reflection
+  2449         3313            7.25004e-08            reflection
+  2450         3315            7.25004e-08            one dimensional contraction
+  2451         3317            7.25004e-08            one dimensional contraction
+  2452         3319            7.25004e-08            one dimensional contraction
+  2453         3320            7.25004e-08            reflection
+  2454         3322            7.25004e-08            one dimensional contraction
+  2455         3324            7.25004e-08            one dimensional contraction
+  2456         3326            7.25004e-08            one dimensional contraction
+  2457         3327            7.25004e-08            reflection
+  2458         3329            7.25004e-08            one dimensional contraction
+  2459         3330            7.25004e-08            reflection
+  2460         3332            7.25004e-08            one dimensional contraction
+  2461         3334            7.25004e-08            one dimensional contraction
+  2462         3336            7.25004e-08            one dimensional contraction
+  2463         3338            7.25004e-08            one dimensional contraction
+  2464         3340            7.25004e-08            one dimensional contraction
+  2465         3341            7.25004e-08            reflection
+  2466         3342            7.25004e-08            reflection
+  2467         3344            7.25004e-08            one dimensional contraction
+  2468         3346            7.25004e-08            one dimensional contraction
+  2469         3347            7.25004e-08            reflection
+  2470         3349            7.25004e-08            one dimensional contraction
+  2471         3350            7.25004e-08            reflection
+  2472         3352            7.25004e-08            one dimensional contraction
+  2473         3354            7.25004e-08            one dimensional contraction
+  2474         3356            7.25004e-08            one dimensional contraction
+  2475         3357            7.25004e-08            reflection
+  2476         3359            7.25004e-08            one dimensional contraction
+  2477         3361            7.25004e-08            one dimensional contraction
+  2478         3362            7.25004e-08            reflection
+  2479         3363            7.25004e-08            reflection
+  2480         3364            7.25004e-08            reflection
+  2481         3366            7.25004e-08            one dimensional contraction
+  2482         3367            7.25004e-08            reflection
+  2483         3368            7.25004e-08            reflection
+  2484         3369            7.25004e-08            reflection
+  2485         3370            7.25004e-08            reflection
+  2486         3372            7.25004e-08            one dimensional contraction
+  2487         3374            7.25004e-08            one dimensional contraction
+  2488         3376            7.25004e-08            one dimensional contraction
+  2489         3378            7.25004e-08            one dimensional contraction
+  2490         3379            7.25004e-08            reflection
+  2491         3381            7.25004e-08            one dimensional contraction
+  2492         3383            7.25004e-08            one dimensional contraction
+  2493         3384            7.25004e-08            reflection
+  2494         3385            7.25004e-08            reflection
+  2495         3386            7.25004e-08            reflection
+  2496         3387            7.25004e-08            reflection
+  2497         3388            7.25004e-08            reflection
+  2498         3390            7.25004e-08            one dimensional contraction
+  2499         3392            7.25004e-08            one dimensional contraction
+  2500         3393            7.25004e-08            reflection
+  2501         3395            7.25004e-08            one dimensional contraction
+  2502         3396            7.25004e-08            reflection
+  2503         3397            7.25004e-08            reflection
+  2504         3399            7.25004e-08            one dimensional contraction
+  2505         3401            7.25004e-08            one dimensional contraction
+  2506         3402            7.25004e-08            reflection
+  2507         3403            7.25004e-08            reflection
+  2508         3405            7.25004e-08            one dimensional contraction
+  2509         3406            7.25004e-08            reflection
+  2510         3407            7.25004e-08            reflection
+  2511         3408            7.25004e-08            reflection
+  2512         3409            7.25004e-08            reflection
+  2513         3410            7.25004e-08            reflection
+  2514         3411            7.25004e-08            reflection
+  2515         3413            7.25004e-08            one dimensional contraction
+  2516         3414            7.25004e-08            reflection
+  2517         3415            7.25004e-08            reflection
+  2518         3416            7.25004e-08            reflection
+  2519         3418            7.25004e-08            one dimensional contraction
+  2520         3419            7.25004e-08            reflection
+  2521         3420            7.25004e-08            reflection
+  2522         3421            7.25004e-08            reflection
+  2523         3423            7.25004e-08            one dimensional contraction
+  2524         3425            7.25004e-08            one dimensional contraction
+  2525         3427            7.25004e-08            one dimensional contraction
+  2526         3429            7.25004e-08            one dimensional contraction
+  2527         3430            7.25004e-08            reflection
+  2528         3431            7.25004e-08            reflection
+  2529         3433            7.25004e-08            one dimensional contraction
+  2530         3435            7.25004e-08            one dimensional contraction
+  2531         3437            7.25004e-08            one dimensional contraction
+  2532         3439            7.25004e-08            one dimensional contraction
+  2533         3441            7.25004e-08            one dimensional contraction
+  2534         3443            7.25004e-08            one dimensional contraction
+  2535         3444            7.25004e-08            reflection
+  2536         3445            7.25004e-08            reflection
+  2537         3447            7.25004e-08            one dimensional contraction
+  2538         3448            7.25004e-08            reflection
+  2539         3449            7.25004e-08            reflection
+  2540         3450            7.25004e-08            reflection
+  2541         3451            7.25004e-08            reflection
+  2542         3452            7.25004e-08            reflection
+  2543         3453            7.25004e-08            reflection
+  2544         3454            7.25004e-08            reflection
+  2545         3455            7.25004e-08            reflection
+  2546         3456            7.25004e-08            reflection
+  2547         3458            7.25004e-08            one dimensional contraction
+  2548         3459            7.25004e-08            reflection
+  2549         3460            7.25004e-08            reflection
+  2550         3461            7.25004e-08            reflection
+  2551         3463            7.25004e-08            one dimensional contraction
+  2552         3465            7.25004e-08            one dimensional contraction
+  2553         3466            7.25004e-08            reflection
+  2554         3467            7.25004e-08            reflection
+  2555         3468            7.25004e-08            reflection
+  2556         3469            7.25004e-08            reflection
+  2557         3470            7.25004e-08            reflection
+  2558         3471            7.25004e-08            reflection
+  2559         3473            7.25004e-08            one dimensional contraction
+  2560         3474            7.25004e-08            reflection
+  2561         3476            7.25004e-08            one dimensional contraction
+  2562         3478            7.25004e-08            one dimensional contraction
+  2563         3480            7.25004e-08            one dimensional contraction
+  2564         3482            7.25004e-08            one dimensional contraction
+  2565         3483            7.25004e-08            reflection
+  2566         3485            7.25004e-08            one dimensional contraction
+  2567         3486            7.25004e-08            reflection
+  2568         3487            7.25004e-08            reflection
+  2569         3488            7.25004e-08            reflection
+  2570         3489            7.25004e-08            reflection
+  2571         3490            7.25004e-08            reflection
+  2572         3492            7.25004e-08            one dimensional contraction
+  2573         3493            7.25004e-08            reflection
+  2574         3494            7.25004e-08            reflection
+  2575         3496            7.25004e-08            one dimensional contraction
+  2576         3498            7.25004e-08            one dimensional contraction
+  2577         3500            7.25004e-08            one dimensional contraction
+  2578         3501            7.25004e-08            reflection
+  2579         3502            7.25004e-08            reflection
+  2580         3503            7.25004e-08            reflection
+  2581         3505            7.25004e-08            one dimensional contraction
+  2582         3506            7.25004e-08            reflection
+  2583         3508            7.25004e-08            one dimensional contraction
+  2584         3510            7.25004e-08            one dimensional contraction
+  2585         3511            7.25004e-08            reflection
+  2586         3513            7.25004e-08            one dimensional contraction
+  2587         3515            7.25004e-08            one dimensional contraction
+  2588         3516            7.25004e-08            reflection
+  2589         3517            7.25004e-08            reflection
+  2590         3518            7.25004e-08            reflection
+  2591         3519            7.25004e-08            reflection
+  2592         3520            7.25004e-08            reflection
+  2593         3521            7.25004e-08            reflection
+  2594         3523            7.25004e-08            one dimensional contraction
+  2595         3525            7.25004e-08            one dimensional contraction
+  2596         3526            7.25004e-08            reflection
+  2597         3527            7.25004e-08            reflection
+  2598         3528            7.25004e-08            reflection
+  2599         3530            7.25004e-08            one dimensional contraction
+  2600         3531            7.25004e-08            reflection
+  2601         3532            7.25004e-08            reflection
+  2602         3534            7.25004e-08            one dimensional contraction
+  2603         3535            7.25004e-08            reflection
+  2604         3536            7.25004e-08            reflection
+  2605         3537            7.25004e-08            reflection
+  2606         3539            7.25004e-08            one dimensional contraction
+  2607         3540            7.25004e-08            reflection
+  2608         3541            7.25004e-08            reflection
+  2609         3543            7.25004e-08            one dimensional contraction
+  2610         3545            7.25004e-08            one dimensional contraction
+  2611         3546            7.25004e-08            reflection
+  2612         3547            7.25004e-08            reflection
+  2613         3549            7.25004e-08            one dimensional contraction
+  2614         3550            7.25004e-08            reflection
+  2615         3552            7.25004e-08            one dimensional contraction
+  2616         3553            7.25004e-08            reflection
+  2617         3555            7.25004e-08            one dimensional contraction
+  2618         3556            7.25004e-08            reflection
+  2619         3558            7.25004e-08            one dimensional contraction
+  2620         3560            7.25004e-08            one dimensional contraction
+  2621         3561            7.25004e-08            reflection
+  2622         3563            7.25004e-08            one dimensional contraction
+  2623         3565            7.25004e-08            one dimensional contraction
+  2624         3567            7.25004e-08            one dimensional contraction
+  2625         3569            7.25004e-08            one dimensional contraction
+  2626         3571            7.25004e-08            one dimensional contraction
+  2627         3573            7.25004e-08            one dimensional contraction
+  2628         3589            7.10377e-08            contraction around best point
+  2629         3591            7.10377e-08            one dimensional contraction
+  2630         3593             6.9764e-08            reflection
+  2631         3594             6.9764e-08            reflection
+  2632         3595             6.9764e-08            reflection
+  2633         3596             6.9764e-08            reflection
+  2634         3597             6.9764e-08            reflection
+  2635         3598             6.9764e-08            reflection
+  2636         3599             6.9764e-08            reflection
+  2637         3601            6.94571e-08            reflection
+  2638         3603            6.94571e-08            one dimensional contraction
+  2639         3605            6.88476e-08            reflection
+  2640         3607            6.88476e-08            one dimensional contraction
+  2641         3609            6.86558e-08            reflection
+  2642         3610            6.86558e-08            reflection
+  2643         3611            6.86558e-08            reflection
+  2644         3612            6.86558e-08            reflection
+  2645         3613            6.86558e-08            reflection
+  2646         3614            6.86558e-08            reflection
+  2647         3616            6.86558e-08            one dimensional contraction
+  2648         3617            6.86558e-08            reflection
+  2649         3619            6.86558e-08            one dimensional contraction
+  2650         3620            6.86558e-08            reflection
+  2651         3621            6.86558e-08            reflection
+  2652         3623            6.84219e-08            reflection
+  2653         3625            6.83521e-08            reflection
+  2654         3627             6.7984e-08            reflection
+  2655         3628             6.7984e-08            reflection
+  2656         3629             6.7984e-08            reflection
+  2657         3631             6.7984e-08            one dimensional contraction
+  2658         3632             6.7984e-08            reflection
+  2659         3634             6.7984e-08            one dimensional contraction
+  2660         3635             6.7984e-08            reflection
+  2661         3636             6.7984e-08            reflection
+  2662         3637             6.7984e-08            reflection
+  2663         3639             6.7984e-08            one dimensional contraction
+  2664         3641            6.72923e-08            reflection
+  2665         3643            6.72923e-08            one dimensional contraction
+  2666         3644            6.72923e-08            reflection
+  2667         3645            6.72923e-08            reflection
+  2668         3646            6.72923e-08            reflection
+  2669         3647            6.72923e-08            reflection
+  2670         3648            6.72923e-08            reflection
+  2671         3649            6.72923e-08            reflection
+  2672         3650            6.72923e-08            reflection
+  2673         3652            6.72923e-08            one dimensional contraction
+  2674         3653            6.72923e-08            reflection
+  2675         3655            6.72923e-08            one dimensional contraction
+  2676         3657            6.72923e-08            one dimensional contraction
+  2677         3659            6.70033e-08            reflection
+  2678         3660            6.70033e-08            reflection
+  2679         3661            6.70033e-08            reflection
+  2680         3663            6.70033e-08            one dimensional contraction
+  2681         3665            6.70033e-08            one dimensional contraction
+  2682         3667            6.68876e-08            reflection
+  2683         3668            6.68876e-08            reflection
+  2684         3669            6.68876e-08            reflection
+  2685         3670            6.68876e-08            reflection
+  2686         3671            6.68876e-08            reflection
+  2687         3673            6.68876e-08            one dimensional contraction
+  2688         3674            6.68876e-08            reflection
+  2689         3675            6.68876e-08            reflection
+  2690         3676            6.68876e-08            reflection
+  2691         3677            6.68876e-08            reflection
+  2692         3678            6.68876e-08            reflection
+  2693         3680            6.68876e-08            one dimensional contraction
+  2694         3682            6.68058e-08            reflection
+  2695         3683            6.68058e-08            reflection
+  2696         3684            6.68058e-08            reflection
+  2697         3685            6.68058e-08            reflection
+  2698         3687            6.68058e-08            one dimensional contraction
+  2699         3689            6.68058e-08            one dimensional contraction
+  2700         3690            6.68058e-08            reflection
+  2701         3691            6.68058e-08            reflection
+  2702         3693            6.68058e-08            one dimensional contraction
+  2703         3695            6.66837e-08            reflection
+  2704         3696            6.66837e-08            reflection
+  2705         3697            6.66837e-08            reflection
+  2706         3698            6.66837e-08            reflection
+  2707         3699            6.66837e-08            reflection
+  2708         3700            6.66837e-08            reflection
+  2709         3701            6.66837e-08            reflection
+  2710         3703            6.66837e-08            one dimensional contraction
+  2711         3705            6.66837e-08            one dimensional contraction
+  2712         3707            6.66837e-08            one dimensional contraction
+  2713         3709            6.66837e-08            one dimensional contraction
+  2714         3710            6.66837e-08            reflection
+  2715         3711            6.66837e-08            reflection
+  2716         3712            6.66837e-08            reflection
+  2717         3713            6.66837e-08            reflection
+  2718         3715            6.66837e-08            one dimensional contraction
+  2719         3717             6.6642e-08            reflection
+  2720         3719            6.65942e-08            reflection
+  2721         3721            6.65942e-08            one dimensional contraction
+  2722         3722            6.65942e-08            reflection
+  2723         3723            6.65942e-08            reflection
+  2724         3725            6.65942e-08            one dimensional contraction
+  2725         3727            6.65942e-08            one dimensional contraction
+  2726         3728            6.65942e-08            reflection
+  2727         3729            6.65942e-08            reflection
+  2728         3730            6.65942e-08            reflection
+  2729         3732            6.65562e-08            reflection
+  2730         3733            6.65562e-08            reflection
+  2731         3734            6.65562e-08            reflection
+  2732         3736            6.65562e-08            one dimensional contraction
+  2733         3737            6.65562e-08            reflection
+  2734         3739            6.65126e-08            reflection
+  2735         3740            6.65126e-08            reflection
+  2736         3742            6.65126e-08            one dimensional contraction
+  2737         3744            6.64931e-08            reflection
+  2738         3745            6.64931e-08            reflection
+  2739         3746            6.64931e-08            reflection
+  2740         3748            6.64931e-08            one dimensional contraction
+  2741         3749            6.64931e-08            reflection
+  2742         3751            6.64931e-08            one dimensional contraction
+  2743         3753            6.64301e-08            reflection
+  2744         3755            6.64301e-08            one dimensional contraction
+  2745         3757            6.64301e-08            one dimensional contraction
+  2746         3758            6.64301e-08            reflection
+  2747         3760            6.64301e-08            one dimensional contraction
+  2748         3762            6.64301e-08            one dimensional contraction
+  2749         3763            6.64301e-08            reflection
+  2750         3764            6.64301e-08            reflection
+  2751         3766            6.64301e-08            one dimensional contraction
+  2752         3767            6.64301e-08            reflection
+  2753         3769            6.64301e-08            one dimensional contraction
+  2754         3770            6.64301e-08            reflection
+  2755         3771            6.64301e-08            reflection
+  2756         3773            6.64301e-08            one dimensional contraction
+  2757         3774            6.64301e-08            reflection
+  2758         3775            6.64301e-08            reflection
+  2759         3776            6.64301e-08            reflection
+  2760         3777            6.64301e-08            reflection
+  2761         3778            6.64301e-08            reflection
+  2762         3780            6.63192e-08            extrapolation
+  2763         3781            6.63192e-08            reflection
+  2764         3782            6.63192e-08            reflection
+  2765         3783            6.63192e-08            reflection
+  2766         3784            6.63192e-08            reflection
+  2767         3785            6.63192e-08            reflection
+  2768         3786            6.63192e-08            reflection
+  2769         3787            6.63192e-08            reflection
+  2770         3788            6.63192e-08            reflection
+  2771         3789            6.63192e-08            reflection
+  2772         3791            6.63192e-08            one dimensional contraction
+  2773         3792            6.63192e-08            reflection
+  2774         3793            6.63192e-08            reflection
+  2775         3794            6.63192e-08            reflection
+  2776         3796            6.62974e-08            extrapolation
+  2777         3797            6.62974e-08            reflection
+  2778         3798            6.62974e-08            reflection
+  2779         3800            6.62898e-08            reflection
+  2780         3801            6.62898e-08            reflection
+  2781         3803            6.62839e-08            reflection
+  2782         3805            6.62573e-08            reflection
+  2783         3807            6.62386e-08            reflection
+  2784         3808            6.62386e-08            reflection
+  2785         3809            6.62386e-08            reflection
+  2786         3811            6.61111e-08            extrapolation
+  2787         3812            6.61111e-08            reflection
+  2788         3813            6.61111e-08            reflection
+  2789         3814            6.61111e-08            reflection
+  2790         3815            6.61111e-08            reflection
+  2791         3816            6.61111e-08            reflection
+  2792         3817            6.61111e-08            reflection
+  2793         3818            6.61111e-08            reflection
+  2794         3819            6.61111e-08            reflection
+  2795         3820            6.61111e-08            reflection
+  2796         3822            6.61004e-08            reflection
+  2797         3823            6.61004e-08            reflection
+  2798         3825             6.5958e-08            extrapolation
+  2799         3826             6.5958e-08            reflection
+  2800         3827             6.5958e-08            reflection
+  2801         3828             6.5958e-08            reflection
+  2802         3829             6.5958e-08            reflection
+  2803         3830             6.5958e-08            reflection
+  2804         3831             6.5958e-08            reflection
+  2805         3832             6.5958e-08            reflection
+  2806         3834            6.59454e-08            extrapolation
+  2807         3835            6.59454e-08            reflection
+  2808         3836            6.59454e-08            reflection
+  2809         3838            6.58497e-08            extrapolation
+  2810         3839            6.58497e-08            reflection
+  2811         3840            6.58497e-08            reflection
+  2812         3842            6.57768e-08            extrapolation
+  2813         3843            6.57768e-08            reflection
+  2814         3844            6.57768e-08            reflection
+  2815         3845            6.57768e-08            reflection
+  2816         3846            6.57768e-08            reflection
+  2817         3847            6.57768e-08            reflection
+  2818         3848            6.57768e-08            reflection
+  2819         3850            6.57733e-08            reflection
+  2820         3851            6.57733e-08            reflection
+  2821         3852            6.57733e-08            reflection
+  2822         3853            6.57733e-08            reflection
+  2823         3854            6.57733e-08            reflection
+  2824         3856            6.57595e-08            reflection
+  2825         3858            6.56772e-08            reflection
+  2826         3859            6.56772e-08            reflection
+  2827         3860            6.56772e-08            reflection
+  2828         3861            6.56772e-08            reflection
+  2829         3863            6.56772e-08            one dimensional contraction
+  2830         3864            6.56772e-08            reflection
+  2831         3865            6.56772e-08            reflection
+  2832         3867             6.5656e-08            reflection
+  2833         3869            6.56463e-08            reflection
+  2834         3870            6.56463e-08            reflection
+  2835         3871            6.56463e-08            reflection
+  2836         3873            6.56463e-08            one dimensional contraction
+  2837         3874            6.56463e-08            reflection
+  2838         3876            6.56378e-08            reflection
+  2839         3877            6.56378e-08            reflection
+  2840         3878            6.56378e-08            reflection
+  2841         3880            6.56069e-08            reflection
+  2842         3881            6.56069e-08            reflection
+  2843         3882            6.56069e-08            reflection
+  2844         3883            6.56069e-08            reflection
+  2845         3885            6.55841e-08            reflection
+  2846         3886            6.55841e-08            reflection
+  2847         3888            6.55136e-08            extrapolation
+  2848         3889            6.55136e-08            reflection
+  2849         3891            6.55136e-08            one dimensional contraction
+  2850         3892            6.55136e-08            reflection
+  2851         3893            6.55136e-08            reflection
+  2852         3894            6.55136e-08            reflection
+  2853         3896            6.55136e-08            one dimensional contraction
+  2854         3897            6.55136e-08            reflection
+  2855         3898            6.55136e-08            reflection
+  2856         3899            6.55136e-08            reflection
+  2857         3900            6.55136e-08            reflection
+  2858         3901            6.55136e-08            reflection
+  2859         3902            6.55136e-08            reflection
+  2860         3903            6.55136e-08            reflection
+  2861         3904            6.55136e-08            reflection
+  2862         3906            6.54601e-08            extrapolation
+  2863         3907            6.54601e-08            reflection
+  2864         3908            6.54601e-08            reflection
+  2865         3910            6.54187e-08            extrapolation
+  2866         3911            6.54187e-08            reflection
+  2867         3912            6.54187e-08            reflection
+  2868         3913            6.54187e-08            reflection
+  2869         3914            6.54187e-08            reflection
+  2870         3915            6.54187e-08            reflection
+  2871         3917            6.54036e-08            reflection
+  2872         3918            6.54036e-08            reflection
+  2873         3919            6.54036e-08            reflection
+  2874         3921            6.53531e-08            reflection
+  2875         3922            6.53531e-08            reflection
+  2876         3923            6.53531e-08            reflection
+  2877         3925            6.52323e-08            extrapolation
+  2878         3926            6.52323e-08            reflection
+  2879         3927            6.52323e-08            reflection
+  2880         3928            6.52323e-08            reflection
+  2881         3929            6.52323e-08            reflection
+  2882         3930            6.52323e-08            reflection
+  2883         3931            6.52323e-08            reflection
+  2884         3932            6.52323e-08            reflection
+  2885         3933            6.52323e-08            reflection
+  2886         3935            6.51815e-08            extrapolation
+  2887         3936            6.51815e-08            reflection
+  2888         3937            6.51815e-08            reflection
+  2889         3938            6.51815e-08            reflection
+  2890         3940            6.50849e-08            extrapolation
+  2891         3941            6.50849e-08            reflection
+  2892         3943            6.49887e-08            extrapolation
+  2893         3944            6.49887e-08            reflection
+  2894         3945            6.49887e-08            reflection
+  2895         3946            6.49887e-08            reflection
+  2896         3947            6.49887e-08            reflection
+  2897         3949            6.48539e-08            extrapolation
+  2898         3950            6.48539e-08            reflection
+  2899         3951            6.48539e-08            reflection
+  2900         3952            6.48539e-08            reflection
+  2901         3953            6.48539e-08            reflection
+  2902         3955            6.48074e-08            extrapolation
+  2903         3957            6.46942e-08            extrapolation
+  2904         3958            6.46942e-08            reflection
+  2905         3959            6.46942e-08            reflection
+  2906         3961            6.43063e-08            extrapolation
+  2907         3962            6.43063e-08            reflection
+  2908         3963            6.43063e-08            reflection
+  2909         3964            6.43063e-08            reflection
+  2910         3965            6.43063e-08            reflection
+  2911         3966            6.43063e-08            reflection
+  2912         3967            6.43063e-08            reflection
+  2913         3968            6.43063e-08            reflection
+  2914         3969            6.43063e-08            reflection
+  2915         3970            6.43063e-08            reflection
+  2916         3972            6.42818e-08            extrapolation
+  2917         3974            6.41449e-08            extrapolation
+  2918         3975            6.41449e-08            reflection
+  2919         3976            6.41449e-08            reflection
+  2920         3977            6.41449e-08            reflection
+  2921         3978            6.41449e-08            reflection
+  2922         3980            6.40921e-08            reflection
+  2923         3982            6.40782e-08            reflection
+  2924         3983            6.40782e-08            reflection
+  2925         3985            6.34288e-08            extrapolation
+  2926         3986            6.34288e-08            reflection
+  2927         3987            6.34288e-08            reflection
+  2928         3988            6.34288e-08            reflection
+  2929         3989            6.34288e-08            reflection
+  2930         3990            6.34288e-08            reflection
+  2931         3991            6.34288e-08            reflection
+  2932         3992            6.34288e-08            reflection
+  2933         3993            6.34288e-08            reflection
+  2934         3994            6.34288e-08            reflection
+  2935         3995            6.34288e-08            reflection
+  2936         3996            6.34288e-08            reflection
+  2937         3997            6.34288e-08            reflection
+  2938         3999            6.33295e-08            reflection
+  2939         4001            6.32847e-08            reflection
+  2940         4003            6.31117e-08            extrapolation
+  2941         4004            6.31117e-08            reflection
+  2942         4005            6.31117e-08            reflection
+  2943         4006            6.31117e-08            reflection
+  2944         4008            6.30961e-08            reflection
+  2945         4009            6.30961e-08            reflection
+  2946         4011            6.27082e-08            extrapolation
+  2947         4012            6.27082e-08            reflection
+  2948         4014            6.22064e-08            extrapolation
+  2949         4015            6.22064e-08            reflection
+  2950         4016            6.22064e-08            reflection
+  2951         4017            6.22064e-08            reflection
+  2952         4018            6.22064e-08            reflection
+  2953         4019            6.22064e-08            reflection
+  2954         4020            6.22064e-08            reflection
+  2955         4022            6.18791e-08            extrapolation
+  2956         4023            6.18791e-08            reflection
+  2957         4024            6.18791e-08            reflection
+  2958         4026            6.12395e-08            extrapolation
+  2959         4027            6.12395e-08            reflection
+  2960         4028            6.12395e-08            reflection
+  2961         4029            6.12395e-08            reflection
+  2962         4030            6.12395e-08            reflection
+  2963         4031            6.12395e-08            reflection
+  2964         4033            6.05094e-08            extrapolation
+  2965         4034            6.05094e-08            reflection
+  2966         4035            6.05094e-08            reflection
+  2967         4036            6.05094e-08            reflection
+  2968         4037            6.05094e-08            reflection
+  2969         4038            6.05094e-08            reflection
+  2970         4040            6.03966e-08            extrapolation
+  2971         4041            6.03966e-08            reflection
+  2972         4043            5.96903e-08            extrapolation
+  2973         4044            5.96903e-08            reflection
+  2974         4046            5.85601e-08            extrapolation
+  2975         4047            5.85601e-08            reflection
+  2976         4048            5.85601e-08            reflection
+  2977         4049            5.85601e-08            reflection
+  2978         4050            5.85601e-08            reflection
+  2979         4051            5.85601e-08            reflection
+  2980         4053             5.7588e-08            extrapolation
+  2981         4054             5.7588e-08            reflection
+  2982         4055             5.7588e-08            reflection
+  2983         4056             5.7588e-08            reflection
+  2984         4057             5.7588e-08            reflection
+  2985         4059            5.63769e-08            extrapolation
+  2986         4060            5.63769e-08            reflection
+  2987         4061            5.63769e-08            reflection
+  2988         4063            5.51608e-08            extrapolation
+  2989         4064            5.51608e-08            reflection
+  2990         4065            5.51608e-08            reflection
+  2991         4066            5.51608e-08            reflection
+  2992         4067            5.51608e-08            reflection
+  2993         4068            5.51608e-08            reflection
+  2994         4070            5.41294e-08            extrapolation
+  2995         4071            5.41294e-08            reflection
+  2996         4072            5.41294e-08            reflection
+  2997         4074            5.38488e-08            extrapolation
+  2998         4076            5.08161e-08            extrapolation
+  2999         4077            5.08161e-08            reflection
+  3000         4078            5.08161e-08            reflection
+Exceeded maximum number of iterations.
  
 Estimated parameters
 ====================
-lm = 0.0637986   
-d = 0.065317   
-beta = 0.209831   
-a = 0.397656   
-k = 0.504335   
-u = 0.566481   
-c = 0.658984   
-q = 0.685023   
-b = 0.816731   
-h = 0.912388   
+lm = 0.0664676   
+d = 0.109885   
+beta = 0.138485   
+a = 0.318866   
+k = 0.43335   
+u = 0.556051   
+c = 0.592705   
+q = 0.726761   
+b = 0.820638   
+h = 0.906498   
 
 Estimated initial conditions
 ============================
-x=0.167266 (Experiment 1)
-y=0.361048 (Experiment 1)
-v=0.47094 (Experiment 1)
-w=0.667287 (Experiment 1)
-z=0.832598 (Experiment 1)
+x=0.167165 (Experiment 1)
+y=0.34847 (Experiment 1)
+v=0.484355 (Experiment 1)
+w=0.667024 (Experiment 1)
+z=0.833046 (Experiment 1)
 
-Optimal cost: 2.7906e-07
+Optimal cost: 5.08161e-08
 
 output = 
 
   struct with fields:
 
          parameters: {10x1 cell}
-               Popt: [0.0638 0.0653 0.2098 0.3977 0.5043 0.5665 0.6590 0.6850 0.8167 0.9124]
+               Popt: [0.0665 0.1099 0.1385 0.3189 0.4333 0.5561 0.5927 0.7268 0.8206 0.9065]
     parameterslocal: {}
           PLOCALopt: []
             icnames: {5x1 cell}
-              ICopt: [0.1673 0.3610 0.4709 0.6673 0.8326]
-            FVALopt: 2.7906e-07
+              ICopt: [0.1672 0.3485 0.4844 0.6670 0.8330]
+            FVALopt: 5.0816e-08
          projectopt: [1x1 IQMprojectSB]
          estimation: [1x1 struct]
 
@@ -2287,4 +3825,4 @@ output =
 
 [?1l>
 
-CPU time: 8.38+119.75 sec	Max. resident set size: 1158868 KB	 Elapsed: 31.33 sec.
+CPU time: 8.76+93.06 sec	Max. resident set size: 1423072 KB	 Elapsed: 48.77 sec.

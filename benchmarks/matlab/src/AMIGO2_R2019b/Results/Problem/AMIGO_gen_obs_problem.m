@@ -1,32 +1,20 @@
 function ms=AMIGO_gen_obs_problem(y,inputs,par,iexp)
-	n=y(:,1);
-	e=y(:,2);
-	s=y(:,3);
-	m=y(:,4);
-	p=y(:,5);
-	muN    =par(1);
-	muEE   =par(2);
-	muLE   =par(3);
-	muLL   =par(4);
-	muM    =par(5);
-	muP    =par(6);
-	muPE   =par(7);
-	muPL   =par(8);
-	deltaNE=par(9);
-	deltaEL=par(10);
-	deltaLM=par(11);
-	rhoE   =par(12);
-	rhoP   =par(13);
+	x1=y(:,1);
+	x2=y(:,2);
+	x3=y(:,3);
+	a12=par(1);
+	a13=par(2);
+	a21=par(3);
+	a31=par(4);
+	a01=par(5);
  
 
 switch iexp
 
 case 1
-Y1=n  ;
-Y2=e  ;
-Y3=s+m;
-Y4=p  ;
-ms(:,1)=Y1;ms(:,2)=Y2;ms(:,3)=Y3;ms(:,4)=Y4;
+y1=x1;
+y2=x2;
+ms(:,1)=y1;ms(:,2)=y2;
 end
 
 return
