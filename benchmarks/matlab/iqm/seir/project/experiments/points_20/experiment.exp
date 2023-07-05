@@ -1,0 +1,19 @@
+********** EXPERIMENT NAME
+
+
+********** EXPERIMENT NOTES
+
+
+********** EXPERIMENT INITIAL PARAMETER AND STATE SETTINGS
+a = rand(1)
+b = rand(1)
+nu = rand(1)
+
+S(0) = rand(1)
+E(0) = rand(1)
+In(0) = rand(1)
+N(0) = rand(1)
+
+********** EXPERIMENT PARAMETER CHANGES
+
+********** EXPERIMENT STATE CHANGES
