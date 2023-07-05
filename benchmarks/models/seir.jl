@@ -12,7 +12,7 @@ parameters = [a, b, nu]
                              D(S) ~ -b * S * In / N,
                              D(E) ~ b * S * In / N - nu * E,
                              D(In) ~ nu * E - a * In,
-                             D(N) ~ 1
+                             D(N) ~ 0
                          ], t, states, parameters)
 measured_quantities = [
     y1 ~ In,
