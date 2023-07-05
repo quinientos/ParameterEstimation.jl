@@ -17,7 +17,7 @@ inputs.model.st_names=char('S', 'E', 'In', 'N');    %x1=V, x2=R        % Names o
 inputs.model.par_names=char('a','b', 'nu');             % Names of the parameters
 %inputs.model.stimulus_names=char('light');  % Names of the stimuli
 inputs.model.eqns=char('dS = -b* S * In / N;', 'dE = b * S * In / N - nu * E;', 'dIn = nu * E - a * In', 'dN = 0');                                 % Equations describing system dynamics.
-inputs.model.par = [0.2, 0.4, 0.6, 0.8];         % Nominal value for the parameters
+inputs.model.par = [0.25, 0.5, 0.75];         % Nominal value for the parameters
 % inputs.model.AMIGOsensrhs = 1;                       % Generate the sensitivity equations for exact
 %                                                      % Jacobian computation
 %==================================
@@ -26,7 +26,7 @@ inputs.model.par = [0.2, 0.4, 0.6, 0.8];         % Nominal value for the paramet
 % EXPERIMENT DESIGN
 inputs.exps.n_exp=1;                          % Number of experiments
 % EXPERIMENT 1
-inputs.exps.exp_y0{1}=[0.25, 0.5, 0.75];        % Initial conditions
+inputs.exps.exp_y0{1}=[0.2, 0.4, 0.6, 0.8];        % Initial conditions
 inputs.exps.t_f{1}=1
 inputs.exps.n_obs{1}=2;                       % Number of observables
 inputs.exps.obs_names{1}=char('Y1', 'Y2'); % Names of the observable
