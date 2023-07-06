@@ -5,14 +5,15 @@
 
 
 ********** EXPERIMENT INITIAL PARAMETER AND STATE SETTINGS
-a = rand(1)
-b = rand(1)
-nu = rand(1)
+k1 = rand(1)
+k2 = rand(1)
+eB = rand(1)
 
-S(0) = rand(1)
-E(0) = rand(1)
-In(0) = rand(1)
-N(0) = rand(1)
+xA(0) = rand(1)
+xB(0) = rand(1)
+xC(0) = rand(1)
+eA(0) = rand(1)
+eC(0) = rand(1)
 
 ********** EXPERIMENT PARAMETER CHANGES
 

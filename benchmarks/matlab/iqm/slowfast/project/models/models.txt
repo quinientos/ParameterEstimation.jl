@@ -4,23 +4,26 @@ model
 
 ********** MODEL NOTES
 
-seir
+slowfast
 
 ********** MODEL STATES
-d/dt(S) = -b * S * In / N 
-d/dt(E) = b * S * In / N - nu * E
-d/dt(In) = nu * E - a * In
-d/dt(N) = 0
+d/dt(xA) = -k1*xA
+d/dt(xB) = k1*xA-k2*xB
+d/dt(xC) = k2*xB
+d/dt(eA) = 0
+d/dt(eC) = 0
 
 ********** MODEL PARAMETERS
-a = 0.25
-b = 0.5
-nu = 0.75
+k1 = 0.25
+k2 = 0.5
+eB = 0.75
 
 ********** MODEL VARIABLES
 
-OUTPUT1 = In
-OUTPUT2 = N
+OUTPUT1 = xC
+OUTPUT2 = eA * xA + eB * xB + eC * xC
+OUTPUT3 = eA
+OUTPUT4 = eC
 
 ********** MODEL REACTIONS
 
