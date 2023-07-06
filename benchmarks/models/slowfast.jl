@@ -1,8 +1,8 @@
 using ModelingToolkit, DifferentialEquations
 using Sundials, ParameterEstimation
 solver = CVODE_BDF()
-@parameters k1 k2 eA eB eC
-@variables t xA(t) xB(t) xC(t) y1(t) y2(t) y3(t) y4(t) #eA(t) eC(t)
+@parameters k1 k2 eB
+@variables t xA(t) xB(t) xC(t) eA(t) eC(t) y1(t) y2(t) y3(t) y4(t) #eA(t) eC(t)
 D = Differential(t)
 states = [xA, xB, xC, eA, eC]
 parameters = [k1, k2, eB]
@@ -16,7 +16,7 @@ parameters = [k1, k2, eB]
 
 measured_quantities = [y1 ~ xC, y2 ~ eA * xA + eB * xB + eC * xC, y3 ~ eA, y4 ~ eC] 
 ic = [0.166, 0.333, 0.5, 0.666, 0.833]
-time_interval = [0.0, 1.0]
+time_interval = [-0.5, 0.5]
 datasize = 20
 p_true = [0.25, 0.5, 0.75] # True Parameters
 
